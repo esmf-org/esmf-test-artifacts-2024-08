@@ -1,4 +1,4 @@
-2024-05-29 03:59:38
+2024-05-30 03:57:40
   Beginning Test, file ESMF_FieldRegridUTest.F90, line 64
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_FieldRegridUTest.F90, line 64
@@ -291,6 +291,8 @@
  2
   PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 79
  2
+  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 
+ 808
   PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 
  808
   PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 
@@ -301,8 +303,6 @@
            1 deBlockList:           1          26         200          50
            2 deBlockList:           1          51         200          75
            3 deBlockList:           1          76         200         100
-  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 
- 808
   PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 8
  24
   PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 8
@@ -320,16 +320,16 @@
   PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, 
  line 855
   PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, 
- line 855
   PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, 
+ line 855
  line 855
   PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTes
  t.F90, line 871
   PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTes
  t.F90, line 871
   PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTes
-  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTes
  t.F90, line 871
+  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTes
  t.F90, line 871
   PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTes
  t.F90, line 887
@@ -407,10 +407,10 @@
  est.F90, line 1028
   PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUT
  est.F90, line 1028
-           1  Time to do Patch FieldRegridStore()=  0.374432419000073     
-           3  Time to do Patch FieldRegridStore()=  0.374340351999990     
-           2  Time to do Patch FieldRegridStore()=  0.374486102999981     
-           0  Time to do Patch FieldRegridStore()=  0.374543282999980     
+           1  Time to do Patch FieldRegridStore()=  0.372605092999947     
+           2  Time to do Patch FieldRegridStore()=  0.372587769000006     
+           3  Time to do Patch FieldRegridStore()=  0.372578170999986     
+           0  Time to do Patch FieldRegridStore()=  0.372732208999992     
   PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and 
  patch, ESMF_FieldRegridUTest.F90, line 1045
   PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and 
@@ -621,9 +621,6 @@
  latlon Grids., ESMF_FieldRegridUTest.F90, line 1533
   PASS  Test spherical vector regridding with bilinear between cs and latlon Gri
  ds with points at pole., ESMF_FieldRegridUTest.F90, line 1550
-  PASS  Test spherical vector regridding with bilinear between cs and latlon Gri
- ds with points at pole., ESMF_FieldRegridUTest.F90, line 1550
-  Ending Test, file ESMF_FieldRegridUTest.F90, line 1555
   Ending Test, file ESMF_FieldRegridUTest.F90, line 1555
   PASS  Test spherical vector regridding with bilinear between cs and latlon Gri
  ds with points at pole., ESMF_FieldRegridUTest.F90, line 1550
@@ -631,7 +628,10 @@
   PASS  Test spherical vector regridding with bilinear between cs and latlon Gri
  ds with points at pole., ESMF_FieldRegridUTest.F90, line 1550
   Ending Test, file ESMF_FieldRegridUTest.F90, line 1555
-  PET           1  Test Elapsed Time    3307.58900000000       msec.
-  PET           3  Test Elapsed Time    3304.21200000000       msec.
-  PET           0  Test Elapsed Time    3296.19600000000       msec.
-  PET           2  Test Elapsed Time    3300.79200000000       msec.
+  PASS  Test spherical vector regridding with bilinear between cs and latlon Gri
+ ds with points at pole., ESMF_FieldRegridUTest.F90, line 1550
+  Ending Test, file ESMF_FieldRegridUTest.F90, line 1555
+  PET           1  Test Elapsed Time    3281.96300000000       msec.
+  PET           3  Test Elapsed Time    3279.29500000000       msec.
+  PET           0  Test Elapsed Time    3272.17800000000       msec.
+  PET           2  Test Elapsed Time    3276.60600000000       msec.
