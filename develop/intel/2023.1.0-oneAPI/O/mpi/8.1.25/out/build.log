@@ -213,14 +213,14 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload   -lrt -ldl -lnetcdff -ln
 
 
 --------------------------------------------------------------
-Compiling on Mon 03 Jun 2024 03:56:22 AM EDT on c5n1371
-Machine characteristics: Linux c5n1371 5.14.21-150400.24.81_12.0.87-cray_shasta_c #1 SMP Thu Jan 11 20:03:21 UTC 2024 (e30c7c1) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Tue 04 Jun 2024 03:48:14 AM EDT on c5n1769
+Machine characteristics: Linux c5n1769 5.14.21-150400.24.81_12.0.87-cray_shasta_c #1 SMP Thu Jan 11 20:03:21 UTC 2024 (e30c7c1) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf'
 Making directory /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/lib/libO/Unicos.intel.64.mpi.default for library
-Making directory /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include for include files
 Making directory /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/mod/modO/Unicos.intel.64.mpi.default for *.mod files
+Making directory /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include for include files
 Making directory /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default for *.o files
 cd /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf ;\
 make ACTION=tree_include tree
@@ -1265,7 +1265,6 @@ In file included from /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue
     } else if (std::numeric_limits<T>::has_infinity && std::isinf(value)) {
                                                        ^~~~~~~~~~~~~~~~~
 4 warnings generated.
-4 warnings generated.
 In file included from /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/src/convert.cpp:3:
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/src/../include/yaml-cpp/node/convert.h:103:7: warning: explicit comparison with NaN in fast floating point mode [-Wtautological-constant-compare]
   if (std::isnan(rhs)) {
@@ -1312,6 +1311,7 @@ YAML_DEFINE_CONVERT_STREAMABLE_SIGNED(long double);
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/src/../include/yaml-cpp/node/convert.h:105:14: warning: explicit comparison with infinity in fast floating point mode [-Wtautological-constant-compare]
   } else if (std::isinf(rhs)) {
              ^~~~~~~~~~~~~~~
+4 warnings generated.
 6 warnings generated.
 4 warnings generated.
 make[8]: Leaving directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/mod/modO/Unicos.intel.64.mpi.default'
@@ -1939,6 +1939,9 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:833:13: warning: enumeration values 'ESMC_CALKIND_GREGORIAN' and 'ESMC_CALKIND_JULIAN' not handled in switch [-Wswitch]
+    switch (this->calendar->calkindflag)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1458:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
@@ -1954,9 +1957,6 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:833:13: warning: enumeration values 'ESMC_CALKIND_GREGORIAN' and 'ESMC_CALKIND_JULIAN' not handled in switch [-Wswitch]
-    switch (this->calendar->calkindflag)
-            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:107:9: warning: array index 511 is past the end of the array (that has type 'char[256]') [-Warray-bounds]
         clock->name[2*ESMF_MAXSTR-1] = '\0';  // null terminate
         ^           ~~~~~~~~~~~~~~~
@@ -2002,19 +2002,22 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:594:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+    if (this == ESMC_NULL_POINTER) {
+        ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:729:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+    if (this == ESMC_NULL_POINTER) {
+        ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1427:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1461:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-:594:9:     if (this == ESMC_NULL_POINTER) {warning: 
-'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]        ^~~~    ~~~~~~~~~~~~~~~~~
-
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1461:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1532:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
@@ -2023,16 +2026,13 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:729:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-    if (this == ESMC_NULL_POINTER) {
-        ^~~~    ~~~~~~~~~~~~~~~~~
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
-    if (this == ESMC_NULL_POINTER) {
-        ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:870:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1004:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+    if (this == ESMC_NULL_POINTER) {
+        ^~~~    ~~~~~~~~~~~~~~~~~
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
     if (this == ESMC_NULL_POINTER) {
         ^~~~    ~~~~~~~~~~~~~~~~~
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:9: warning: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
@@ -2622,7 +2622,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.6.2
-Configured On:		Mon 03 Jun 2024 03:59:46 AM EDT
+Configured On:		Tue 04 Jun 2024 03:51:36 AM EDT
 Host System:		x86_64-Linux-5.14.21-150400.24.81_12.0.87-cray_shasta_c
 Build Directory: 	/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/IO/PIO/Install
@@ -3043,12 +3043,6 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_MBMesh_Search_EtoP.o
 CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_MBMesh_ShapeFunc.o
 CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/stubs/pthread  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/ESMCI_MBMesh_Util.o
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:3282:9: warning: 'DOT_PRODUCT3D' macro redefined [-Wmacro-redefined]
-#define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
-        ^
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:1061:9: note: previous definition is here
-#define DOT_PRODUCT3D(a,b) a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
-        ^
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:543:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
 }
 ^
@@ -3058,6 +3052,12 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2080:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
 }
 ^
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:3282:9: warning: 'DOT_PRODUCT3D' macro redefined [-Wmacro-redefined]
+#define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
+        ^
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:1061:9: note: previous definition is here
+#define DOT_PRODUCT3D(a,b) a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+        ^
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C:1058:29: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
     char *esmfmesh_filename=".esmf.nc";
                             ^
@@ -3121,6 +3121,13 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:535:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
 }
 ^
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1188:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:648:13: warning: implicit conversion of NULL constant to 'EntityHandle' (aka 'unsigned long') [-Wnull-conversion]
+    si.elem=NULL;
+           ~^~~~
+            0
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:787:10: warning: expression result unused [-Wunused-value]
     for (pb; pb !=  pe; ++pb) {
          ^~
@@ -3133,16 +3140,9 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -pthread  -qopenmp -I/tmp/intel_2023.1.0-oneA
 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1454:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
 }
 ^
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1188:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-}
-^
-/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:648:13: warning: implicit conversion of NULL constant to 'EntityHandle' (aka 'unsigned long') [-Wnull-conversion]
-    si.elem=NULL;
-           ~^~~~
-            0
-1 warning generated.
 1 warning generated.
 5 warnings generated.
+1 warning generated.
 1 warning generated.
 1 warning generated.
 3 warnings generated.
@@ -3413,8 +3413,8 @@ cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_de
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_maps.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_maps.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_migrate.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_migrate.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_mmio.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_mmio.o
-cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_mm_readfile.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_mm_readfile.o
 1 warning generated.
+cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_mm_readfile.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_mm_readfile.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_output.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_output.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_par_util.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_par_util.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/dr_random_io.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/dr_random_io.o
@@ -3556,8 +3556,8 @@ cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_de
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rib.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rib.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rib_util.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rib_util.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/rootlist.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/rootlist.o
-1 warning generated.
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/scatter_graph.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/scatter_graph.o
+1 warning generated.
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/set_param.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/set_param.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/shared.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/shared.o
 cc -c -std=c99 -O -DNDEBUG -fPIC  -qopenmp -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/../include -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/build_config/Unicos.intel.default -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Superstructure  -I/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.7.0b06-37-g31f880616f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Zoltan"' -DESMF_CSTD=99 /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/Infrastructure/Mesh/src/Zoltan/timer.c -o /tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/obj/objO/Unicos.intel.64.mpi.default/timer.o
@@ -5498,6 +5498,6 @@ make[2]: Leaving directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf/src/In
 make[1]: Leaving directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf'
 make[1]: Entering directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf'
 make[1]: Leaving directory '/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/esmf'
-ESMF library built successfully on Mon 03 Jun 2024 04:04:22 AM EDT
+ESMF library built successfully on Tue 04 Jun 2024 03:56:12 AM EDT
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
