@@ -1,0 +1,237 @@
+2024-06-12 01:42:57
+20240612 015345.855 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.855 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240612 015345.855 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240612 015345.855 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240612 015345.855 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240612 015345.855 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.855 INFO             PET0 Running with ESMF Version   : v8.7.0b07
+20240612 015345.855 INFO             PET0 ESMF library build date/time: "Jun 12 2024" "01:40:40"
+20240612 015345.855 INFO             PET0 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/gfortran_12.2.0_pio2.6.2_mpi_O_develop/esmf
+20240612 015345.855 INFO             PET0 ESMF_COMM                   : mpi
+20240612 015345.856 INFO             PET0 ESMF_MOAB                   : enabled
+20240612 015345.856 INFO             PET0 ESMF_LAPACK                 : enabled
+20240612 015345.856 INFO             PET0 ESMF_NETCDF                 : enabled
+20240612 015345.856 INFO             PET0 ESMF_PNETCDF                : disabled
+20240612 015345.856 INFO             PET0 ESMF_PIO                    : enabled
+20240612 015345.856 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240612 015345.857 INFO             PET0  Beginning Test, file ESMF_BaseUTest.F90, line 84
+20240612 015345.857 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 94
+20240612 015345.857 INFO             PET0  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 103
+20240612 015345.857 ERROR            PET0 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET0  PASS  Destroy a destroyed Base, ESMF_BaseUTest.F90, line 115
+20240612 015345.857 ERROR            PET0 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET0  PASS  Destroy a non-created Base, ESMF_BaseUTest.F90, line 124
+20240612 015345.857 ERROR            PET0 ESMF_Base.F90:933 ESMF_BasePrint Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET0  PASS  ESMF_BasePrint of deleted Base, ESMF_BaseUTest.F90, line 134
+20240612 015345.857 ERROR            PET0 ESMF_Base.F90:933 ESMF_BasePrint Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET0  PASS  ESMF_BasePrint of non-created Base, ESMF_BaseUTest.F90, line 144
+20240612 015345.857 INFO             PET0  PASS  ESMF_SetName of non-created Base, ESMF_BaseUTest.F90, line 154
+20240612 015345.857 INFO             PET0  PASS  ESMF_SetName of deleted Base, ESMF_BaseUTest.F90, line 165
+20240612 015345.857 ERROR            PET0 ESMCI_Base_F.C:79 c_esmc_basecreate() test/object must not have a slash (/) in its name
+20240612 015345.857 ERROR            PET0 ESMF_Base.F90:281 ESMF_BaseCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseCreate with slash in name, ESMF_BaseUTest.F90, line 180
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 188
+20240612 015345.857 ERROR            PET0 ESMCI_Base_F.C:598 c_esmc_setname() fred/jones must not have a slash (/) in its name
+20240612 015345.857 INFO             PET0  PASS  ESMF_SetName with slash in its name, ESMF_BaseUTest.F90, line 198
+20240612 015345.857 INFO             PET0  PASS  ESMF_SetName, ESMF_BaseUTest.F90, line 207
+20240612 015345.857 INFO             PET0  PASS  ESMF_GetName, ESMF_BaseUTest.F90, line 216
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseValidate, ESMF_BaseUTest.F90, line 225
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseGetID, ESMF_BaseUTest.F90, line 233
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseGetVMId of original Base, ESMF_BaseUTest.F90, line 241
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseSetVMId a new VMId into the Base, ESMF_BaseUTest.F90, line 250
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseGetVMId new VMid, ESMF_BaseUTest.F90, line 258
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ESMF_BaseUTest.F90, line 265
+20240612 015345.857 INFO             PET0  PASS  ESMF_BasePrint brief, ESMF_BaseUTest.F90, line 275
+20240612 015345.857 INFO             PET0  PASS  ESMF_BasePrint debug, ESMF_BaseUTest.F90, line 284
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseSerialize - inquire only option, ESMF_BaseUTest.F90, line 305
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseSerialize - perform serialization, ESMF_BaseUTest.F90, line 322
+20240612 015345.857 INFO             PET0  PASS  Compare calculated buffer size with actual size, ESMF_BaseUTest.F90, line 334
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseDeserialize - perform deserialization, ESMF_BaseUTest.F90, line 348
+20240612 015345.857 INFO             PET0  PASS  Compare serialize/deserialize offsets, ESMF_BaseUTest.F90, line 357
+20240612 015345.857 INFO             PET0  PASS  Creating VMId for inquiry, ESMF_BaseUTest.F90, line 367
+20240612 015345.857 INFO             PET0  PASS  ESMF_BaseDeserializeID/VMId - perform deserialization inquiry, ESMF_BaseUTest.F90, line 379
+20240612 015345.857 INFO             PET0  PASS  Compare original vs inquired ids, ESMF_BaseUTest.F90, line 389
+20240612 015345.857 INFO             PET0  PASS  Compare original vs inquired VMId inquiry, ESMF_BaseUTest.F90, line 405
+20240612 015345.857 INFO             PET0  PASS  Compare original vs inquired VMIds, ESMF_BaseUTest.F90, line 415
+20240612 015345.857 INFO             PET0  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 431
+20240612 015345.857 INFO             PET0  Ending Test, file ESMF_BaseUTest.F90, line 439
+20240612 015345.857 INFO             PET0  Finalizing ESMF
+20240612 015345.856 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240612 015345.856 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240612 015345.856 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240612 015345.856 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240612 015345.856 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET1 Running with ESMF Version   : v8.7.0b07
+20240612 015345.856 INFO             PET1 ESMF library build date/time: "Jun 12 2024" "01:40:40"
+20240612 015345.856 INFO             PET1 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/gfortran_12.2.0_pio2.6.2_mpi_O_develop/esmf
+20240612 015345.856 INFO             PET1 ESMF_COMM                   : mpi
+20240612 015345.856 INFO             PET1 ESMF_MOAB                   : enabled
+20240612 015345.856 INFO             PET1 ESMF_LAPACK                 : enabled
+20240612 015345.856 INFO             PET1 ESMF_NETCDF                 : enabled
+20240612 015345.856 INFO             PET1 ESMF_PNETCDF                : disabled
+20240612 015345.856 INFO             PET1 ESMF_PIO                    : enabled
+20240612 015345.856 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240612 015345.857 INFO             PET1  Beginning Test, file ESMF_BaseUTest.F90, line 84
+20240612 015345.857 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 94
+20240612 015345.857 INFO             PET1  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 103
+20240612 015345.857 ERROR            PET1 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET1  PASS  Destroy a destroyed Base, ESMF_BaseUTest.F90, line 115
+20240612 015345.857 ERROR            PET1 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET1  PASS  Destroy a non-created Base, ESMF_BaseUTest.F90, line 124
+20240612 015345.857 ERROR            PET1 ESMF_Base.F90:933 ESMF_BasePrint Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET1  PASS  ESMF_BasePrint of deleted Base, ESMF_BaseUTest.F90, line 134
+20240612 015345.857 ERROR            PET1 ESMF_Base.F90:933 ESMF_BasePrint Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET1  PASS  ESMF_BasePrint of non-created Base, ESMF_BaseUTest.F90, line 144
+20240612 015345.857 INFO             PET1  PASS  ESMF_SetName of non-created Base, ESMF_BaseUTest.F90, line 154
+20240612 015345.857 INFO             PET1  PASS  ESMF_SetName of deleted Base, ESMF_BaseUTest.F90, line 165
+20240612 015345.857 ERROR            PET1 ESMCI_Base_F.C:79 c_esmc_basecreate() test/object must not have a slash (/) in its name
+20240612 015345.857 ERROR            PET1 ESMF_Base.F90:281 ESMF_BaseCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseCreate with slash in name, ESMF_BaseUTest.F90, line 180
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 188
+20240612 015345.857 ERROR            PET1 ESMCI_Base_F.C:598 c_esmc_setname() fred/jones must not have a slash (/) in its name
+20240612 015345.857 INFO             PET1  PASS  ESMF_SetName with slash in its name, ESMF_BaseUTest.F90, line 198
+20240612 015345.857 INFO             PET1  PASS  ESMF_SetName, ESMF_BaseUTest.F90, line 207
+20240612 015345.857 INFO             PET1  PASS  ESMF_GetName, ESMF_BaseUTest.F90, line 216
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseValidate, ESMF_BaseUTest.F90, line 225
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseGetID, ESMF_BaseUTest.F90, line 233
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseGetVMId of original Base, ESMF_BaseUTest.F90, line 241
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseSetVMId a new VMId into the Base, ESMF_BaseUTest.F90, line 250
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseGetVMId new VMid, ESMF_BaseUTest.F90, line 258
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ESMF_BaseUTest.F90, line 265
+20240612 015345.857 INFO             PET1  PASS  ESMF_BasePrint brief, ESMF_BaseUTest.F90, line 275
+20240612 015345.857 INFO             PET1  PASS  ESMF_BasePrint debug, ESMF_BaseUTest.F90, line 284
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseSerialize - inquire only option, ESMF_BaseUTest.F90, line 305
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseSerialize - perform serialization, ESMF_BaseUTest.F90, line 322
+20240612 015345.857 INFO             PET1  PASS  Compare calculated buffer size with actual size, ESMF_BaseUTest.F90, line 334
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseDeserialize - perform deserialization, ESMF_BaseUTest.F90, line 348
+20240612 015345.857 INFO             PET1  PASS  Compare serialize/deserialize offsets, ESMF_BaseUTest.F90, line 357
+20240612 015345.857 INFO             PET1  PASS  Creating VMId for inquiry, ESMF_BaseUTest.F90, line 367
+20240612 015345.857 INFO             PET1  PASS  ESMF_BaseDeserializeID/VMId - perform deserialization inquiry, ESMF_BaseUTest.F90, line 379
+20240612 015345.857 INFO             PET1  PASS  Compare original vs inquired ids, ESMF_BaseUTest.F90, line 389
+20240612 015345.857 INFO             PET1  PASS  Compare original vs inquired VMId inquiry, ESMF_BaseUTest.F90, line 405
+20240612 015345.857 INFO             PET1  PASS  Compare original vs inquired VMIds, ESMF_BaseUTest.F90, line 415
+20240612 015345.857 INFO             PET1  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 431
+20240612 015345.857 INFO             PET1  Ending Test, file ESMF_BaseUTest.F90, line 439
+20240612 015345.857 INFO             PET1  Finalizing ESMF
+20240612 015345.856 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240612 015345.856 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240612 015345.856 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240612 015345.856 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240612 015345.856 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET2 Running with ESMF Version   : v8.7.0b07
+20240612 015345.856 INFO             PET2 ESMF library build date/time: "Jun 12 2024" "01:40:40"
+20240612 015345.856 INFO             PET2 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/gfortran_12.2.0_pio2.6.2_mpi_O_develop/esmf
+20240612 015345.856 INFO             PET2 ESMF_COMM                   : mpi
+20240612 015345.857 INFO             PET2 ESMF_MOAB                   : enabled
+20240612 015345.857 INFO             PET2 ESMF_LAPACK                 : enabled
+20240612 015345.857 INFO             PET2 ESMF_NETCDF                 : enabled
+20240612 015345.857 INFO             PET2 ESMF_PNETCDF                : disabled
+20240612 015345.857 INFO             PET2 ESMF_PIO                    : enabled
+20240612 015345.857 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240612 015345.857 INFO             PET2  Beginning Test, file ESMF_BaseUTest.F90, line 84
+20240612 015345.857 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 94
+20240612 015345.857 INFO             PET2  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 103
+20240612 015345.857 ERROR            PET2 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET2  PASS  Destroy a destroyed Base, ESMF_BaseUTest.F90, line 115
+20240612 015345.857 ERROR            PET2 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET2  PASS  Destroy a non-created Base, ESMF_BaseUTest.F90, line 124
+20240612 015345.857 ERROR            PET2 ESMF_Base.F90:933 ESMF_BasePrint Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET2  PASS  ESMF_BasePrint of deleted Base, ESMF_BaseUTest.F90, line 134
+20240612 015345.857 ERROR            PET2 ESMF_Base.F90:933 ESMF_BasePrint Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET2  PASS  ESMF_BasePrint of non-created Base, ESMF_BaseUTest.F90, line 144
+20240612 015345.857 INFO             PET2  PASS  ESMF_SetName of non-created Base, ESMF_BaseUTest.F90, line 154
+20240612 015345.857 INFO             PET2  PASS  ESMF_SetName of deleted Base, ESMF_BaseUTest.F90, line 165
+20240612 015345.857 ERROR            PET2 ESMCI_Base_F.C:79 c_esmc_basecreate() test/object must not have a slash (/) in its name
+20240612 015345.857 ERROR            PET2 ESMF_Base.F90:281 ESMF_BaseCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseCreate with slash in name, ESMF_BaseUTest.F90, line 180
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 188
+20240612 015345.857 ERROR            PET2 ESMCI_Base_F.C:598 c_esmc_setname() fred/jones must not have a slash (/) in its name
+20240612 015345.857 INFO             PET2  PASS  ESMF_SetName with slash in its name, ESMF_BaseUTest.F90, line 198
+20240612 015345.857 INFO             PET2  PASS  ESMF_SetName, ESMF_BaseUTest.F90, line 207
+20240612 015345.857 INFO             PET2  PASS  ESMF_GetName, ESMF_BaseUTest.F90, line 216
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseValidate, ESMF_BaseUTest.F90, line 225
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseGetID, ESMF_BaseUTest.F90, line 233
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseGetVMId of original Base, ESMF_BaseUTest.F90, line 241
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseSetVMId a new VMId into the Base, ESMF_BaseUTest.F90, line 250
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseGetVMId new VMid, ESMF_BaseUTest.F90, line 258
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ESMF_BaseUTest.F90, line 265
+20240612 015345.857 INFO             PET2  PASS  ESMF_BasePrint brief, ESMF_BaseUTest.F90, line 275
+20240612 015345.857 INFO             PET2  PASS  ESMF_BasePrint debug, ESMF_BaseUTest.F90, line 284
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseSerialize - inquire only option, ESMF_BaseUTest.F90, line 305
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseSerialize - perform serialization, ESMF_BaseUTest.F90, line 322
+20240612 015345.857 INFO             PET2  PASS  Compare calculated buffer size with actual size, ESMF_BaseUTest.F90, line 334
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseDeserialize - perform deserialization, ESMF_BaseUTest.F90, line 348
+20240612 015345.857 INFO             PET2  PASS  Compare serialize/deserialize offsets, ESMF_BaseUTest.F90, line 357
+20240612 015345.857 INFO             PET2  PASS  Creating VMId for inquiry, ESMF_BaseUTest.F90, line 367
+20240612 015345.857 INFO             PET2  PASS  ESMF_BaseDeserializeID/VMId - perform deserialization inquiry, ESMF_BaseUTest.F90, line 379
+20240612 015345.857 INFO             PET2  PASS  Compare original vs inquired ids, ESMF_BaseUTest.F90, line 389
+20240612 015345.857 INFO             PET2  PASS  Compare original vs inquired VMId inquiry, ESMF_BaseUTest.F90, line 405
+20240612 015345.857 INFO             PET2  PASS  Compare original vs inquired VMIds, ESMF_BaseUTest.F90, line 415
+20240612 015345.857 INFO             PET2  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 431
+20240612 015345.857 INFO             PET2  Ending Test, file ESMF_BaseUTest.F90, line 439
+20240612 015345.857 INFO             PET2  Finalizing ESMF
+20240612 015345.856 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240612 015345.856 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240612 015345.856 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240612 015345.856 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240612 015345.856 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240612 015345.856 INFO             PET3 Running with ESMF Version   : v8.7.0b07
+20240612 015345.856 INFO             PET3 ESMF library build date/time: "Jun 12 2024" "01:40:40"
+20240612 015345.856 INFO             PET3 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/gfortran_12.2.0_pio2.6.2_mpi_O_develop/esmf
+20240612 015345.856 INFO             PET3 ESMF_COMM                   : mpi
+20240612 015345.856 INFO             PET3 ESMF_MOAB                   : enabled
+20240612 015345.856 INFO             PET3 ESMF_LAPACK                 : enabled
+20240612 015345.856 INFO             PET3 ESMF_NETCDF                 : enabled
+20240612 015345.856 INFO             PET3 ESMF_PNETCDF                : disabled
+20240612 015345.856 INFO             PET3 ESMF_PIO                    : enabled
+20240612 015345.856 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240612 015345.857 INFO             PET3  Beginning Test, file ESMF_BaseUTest.F90, line 84
+20240612 015345.857 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 94
+20240612 015345.857 INFO             PET3  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 103
+20240612 015345.857 ERROR            PET3 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET3  PASS  Destroy a destroyed Base, ESMF_BaseUTest.F90, line 115
+20240612 015345.857 ERROR            PET3 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET3  PASS  Destroy a non-created Base, ESMF_BaseUTest.F90, line 124
+20240612 015345.857 ERROR            PET3 ESMF_Base.F90:933 ESMF_BasePrint Object being used after deletion  - Bad Object
+20240612 015345.857 INFO             PET3  PASS  ESMF_BasePrint of deleted Base, ESMF_BaseUTest.F90, line 134
+20240612 015345.857 ERROR            PET3 ESMF_Base.F90:933 ESMF_BasePrint Object being used before creation  - Bad Object
+20240612 015345.857 INFO             PET3  PASS  ESMF_BasePrint of non-created Base, ESMF_BaseUTest.F90, line 144
+20240612 015345.857 INFO             PET3  PASS  ESMF_SetName of non-created Base, ESMF_BaseUTest.F90, line 154
+20240612 015345.857 INFO             PET3  PASS  ESMF_SetName of deleted Base, ESMF_BaseUTest.F90, line 165
+20240612 015345.857 ERROR            PET3 ESMCI_Base_F.C:79 c_esmc_basecreate() test/object must not have a slash (/) in its name
+20240612 015345.857 ERROR            PET3 ESMF_Base.F90:281 ESMF_BaseCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseCreate with slash in name, ESMF_BaseUTest.F90, line 180
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 188
+20240612 015345.857 ERROR            PET3 ESMCI_Base_F.C:598 c_esmc_setname() fred/jones must not have a slash (/) in its name
+20240612 015345.857 INFO             PET3  PASS  ESMF_SetName with slash in its name, ESMF_BaseUTest.F90, line 198
+20240612 015345.857 INFO             PET3  PASS  ESMF_SetName, ESMF_BaseUTest.F90, line 207
+20240612 015345.857 INFO             PET3  PASS  ESMF_GetName, ESMF_BaseUTest.F90, line 216
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseValidate, ESMF_BaseUTest.F90, line 225
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseGetID, ESMF_BaseUTest.F90, line 233
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseGetVMId of original Base, ESMF_BaseUTest.F90, line 241
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseSetVMId a new VMId into the Base, ESMF_BaseUTest.F90, line 250
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseGetVMId new VMid, ESMF_BaseUTest.F90, line 258
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ESMF_BaseUTest.F90, line 265
+20240612 015345.857 INFO             PET3  PASS  ESMF_BasePrint brief, ESMF_BaseUTest.F90, line 275
+20240612 015345.857 INFO             PET3  PASS  ESMF_BasePrint debug, ESMF_BaseUTest.F90, line 284
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseSerialize - inquire only option, ESMF_BaseUTest.F90, line 305
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseSerialize - perform serialization, ESMF_BaseUTest.F90, line 322
+20240612 015345.857 INFO             PET3  PASS  Compare calculated buffer size with actual size, ESMF_BaseUTest.F90, line 334
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseDeserialize - perform deserialization, ESMF_BaseUTest.F90, line 348
+20240612 015345.857 INFO             PET3  PASS  Compare serialize/deserialize offsets, ESMF_BaseUTest.F90, line 357
+20240612 015345.857 INFO             PET3  PASS  Creating VMId for inquiry, ESMF_BaseUTest.F90, line 367
+20240612 015345.857 INFO             PET3  PASS  ESMF_BaseDeserializeID/VMId - perform deserialization inquiry, ESMF_BaseUTest.F90, line 379
+20240612 015345.857 INFO             PET3  PASS  Compare original vs inquired ids, ESMF_BaseUTest.F90, line 389
+20240612 015345.857 INFO             PET3  PASS  Compare original vs inquired VMId inquiry, ESMF_BaseUTest.F90, line 405
+20240612 015345.857 INFO             PET3  PASS  Compare original vs inquired VMIds, ESMF_BaseUTest.F90, line 415
+20240612 015345.857 INFO             PET3  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 431
+20240612 015345.857 INFO             PET3  Ending Test, file ESMF_BaseUTest.F90, line 439
+20240612 015345.857 INFO             PET3  Finalizing ESMF
