@@ -1,4 +1,4 @@
-2024-06-17 04:02:53
+2024-06-18 04:03:07
 Beginning Test, file ESMC_VMUTest.c, line 45
 Beginning Test, file ESMC_VMUTest.c, line 45NUMBER_OF_PROCESSORS 4
 Beginning Test, file ESMC_VMUTest.c, line 45
@@ -7,13 +7,13 @@ Beginning Test, file ESMC_VMUTest.c, line 45
 Beginning Test, file ESMC_VMUTest.c, line 45NUMBER_OF_PROCESSORS 4
 Beginning Test, file ESMC_VMUTest.c, line 45
 Beginning Test, file ESMC_VMUTest.c, line 45NUMBER_OF_PROCESSORS 4
+PASS VMLogMemInfo, ESMC_VMUTest.c, line 60
 PASS VMLogMemInfo, ESMC_VMUTest.c, line 60
 PASS VMGetGlobal, ESMC_VMUTest.c, line 69
-PASS VMLogMemInfo, ESMC_VMUTest.c, line 60
+PASS VMGetGlobal, ESMC_VMUTest.c, line 69
+PASS VMGetCurrent, ESMC_VMUTest.c, line 78
 PASS VMGetCurrent, ESMC_VMUTest.c, line 78
 PASS VMGet, ESMC_VMUTest.c, line 88
-PASS VMGetGlobal, ESMC_VMUTest.c, line 69
-PASS VMGetCurrent, ESMC_VMUTest.c, line 78
 PASS VMGet, ESMC_VMUTest.c, line 88
 PASS VMLogMemInfo, ESMC_VMUTest.c, line 60
 PASS VMGetGlobal, ESMC_VMUTest.c, line 69
@@ -62,42 +62,42 @@ PASS VMPrint, ESMC_VMUTest.c, line 109
 PASS VMReduceI4, ESMC_VMUTest.c, line 134
 PASS VMReduceI4, ESMC_VMUTest.c, line 134
 PASS VMReduceI8, ESMC_VMUTest.c, line 160
+PASS VMReduceI8, ESMC_VMUTest.c, line 160
+PASS VMReduceR4, ESMC_VMUTest.c, line 186
 PASS VMReduceI4, ESMC_VMUTest.c, line 134
 PASS VMReduceI8, ESMC_VMUTest.c, line 160
 PASS VMReduceR4, ESMC_VMUTest.c, line 186
 PASS VMReduceR8, ESMC_VMUTest.c, line 212
 PASS VMReduceI4, ESMC_VMUTest.c, line 134
-PASS VMReduceR4, ESMC_VMUTest.c, line 186
-PASS VMReduceR8, ESMC_VMUTest.c, line 212
 PASS VMReduceI8, ESMC_VMUTest.c, line 160
-PASS VMReduceR4, ESMC_VMUTest.c, line 186
-PASS VMReduceI8, ESMC_VMUTest.c, line 160
+PASS VMReduceR8, ESMC_VMUTest.c, line 212
 PASS VMReduceR4, ESMC_VMUTest.c, line 186
 PASS VMReduceR8, ESMC_VMUTest.c, line 212
+PASS VMReduceR4, ESMC_VMUTest.c, line 186
 PASS VMReduceR8, ESMC_VMUTest.c, line 212
 PASS VMBroadcastI4, ESMC_VMUTest.c, line 237
 PASS VMBroadcastI4, ESMC_VMUTest.c, line 237
-PASS VMBroadcastI8, ESMC_VMUTest.c, line 262
 PASS VMBroadcastI4, ESMC_VMUTest.c, line 237
 PASS VMBroadcastI8, ESMC_VMUTest.c, line 262
 PASS VMBroadcastI4, ESMC_VMUTest.c, line 237
 PASS VMBroadcastI8, ESMC_VMUTest.c, line 262
 PASS VMBroadcastR4, ESMC_VMUTest.c, line 287
-PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
-PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
-PASS VMBroadcastR4, ESMC_VMUTest.c, line 287
-PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
 PASS VMBroadcastI8, ESMC_VMUTest.c, line 262
 PASS VMBroadcastR4, ESMC_VMUTest.c, line 287
-Ending Test, file ESMC_VMUTest.c, line 368
-PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
-Ending Test, file ESMC_VMUTest.c, line 368
+PASS VMBroadcastI8, ESMC_VMUTest.c, line 262
 PASS VMBroadcastR4, ESMC_VMUTest.c, line 287
 PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
+PASS VMBroadcastR4, ESMC_VMUTest.c, line 287
+PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
+PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
 PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
 PASS VMBroadcastR8, ESMC_VMUTest.c, line 312
 PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
+PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
 Ending Test, file ESMC_VMUTest.c, line 368
+Ending Test, file ESMC_VMUTest.c, line 368
+Ending Test, file ESMC_VMUTest.c, line 368
+PASS VMBroadcastLogical, ESMC_VMUTest.c, line 337
 Ending Test, file ESMC_VMUTest.c, line 368
 --- VMK::print() start ---
 vm located at: 0x446140
@@ -122,11 +122,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-Ending Test, file ESMC_VMUTest.c, line 368 PET 1 Test Elapsed Time 22.02 msec.
+Ending Test, file ESMC_VMUTest.c, line 368 PET 1 Test Elapsed Time 16.792 msec.
 --- VMK::print() start ---
 vm located at: 0x446140
 npets = 4, mypet=3
-  pth_mutex =		 0x4a6490
+  pth_mutex =		 0x4a6380
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -146,7 +146,7 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-Ending Test, file ESMC_VMUTest.c, line 368 PET 3 Test Elapsed Time 22 msec.
+Ending Test, file ESMC_VMUTest.c, line 368 PET 3 Test Elapsed Time 16.792 msec.
 --- VMK::print() start ---
 vm located at: 0x446140
 npets = 4, mypet=0
@@ -170,11 +170,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-Ending Test, file ESMC_VMUTest.c, line 368 PET 0 Test Elapsed Time 22.12 msec.
+Ending Test, file ESMC_VMUTest.c, line 368 PET 0 Test Elapsed Time 16.874 msec.
 --- VMK::print() start ---
 vm located at: 0x446140
 npets = 4, mypet=2
-  pth_mutex =		 0x4a6490
+  pth_mutex =		 0x4a6380
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -194,4 +194,4 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-Ending Test, file ESMC_VMUTest.c, line 368 PET 2 Test Elapsed Time 22.285 msec.
+Ending Test, file ESMC_VMUTest.c, line 368 PET 2 Test Elapsed Time 17.015 msec.
