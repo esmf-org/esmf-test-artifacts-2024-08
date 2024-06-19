@@ -1,0 +1,979 @@
+2024-06-19 04:07:09
+20240619 042930.991 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET0 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET0 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET0 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET0 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET0 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET0 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET0 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET0 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET0 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET0 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET0 esmfComm=mpi
+20240619 042930.991 INFO             PET0 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET0 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET0 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET0 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET0 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET0 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET0 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET0 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET0 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET0 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET0 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET0 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET0 
+20240619 042930.991 INFO             PET0 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET0 MPI_VERSION=3
+20240619 042930.991 INFO             PET0 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET0 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET0 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET0 mpi_t_okay=0
+20240619 042930.991 INFO             PET0 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET0 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET0 main: vm located at: 0x44c5e0
+20240619 042930.991 INFO             PET0 main: mpionly=1 threadsflag=0
+20240619 042930.991 INFO             PET0 main: ssiCount=1 localSsi=0
+20240619 042930.991 INFO             PET0 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.991 INFO             PET0 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.991 INFO             PET0 main: localPet=0 mypthid=139935332597632 ssiLocalPet=0 currentSsiPe=0
+20240619 042930.992 INFO             PET0 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET0 main:  SSIPE=0
+20240619 042930.992 INFO             PET0 main:  SSIPE=128
+20240619 042930.992 INFO             PET0 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET0 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET0 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET0 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET0 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET0 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET0 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET0 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET0 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET0 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET0 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET0 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET0 Executing 'userm1_register'
+20240619 042930.993 INFO             PET0 Executing 'userm2_setvm'
+20240619 042930.993 INFO             PET0 Executing 'userm2_register'
+20240619 042930.996 INFO             PET0 Entering 'user1_run'
+20240619 042930.996 INFO             PET0 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET0 model1: vm located at: 0x4e0fe0
+20240619 042930.996 INFO             PET0 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET0 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET0 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET0 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET0 model1: localPet=0 mypthid=139935332597632 ssiLocalPet=0 currentSsiPe=0
+20240619 042930.996 INFO             PET0 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET0 model1:  SSIPE=0
+20240619 042930.996 INFO             PET0 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET0 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042930.996 INFO             PET0 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET0 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET0 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET0 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET0 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET0 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET0 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET0 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET0 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042931.767 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042932.465 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042933.164 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042933.862 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042934.561 INFO             PET0 Exiting 'user1_run'
+20240619 042936.482 INFO             PET0 Entering 'user2_run'
+20240619 042936.482 INFO             PET0 model2: --- VMK::log() start -------------------------------------
+20240619 042936.482 INFO             PET0 model2: vm located at: 0x4e2d00
+20240619 042936.482 INFO             PET0 model2: mpionly=1 threadsflag=0
+20240619 042936.482 INFO             PET0 model2: ssiCount=1 localSsi=0
+20240619 042936.482 INFO             PET0 model2: devCount=0 ssiLocalDevCount=0
+20240619 042936.482 INFO             PET0 model2: petCount=2 ssiLocalPetCount=2
+20240619 042936.482 INFO             PET0 model2: localPet=0 mypthid=139935332597632 ssiLocalPet=0 currentSsiPe=0
+20240619 042936.482 INFO             PET0 model2: Current system level affinity pinning for local PET:
+20240619 042936.482 INFO             PET0 model2:  SSIPE=0
+20240619 042936.482 INFO             PET0 model2: Current system level OMP_NUM_THREADS setting for local PET: 3
+20240619 042936.482 INFO             PET0 model2: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042936.482 INFO             PET0 model2: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042936.482 INFO             PET0 model2: PET=0 lpid=0 tid=0 pid=0 peCount=3 accCount=0
+20240619 042936.482 INFO             PET0 model2:  PE=0 SSI=0 SSIPE=0
+20240619 042936.482 INFO             PET0 model2:  PE=1 SSI=0 SSIPE=1
+20240619 042936.482 INFO             PET0 model2:  PE=2 SSI=0 SSIPE=2
+20240619 042936.482 INFO             PET0 model2: PET=1 lpid=1 tid=0 pid=3 peCount=3 accCount=0
+20240619 042936.482 INFO             PET0 model2:  PE=3 SSI=0 SSIPE=3
+20240619 042936.482 INFO             PET0 model2:  PE=4 SSI=0 SSIPE=4
+20240619 042936.482 INFO             PET0 model2:  PE=5 SSI=0 SSIPE=5
+20240619 042936.482 INFO             PET0 model2: --- VMK::log() end ---------------------------------------
+20240619 042936.482 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042936.482 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042936.482 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042937.233 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042937.233 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042937.233 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042937.959 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042937.959 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042937.959 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042938.686 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042938.686 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042938.686 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042939.411 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042939.412 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042939.412 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042940.136 INFO             PET0  user2_run: All data correct.
+20240619 042940.137 INFO             PET0 Exiting 'user2_run'
+20240619 042940.137 INFO             PET0 Entering 'user1_run'
+20240619 042940.137 INFO             PET0 model1: --- VMK::log() start -------------------------------------
+20240619 042940.137 INFO             PET0 model1: vm located at: 0x4e0fe0
+20240619 042940.137 INFO             PET0 model1: mpionly=1 threadsflag=0
+20240619 042940.137 INFO             PET0 model1: ssiCount=1 localSsi=0
+20240619 042940.137 INFO             PET0 model1: devCount=0 ssiLocalDevCount=0
+20240619 042940.137 INFO             PET0 model1: petCount=6 ssiLocalPetCount=6
+20240619 042940.137 INFO             PET0 model1: localPet=0 mypthid=139935332597632 ssiLocalPet=0 currentSsiPe=0
+20240619 042940.137 INFO             PET0 model1: Current system level affinity pinning for local PET:
+20240619 042940.137 INFO             PET0 model1:  SSIPE=0
+20240619 042940.137 INFO             PET0 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042940.137 INFO             PET0 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042940.137 INFO             PET0 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042940.137 INFO             PET0 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042940.137 INFO             PET0 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042940.137 INFO             PET0 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042940.137 INFO             PET0 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042940.137 INFO             PET0 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042940.137 INFO             PET0 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042940.137 INFO             PET0 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042940.137 INFO             PET0 model1: --- VMK::log() end ---------------------------------------
+20240619 042940.137 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042940.835 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042941.534 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042942.232 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042942.930 INFO             PET0  user1_run: on SSIPE:            0  Filling data lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042943.628 INFO             PET0 Exiting 'user1_run'
+20240619 042943.800 INFO             PET0 Entering 'user2_run'
+20240619 042943.800 INFO             PET0 model2: --- VMK::log() start -------------------------------------
+20240619 042943.800 INFO             PET0 model2: vm located at: 0x4e2d00
+20240619 042943.800 INFO             PET0 model2: mpionly=1 threadsflag=0
+20240619 042943.800 INFO             PET0 model2: ssiCount=1 localSsi=0
+20240619 042943.800 INFO             PET0 model2: devCount=0 ssiLocalDevCount=0
+20240619 042943.800 INFO             PET0 model2: petCount=2 ssiLocalPetCount=2
+20240619 042943.800 INFO             PET0 model2: localPet=0 mypthid=139935332597632 ssiLocalPet=0 currentSsiPe=0
+20240619 042943.800 INFO             PET0 model2: Current system level affinity pinning for local PET:
+20240619 042943.800 INFO             PET0 model2:  SSIPE=0
+20240619 042943.800 INFO             PET0 model2: Current system level OMP_NUM_THREADS setting for local PET: 3
+20240619 042943.800 INFO             PET0 model2: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042943.800 INFO             PET0 model2: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042943.800 INFO             PET0 model2: PET=0 lpid=0 tid=0 pid=0 peCount=3 accCount=0
+20240619 042943.800 INFO             PET0 model2:  PE=0 SSI=0 SSIPE=0
+20240619 042943.800 INFO             PET0 model2:  PE=1 SSI=0 SSIPE=1
+20240619 042943.800 INFO             PET0 model2:  PE=2 SSI=0 SSIPE=2
+20240619 042943.800 INFO             PET0 model2: PET=1 lpid=1 tid=0 pid=3 peCount=3 accCount=0
+20240619 042943.800 INFO             PET0 model2:  PE=3 SSI=0 SSIPE=3
+20240619 042943.800 INFO             PET0 model2:  PE=4 SSI=0 SSIPE=4
+20240619 042943.800 INFO             PET0 model2:  PE=5 SSI=0 SSIPE=5
+20240619 042943.800 INFO             PET0 model2: --- VMK::log() end ---------------------------------------
+20240619 042943.801 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042943.801 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042943.801 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042944.525 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042944.526 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042944.526 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042945.575 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042945.575 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042945.575 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042946.653 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042946.653 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042946.653 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042947.732 INFO             PET0  user2_run: OpenMP thread:           2  on SSIPE:            2  Testing data for localDe =           2  DE=           4  lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042947.732 INFO             PET0  user2_run: OpenMP thread:           0  on SSIPE:            0  Testing data for localDe =           0  DE=           0  lbound:           1           1           1  ubound:        1667        1200          10
+20240619 042947.732 INFO             PET0  user2_run: OpenMP thread:           1  on SSIPE:            1  Testing data for localDe =           1  DE=           2  lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042948.811 INFO             PET0  user2_run: All data correct.
+20240619 042948.811 INFO             PET0 Exiting 'user2_run'
+20240619 042948.812 INFO             PET0  NUMBER_OF_PROCESSORS           6
+20240619 042948.812 INFO             PET0  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042948.812 INFO             PET0  Finalizing ESMF
+20240619 042930.991 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET1 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET1 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET1 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET1 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET1 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET1 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET1 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET1 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET1 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET1 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET1 esmfComm=mpi
+20240619 042930.991 INFO             PET1 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET1 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET1 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET1 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET1 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET1 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET1 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET1 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET1 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET1 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET1 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET1 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET1 
+20240619 042930.991 INFO             PET1 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET1 MPI_VERSION=3
+20240619 042930.991 INFO             PET1 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET1 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET1 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET1 mpi_t_okay=0
+20240619 042930.991 INFO             PET1 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET1 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET1 main: vm located at: 0x44c5e0
+20240619 042930.991 INFO             PET1 main: mpionly=1 threadsflag=0
+20240619 042930.992 INFO             PET1 main: ssiCount=1 localSsi=0
+20240619 042930.992 INFO             PET1 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.992 INFO             PET1 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.992 INFO             PET1 main: localPet=1 mypthid=140078655897472 ssiLocalPet=1 currentSsiPe=64
+20240619 042930.992 INFO             PET1 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET1 main:  SSIPE=64
+20240619 042930.992 INFO             PET1 main:  SSIPE=192
+20240619 042930.992 INFO             PET1 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET1 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET1 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET1 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET1 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET1 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET1 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET1 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET1 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET1 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET1 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET1 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET1 Executing 'userm1_register'
+20240619 042930.993 INFO             PET1 Executing 'userm2_setvm'
+20240619 042930.993 DEBUG            PET1 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.993 DEBUG            PET1 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.996 INFO             PET1 Entering 'user1_run'
+20240619 042930.996 INFO             PET1 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET1 model1: vm located at: 0x4e0740
+20240619 042930.996 INFO             PET1 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET1 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET1 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET1 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET1 model1: localPet=1 mypthid=140078655897472 ssiLocalPet=1 currentSsiPe=1
+20240619 042930.996 INFO             PET1 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET1 model1:  SSIPE=1
+20240619 042930.996 INFO             PET1 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET1 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042930.996 INFO             PET1 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET1 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET1 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET1 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET1 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET1 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET1 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET1 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET1 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042931.772 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042932.475 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042933.179 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042933.881 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042934.584 INFO             PET1 Exiting 'user1_run'
+20240619 042940.137 INFO             PET1 Entering 'user1_run'
+20240619 042940.137 INFO             PET1 model1: --- VMK::log() start -------------------------------------
+20240619 042940.137 INFO             PET1 model1: vm located at: 0x4e0740
+20240619 042940.137 INFO             PET1 model1: mpionly=1 threadsflag=0
+20240619 042940.137 INFO             PET1 model1: ssiCount=1 localSsi=0
+20240619 042940.137 INFO             PET1 model1: devCount=0 ssiLocalDevCount=0
+20240619 042940.137 INFO             PET1 model1: petCount=6 ssiLocalPetCount=6
+20240619 042940.137 INFO             PET1 model1: localPet=1 mypthid=140078655897472 ssiLocalPet=1 currentSsiPe=1
+20240619 042940.137 INFO             PET1 model1: Current system level affinity pinning for local PET:
+20240619 042940.137 INFO             PET1 model1:  SSIPE=1
+20240619 042940.137 INFO             PET1 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042940.137 INFO             PET1 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042940.137 INFO             PET1 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042940.137 INFO             PET1 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042940.137 INFO             PET1 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042940.137 INFO             PET1 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042940.137 INFO             PET1 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042940.137 INFO             PET1 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042940.137 INFO             PET1 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042940.137 INFO             PET1 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042940.137 INFO             PET1 model1: --- VMK::log() end ---------------------------------------
+20240619 042940.137 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042940.885 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042941.589 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042942.344 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042943.049 INFO             PET1  user1_run: on SSIPE:            1  Filling data lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042943.800 INFO             PET1 Exiting 'user1_run'
+20240619 042948.812 INFO             PET1  NUMBER_OF_PROCESSORS           6
+20240619 042948.812 INFO             PET1  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042948.812 INFO             PET1  Finalizing ESMF
+20240619 042930.991 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET2 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET2 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET2 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET2 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET2 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET2 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET2 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET2 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET2 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET2 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET2 esmfComm=mpi
+20240619 042930.991 INFO             PET2 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET2 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET2 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET2 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET2 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET2 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET2 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET2 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET2 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET2 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET2 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET2 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET2 
+20240619 042930.991 INFO             PET2 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET2 MPI_VERSION=3
+20240619 042930.991 INFO             PET2 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET2 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET2 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET2 mpi_t_okay=0
+20240619 042930.991 INFO             PET2 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET2 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET2 main: vm located at: 0x44c5e0
+20240619 042930.991 INFO             PET2 main: mpionly=1 threadsflag=0
+20240619 042930.991 INFO             PET2 main: ssiCount=1 localSsi=0
+20240619 042930.991 INFO             PET2 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.991 INFO             PET2 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.991 INFO             PET2 main: localPet=2 mypthid=140087292231552 ssiLocalPet=2 currentSsiPe=1
+20240619 042930.992 INFO             PET2 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET2 main:  SSIPE=1
+20240619 042930.992 INFO             PET2 main:  SSIPE=129
+20240619 042930.992 INFO             PET2 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET2 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET2 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET2 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET2 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET2 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET2 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET2 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET2 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET2 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET2 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET2 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET2 Executing 'userm1_register'
+20240619 042930.993 INFO             PET2 Executing 'userm2_setvm'
+20240619 042930.993 DEBUG            PET2 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.993 DEBUG            PET2 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.996 INFO             PET2 Entering 'user1_run'
+20240619 042930.996 INFO             PET2 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET2 model1: vm located at: 0x4e0410
+20240619 042930.996 INFO             PET2 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET2 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET2 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET2 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET2 model1: localPet=2 mypthid=140087292231552 ssiLocalPet=2 currentSsiPe=2
+20240619 042930.996 INFO             PET2 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET2 model1:  SSIPE=2
+20240619 042930.996 INFO             PET2 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET2 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042930.996 INFO             PET2 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET2 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET2 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET2 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET2 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET2 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET2 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET2 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET2 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042932.156 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042933.236 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042934.317 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042935.398 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042936.479 INFO             PET2 Exiting 'user1_run'
+20240619 042940.137 INFO             PET2 Entering 'user1_run'
+20240619 042940.137 INFO             PET2 model1: --- VMK::log() start -------------------------------------
+20240619 042940.137 INFO             PET2 model1: vm located at: 0x4e0410
+20240619 042940.137 INFO             PET2 model1: mpionly=1 threadsflag=0
+20240619 042940.137 INFO             PET2 model1: ssiCount=1 localSsi=0
+20240619 042940.137 INFO             PET2 model1: devCount=0 ssiLocalDevCount=0
+20240619 042940.137 INFO             PET2 model1: petCount=6 ssiLocalPetCount=6
+20240619 042940.137 INFO             PET2 model1: localPet=2 mypthid=140087292231552 ssiLocalPet=2 currentSsiPe=2
+20240619 042940.137 INFO             PET2 model1: Current system level affinity pinning for local PET:
+20240619 042940.137 INFO             PET2 model1:  SSIPE=2
+20240619 042940.137 INFO             PET2 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042940.137 INFO             PET2 model1: Current system level OMP_NUM_PROCS setting for local PET: 1
+20240619 042940.137 INFO             PET2 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042940.137 INFO             PET2 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042940.137 INFO             PET2 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042940.137 INFO             PET2 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042940.137 INFO             PET2 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042940.137 INFO             PET2 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042940.137 INFO             PET2 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042940.137 INFO             PET2 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042940.137 INFO             PET2 model1: --- VMK::log() end ---------------------------------------
+20240619 042940.137 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042940.839 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042941.540 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042942.242 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042942.944 INFO             PET2  user1_run: on SSIPE:            2  Filling data lbound:        3335           1           1  ubound:        5001        1200          10
+20240619 042943.645 INFO             PET2 Exiting 'user1_run'
+20240619 042948.812 INFO             PET2  NUMBER_OF_PROCESSORS           6
+20240619 042948.812 INFO             PET2  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042948.812 INFO             PET2  Finalizing ESMF
+20240619 042930.991 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET3 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET3 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET3 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET3 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET3 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET3 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET3 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET3 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET3 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET3 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET3 esmfComm=mpi
+20240619 042930.991 INFO             PET3 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET3 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET3 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET3 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET3 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET3 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET3 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET3 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET3 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET3 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET3 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET3 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET3 
+20240619 042930.991 INFO             PET3 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET3 MPI_VERSION=3
+20240619 042930.991 INFO             PET3 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET3 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET3 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET3 mpi_t_okay=0
+20240619 042930.991 INFO             PET3 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET3 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET3 main: vm located at: 0x44c5e0
+20240619 042930.992 INFO             PET3 main: mpionly=1 threadsflag=0
+20240619 042930.992 INFO             PET3 main: ssiCount=1 localSsi=0
+20240619 042930.992 INFO             PET3 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.992 INFO             PET3 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.992 INFO             PET3 main: localPet=3 mypthid=140319221256064 ssiLocalPet=3 currentSsiPe=193
+20240619 042930.992 INFO             PET3 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET3 main:  SSIPE=65
+20240619 042930.992 INFO             PET3 main:  SSIPE=193
+20240619 042930.992 INFO             PET3 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET3 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET3 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET3 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET3 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET3 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET3 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET3 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET3 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET3 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET3 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET3 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET3 Executing 'userm1_register'
+20240619 042930.993 INFO             PET3 Executing 'userm2_setvm'
+20240619 042930.993 INFO             PET3 Executing 'userm2_register'
+20240619 042930.996 INFO             PET3 Entering 'user1_run'
+20240619 042930.996 INFO             PET3 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET3 model1: vm located at: 0x4e0740
+20240619 042930.996 INFO             PET3 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET3 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET3 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET3 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET3 model1: localPet=3 mypthid=140319221256064 ssiLocalPet=3 currentSsiPe=193
+20240619 042930.996 INFO             PET3 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET3 model1:  SSIPE=65
+20240619 042930.996 INFO             PET3 model1:  SSIPE=193
+20240619 042930.996 INFO             PET3 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET3 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.996 INFO             PET3 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET3 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET3 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET3 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET3 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET3 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET3 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET3 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET3 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042931.781 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042932.486 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042933.189 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042933.893 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042934.597 INFO             PET3 Exiting 'user1_run'
+20240619 042936.482 INFO             PET3 Entering 'user2_run'
+20240619 042936.482 INFO             PET3 model2: --- VMK::log() start -------------------------------------
+20240619 042936.482 INFO             PET3 model2: vm located at: 0x4e2180
+20240619 042936.482 INFO             PET3 model2: mpionly=1 threadsflag=0
+20240619 042936.482 INFO             PET3 model2: ssiCount=1 localSsi=0
+20240619 042936.482 INFO             PET3 model2: devCount=0 ssiLocalDevCount=0
+20240619 042936.482 INFO             PET3 model2: petCount=2 ssiLocalPetCount=2
+20240619 042936.482 INFO             PET3 model2: localPet=1 mypthid=140319221256064 ssiLocalPet=1 currentSsiPe=193
+20240619 042936.482 INFO             PET3 model2: Current system level affinity pinning for local PET:
+20240619 042936.482 INFO             PET3 model2:  SSIPE=65
+20240619 042936.482 INFO             PET3 model2:  SSIPE=193
+20240619 042936.482 INFO             PET3 model2: Current system level OMP_NUM_THREADS setting for local PET: 3
+20240619 042936.482 INFO             PET3 model2: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042936.482 INFO             PET3 model2: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042936.482 INFO             PET3 model2: PET=0 lpid=0 tid=0 pid=0 peCount=3 accCount=0
+20240619 042936.482 INFO             PET3 model2:  PE=0 SSI=0 SSIPE=0
+20240619 042936.482 INFO             PET3 model2:  PE=1 SSI=0 SSIPE=1
+20240619 042936.482 INFO             PET3 model2:  PE=2 SSI=0 SSIPE=2
+20240619 042936.482 INFO             PET3 model2: PET=1 lpid=1 tid=0 pid=3 peCount=3 accCount=0
+20240619 042936.482 INFO             PET3 model2:  PE=3 SSI=0 SSIPE=3
+20240619 042936.482 INFO             PET3 model2:  PE=4 SSI=0 SSIPE=4
+20240619 042936.482 INFO             PET3 model2:  PE=5 SSI=0 SSIPE=5
+20240619 042936.482 INFO             PET3 model2: --- VMK::log() end ---------------------------------------
+20240619 042936.482 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042936.483 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042936.502 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042938.119 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:          193  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042938.119 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042938.134 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:           65  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042939.725 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042939.725 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:          193  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042939.738 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042941.333 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042941.334 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:          193  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042941.350 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042942.949 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:          193  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042942.954 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042942.970 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:           65  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042944.586 INFO             PET3  user2_run: All data correct.
+20240619 042944.586 INFO             PET3 Exiting 'user2_run'
+20240619 042944.586 INFO             PET3 Entering 'user1_run'
+20240619 042944.586 INFO             PET3 model1: --- VMK::log() start -------------------------------------
+20240619 042944.586 INFO             PET3 model1: vm located at: 0x4e0740
+20240619 042944.586 INFO             PET3 model1: mpionly=1 threadsflag=0
+20240619 042944.586 INFO             PET3 model1: ssiCount=1 localSsi=0
+20240619 042944.586 INFO             PET3 model1: devCount=0 ssiLocalDevCount=0
+20240619 042944.586 INFO             PET3 model1: petCount=6 ssiLocalPetCount=6
+20240619 042944.586 INFO             PET3 model1: localPet=3 mypthid=140319221256064 ssiLocalPet=3 currentSsiPe=193
+20240619 042944.586 INFO             PET3 model1: Current system level affinity pinning for local PET:
+20240619 042944.586 INFO             PET3 model1:  SSIPE=65
+20240619 042944.586 INFO             PET3 model1:  SSIPE=193
+20240619 042944.586 INFO             PET3 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042944.586 INFO             PET3 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042944.586 INFO             PET3 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042944.586 INFO             PET3 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042944.586 INFO             PET3 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042944.586 INFO             PET3 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042944.586 INFO             PET3 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042944.586 INFO             PET3 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042944.586 INFO             PET3 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042944.586 INFO             PET3 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042944.586 INFO             PET3 model1: --- VMK::log() end ---------------------------------------
+20240619 042944.586 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042945.290 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042945.994 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042946.698 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042947.402 INFO             PET3  user1_run: on SSIPE:          193  Filling data lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042948.105 INFO             PET3 Exiting 'user1_run'
+20240619 042949.579 INFO             PET3 Entering 'user2_run'
+20240619 042949.579 INFO             PET3 model2: --- VMK::log() start -------------------------------------
+20240619 042949.579 INFO             PET3 model2: vm located at: 0x4e2180
+20240619 042949.579 INFO             PET3 model2: mpionly=1 threadsflag=0
+20240619 042949.579 INFO             PET3 model2: ssiCount=1 localSsi=0
+20240619 042949.579 INFO             PET3 model2: devCount=0 ssiLocalDevCount=0
+20240619 042949.579 INFO             PET3 model2: petCount=2 ssiLocalPetCount=2
+20240619 042949.579 INFO             PET3 model2: localPet=1 mypthid=140319221256064 ssiLocalPet=1 currentSsiPe=193
+20240619 042949.579 INFO             PET3 model2: Current system level affinity pinning for local PET:
+20240619 042949.579 INFO             PET3 model2:  SSIPE=65
+20240619 042949.579 INFO             PET3 model2:  SSIPE=193
+20240619 042949.579 INFO             PET3 model2: Current system level OMP_NUM_THREADS setting for local PET: 3
+20240619 042949.579 INFO             PET3 model2: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042949.579 INFO             PET3 model2: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042949.579 INFO             PET3 model2: PET=0 lpid=0 tid=0 pid=0 peCount=3 accCount=0
+20240619 042949.579 INFO             PET3 model2:  PE=0 SSI=0 SSIPE=0
+20240619 042949.579 INFO             PET3 model2:  PE=1 SSI=0 SSIPE=1
+20240619 042949.579 INFO             PET3 model2:  PE=2 SSI=0 SSIPE=2
+20240619 042949.579 INFO             PET3 model2: PET=1 lpid=1 tid=0 pid=3 peCount=3 accCount=0
+20240619 042949.579 INFO             PET3 model2:  PE=3 SSI=0 SSIPE=3
+20240619 042949.579 INFO             PET3 model2:  PE=4 SSI=0 SSIPE=4
+20240619 042949.579 INFO             PET3 model2:  PE=5 SSI=0 SSIPE=5
+20240619 042949.579 INFO             PET3 model2: --- VMK::log() end ---------------------------------------
+20240619 042949.580 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042949.580 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042949.594 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042951.197 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:          193  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042951.198 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042951.210 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:           65  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042952.825 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042952.826 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:          193  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042952.842 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042954.465 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:           65  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042954.465 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:          193  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042954.465 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042956.073 INFO             PET3  user2_run: OpenMP thread:           1  on SSIPE:           65  Testing data for localDe =           1  DE=           3  lbound:        5002           1           1  ubound:        6668        1200          10
+20240619 042956.073 INFO             PET3  user2_run: OpenMP thread:           2  on SSIPE:          193  Testing data for localDe =           2  DE=           5  lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042956.086 INFO             PET3  user2_run: OpenMP thread:           0  on SSIPE:          193  Testing data for localDe =           0  DE=           1  lbound:        1668           1           1  ubound:        3334        1200          10
+20240619 042957.681 INFO             PET3  user2_run: All data correct.
+20240619 042957.681 INFO             PET3 Exiting 'user2_run'
+20240619 042957.681 INFO             PET3  NUMBER_OF_PROCESSORS           6
+20240619 042957.681 INFO             PET3  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042957.681 INFO             PET3  Finalizing ESMF
+20240619 042930.991 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET4 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET4 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET4 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET4 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET4 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET4 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET4 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET4 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET4 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET4 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET4 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET4 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET4 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET4 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET4 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET4 esmfComm=mpi
+20240619 042930.991 INFO             PET4 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET4 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET4 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET4 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET4 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET4 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET4 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET4 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET4 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET4 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET4 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET4 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET4 
+20240619 042930.991 INFO             PET4 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET4 MPI_VERSION=3
+20240619 042930.991 INFO             PET4 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET4 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET4 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET4 mpi_t_okay=0
+20240619 042930.991 INFO             PET4 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET4 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET4 main: vm located at: 0x44c5e0
+20240619 042930.991 INFO             PET4 main: mpionly=1 threadsflag=0
+20240619 042930.991 INFO             PET4 main: ssiCount=1 localSsi=0
+20240619 042930.991 INFO             PET4 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.991 INFO             PET4 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.991 INFO             PET4 main: localPet=4 mypthid=139869186326400 ssiLocalPet=4 currentSsiPe=130
+20240619 042930.992 INFO             PET4 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET4 main:  SSIPE=2
+20240619 042930.992 INFO             PET4 main:  SSIPE=130
+20240619 042930.992 INFO             PET4 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET4 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET4 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET4 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET4 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET4 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET4 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET4 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET4 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET4 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET4 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET4 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET4 Executing 'userm1_register'
+20240619 042930.993 INFO             PET4 Executing 'userm2_setvm'
+20240619 042930.993 DEBUG            PET4 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.993 DEBUG            PET4 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.996 INFO             PET4 Entering 'user1_run'
+20240619 042930.996 INFO             PET4 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET4 model1: vm located at: 0x4e0520
+20240619 042930.996 INFO             PET4 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET4 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET4 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET4 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET4 model1: localPet=4 mypthid=139869186326400 ssiLocalPet=4 currentSsiPe=130
+20240619 042930.996 INFO             PET4 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET4 model1:  SSIPE=2
+20240619 042930.996 INFO             PET4 model1:  SSIPE=130
+20240619 042930.996 INFO             PET4 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET4 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.996 INFO             PET4 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET4 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET4 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET4 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET4 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET4 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET4 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET4 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET4 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042932.155 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042933.235 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042934.315 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042935.396 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042936.477 INFO             PET4 Exiting 'user1_run'
+20240619 042944.586 INFO             PET4 Entering 'user1_run'
+20240619 042944.586 INFO             PET4 model1: --- VMK::log() start -------------------------------------
+20240619 042944.586 INFO             PET4 model1: vm located at: 0x4e0520
+20240619 042944.586 INFO             PET4 model1: mpionly=1 threadsflag=0
+20240619 042944.586 INFO             PET4 model1: ssiCount=1 localSsi=0
+20240619 042944.586 INFO             PET4 model1: devCount=0 ssiLocalDevCount=0
+20240619 042944.586 INFO             PET4 model1: petCount=6 ssiLocalPetCount=6
+20240619 042944.586 INFO             PET4 model1: localPet=4 mypthid=139869186326400 ssiLocalPet=4 currentSsiPe=130
+20240619 042944.586 INFO             PET4 model1: Current system level affinity pinning for local PET:
+20240619 042944.586 INFO             PET4 model1:  SSIPE=2
+20240619 042944.586 INFO             PET4 model1:  SSIPE=130
+20240619 042944.586 INFO             PET4 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042944.586 INFO             PET4 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042944.586 INFO             PET4 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042944.586 INFO             PET4 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042944.586 INFO             PET4 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042944.586 INFO             PET4 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042944.586 INFO             PET4 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042944.586 INFO             PET4 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042944.586 INFO             PET4 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042944.586 INFO             PET4 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042944.586 INFO             PET4 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042944.586 INFO             PET4 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042944.586 INFO             PET4 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042944.586 INFO             PET4 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042944.587 INFO             PET4 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042944.587 INFO             PET4 model1: --- VMK::log() end ---------------------------------------
+20240619 042944.587 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042945.669 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042946.749 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042947.831 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042948.878 INFO             PET4  user1_run: on SSIPE:          130  Filling data lbound:        6669           1           1  ubound:        8334        1200          10
+20240619 042949.579 INFO             PET4 Exiting 'user1_run'
+20240619 042957.682 INFO             PET4  NUMBER_OF_PROCESSORS           6
+20240619 042957.682 INFO             PET4  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042957.682 INFO             PET4  Finalizing ESMF
+20240619 042930.991 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET5 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240619 042930.991 INFO             PET5 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240619 042930.991 INFO             PET5 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240619 042930.991 INFO             PET5 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240619 042930.991 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240619 042930.991 INFO             PET5 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240619 042930.991 INFO             PET5 ESMF library build date/time: "Jun 19 2024" "04:05:58"
+20240619 042930.991 INFO             PET5 ESMF library build location : /tmp/gfortran_12.2.0_mpi_g_develop/esmf
+20240619 042930.991 INFO             PET5 ESMF_COMM                   : mpi
+20240619 042930.991 INFO             PET5 ESMF_MOAB                   : enabled
+20240619 042930.991 INFO             PET5 ESMF_LAPACK                 : enabled
+20240619 042930.991 INFO             PET5 ESMF_NETCDF                 : enabled
+20240619 042930.991 INFO             PET5 ESMF_PNETCDF                : disabled
+20240619 042930.991 INFO             PET5 ESMF_PIO                    : enabled
+20240619 042930.991 INFO             PET5 ESMF_YAMLCPP                : enabled
+20240619 042930.991 INFO             PET5 --- VMK::logSystem() start -------------------------------
+20240619 042930.991 INFO             PET5 esmfComm=mpi
+20240619 042930.991 INFO             PET5 isPthreadsEnabled=1
+20240619 042930.991 INFO             PET5 isOpenMPEnabled=1
+20240619 042930.991 INFO             PET5 isOpenACCEnabled=0
+20240619 042930.991 INFO             PET5 isSsiSharedMemoryEnabled=1
+20240619 042930.991 INFO             PET5 ssiCount=1 peCount=6
+20240619 042930.991 INFO             PET5 PE=0 SSI=0 SSIPE=0
+20240619 042930.991 INFO             PET5 PE=1 SSI=0 SSIPE=1
+20240619 042930.991 INFO             PET5 PE=2 SSI=0 SSIPE=2
+20240619 042930.991 INFO             PET5 PE=3 SSI=0 SSIPE=3
+20240619 042930.991 INFO             PET5 PE=4 SSI=0 SSIPE=4
+20240619 042930.991 INFO             PET5 PE=5 SSI=0 SSIPE=5
+20240619 042930.991 INFO             PET5 ndevs=0 ndevsSSI=0
+20240619 042930.991 INFO             PET5 
+20240619 042930.991 INFO             PET5 --- VMK::logSystem() MPI Layer ---------------------------
+20240619 042930.991 INFO             PET5 MPI_VERSION=3
+20240619 042930.991 INFO             PET5 MPI_SUBVERSION=1
+20240619 042930.991 INFO             PET5 MPICH_VERSION="3.4a2"
+20240619 042930.991 INFO             PET5 CRAY_MPICH_VERSION=8.1.25.17
+20240619 042930.991 INFO             PET5 mpi_t_okay=0
+20240619 042930.991 INFO             PET5 --- VMK::logSystem() end ---------------------------------
+20240619 042930.991 INFO             PET5 main: --- VMK::log() start -------------------------------------
+20240619 042930.991 INFO             PET5 main: vm located at: 0x44c5e0
+20240619 042930.992 INFO             PET5 main: mpionly=1 threadsflag=0
+20240619 042930.992 INFO             PET5 main: ssiCount=1 localSsi=0
+20240619 042930.992 INFO             PET5 main: devCount=0 ssiLocalDevCount=0
+20240619 042930.992 INFO             PET5 main: petCount=6 ssiLocalPetCount=6
+20240619 042930.992 INFO             PET5 main: localPet=5 mypthid=140013036019584 ssiLocalPet=5 currentSsiPe=66
+20240619 042930.992 INFO             PET5 main: Current system level affinity pinning for local PET:
+20240619 042930.992 INFO             PET5 main:  SSIPE=66
+20240619 042930.992 INFO             PET5 main:  SSIPE=194
+20240619 042930.992 INFO             PET5 main: Current system level OMP_NUM_THREADS setting for local PET: 2
+20240619 042930.992 INFO             PET5 main: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.992 INFO             PET5 main: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.992 INFO             PET5 main: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=0 SSI=0 SSIPE=0
+20240619 042930.992 INFO             PET5 main: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=1 SSI=0 SSIPE=1
+20240619 042930.992 INFO             PET5 main: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=2 SSI=0 SSIPE=2
+20240619 042930.992 INFO             PET5 main: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=3 SSI=0 SSIPE=3
+20240619 042930.992 INFO             PET5 main: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=4 SSI=0 SSIPE=4
+20240619 042930.992 INFO             PET5 main: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.992 INFO             PET5 main:  PE=5 SSI=0 SSIPE=5
+20240619 042930.992 INFO             PET5 main: --- VMK::log() end ---------------------------------------
+20240619 042930.992 INFO             PET5 Executing 'userm1_setvm'
+20240619 042930.993 INFO             PET5 Executing 'userm1_register'
+20240619 042930.993 INFO             PET5 Executing 'userm2_setvm'
+20240619 042930.993 DEBUG            PET5 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.993 DEBUG            PET5 vmkt_create()#218 Pthread: service=1 (0: actual PET, 1: service thread) - PTHREAD_STACK_MIN: 16384 bytes stack_size: 4194304 bytes
+20240619 042930.996 INFO             PET5 Entering 'user1_run'
+20240619 042930.996 INFO             PET5 model1: --- VMK::log() start -------------------------------------
+20240619 042930.996 INFO             PET5 model1: vm located at: 0x4e0520
+20240619 042930.996 INFO             PET5 model1: mpionly=1 threadsflag=0
+20240619 042930.996 INFO             PET5 model1: ssiCount=1 localSsi=0
+20240619 042930.996 INFO             PET5 model1: devCount=0 ssiLocalDevCount=0
+20240619 042930.996 INFO             PET5 model1: petCount=6 ssiLocalPetCount=6
+20240619 042930.996 INFO             PET5 model1: localPet=5 mypthid=140013036019584 ssiLocalPet=5 currentSsiPe=66
+20240619 042930.996 INFO             PET5 model1: Current system level affinity pinning for local PET:
+20240619 042930.996 INFO             PET5 model1:  SSIPE=66
+20240619 042930.996 INFO             PET5 model1:  SSIPE=194
+20240619 042930.996 INFO             PET5 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042930.996 INFO             PET5 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042930.996 INFO             PET5 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042930.996 INFO             PET5 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042930.996 INFO             PET5 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042930.996 INFO             PET5 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042930.996 INFO             PET5 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042930.996 INFO             PET5 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042930.996 INFO             PET5 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042930.996 INFO             PET5 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042930.996 INFO             PET5 model1: --- VMK::log() end ---------------------------------------
+20240619 042930.996 INFO             PET5  user1_run: on SSIPE:           66  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042931.781 INFO             PET5  user1_run: on SSIPE:           66  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042932.485 INFO             PET5  user1_run: on SSIPE:           66  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042933.189 INFO             PET5  user1_run: on SSIPE:           66  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042933.892 INFO             PET5  user1_run: on SSIPE:           66  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042934.596 INFO             PET5 Exiting 'user1_run'
+20240619 042944.586 INFO             PET5 Entering 'user1_run'
+20240619 042944.586 INFO             PET5 model1: --- VMK::log() start -------------------------------------
+20240619 042944.586 INFO             PET5 model1: vm located at: 0x4e0520
+20240619 042944.586 INFO             PET5 model1: mpionly=1 threadsflag=0
+20240619 042944.586 INFO             PET5 model1: ssiCount=1 localSsi=0
+20240619 042944.586 INFO             PET5 model1: devCount=0 ssiLocalDevCount=0
+20240619 042944.586 INFO             PET5 model1: petCount=6 ssiLocalPetCount=6
+20240619 042944.586 INFO             PET5 model1: localPet=5 mypthid=140013036019584 ssiLocalPet=5 currentSsiPe=194
+20240619 042944.586 INFO             PET5 model1: Current system level affinity pinning for local PET:
+20240619 042944.586 INFO             PET5 model1:  SSIPE=66
+20240619 042944.586 INFO             PET5 model1:  SSIPE=194
+20240619 042944.586 INFO             PET5 model1: Current system level OMP_NUM_THREADS setting for local PET: 1
+20240619 042944.586 INFO             PET5 model1: Current system level OMP_NUM_PROCS setting for local PET: 2
+20240619 042944.586 INFO             PET5 model1: ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240619 042944.586 INFO             PET5 model1: PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=0 SSI=0 SSIPE=0
+20240619 042944.586 INFO             PET5 model1: PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=1 SSI=0 SSIPE=1
+20240619 042944.586 INFO             PET5 model1: PET=2 lpid=2 tid=0 pid=2 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=2 SSI=0 SSIPE=2
+20240619 042944.586 INFO             PET5 model1: PET=3 lpid=3 tid=0 pid=3 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=3 SSI=0 SSIPE=3
+20240619 042944.586 INFO             PET5 model1: PET=4 lpid=4 tid=0 pid=4 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=4 SSI=0 SSIPE=4
+20240619 042944.586 INFO             PET5 model1: PET=5 lpid=5 tid=0 pid=5 peCount=1 accCount=0
+20240619 042944.586 INFO             PET5 model1:  PE=5 SSI=0 SSIPE=5
+20240619 042944.586 INFO             PET5 model1: --- VMK::log() end ---------------------------------------
+20240619 042944.586 INFO             PET5  user1_run: on SSIPE:          194  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042945.290 INFO             PET5  user1_run: on SSIPE:          194  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042945.994 INFO             PET5  user1_run: on SSIPE:          194  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042946.698 INFO             PET5  user1_run: on SSIPE:          194  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042947.401 INFO             PET5  user1_run: on SSIPE:          194  Filling data lbound:        8335           1           1  ubound:       10000        1200          10
+20240619 042948.104 INFO             PET5 Exiting 'user1_run'
+20240619 042957.682 INFO             PET5  NUMBER_OF_PROCESSORS           6
+20240619 042957.682 INFO             PET5  PASS  System Test ESMF_ArraySharedDeSSISTest, ESMF_ArraySharedDeSSISTest.F90, line 297
+20240619 042957.682 INFO             PET5  Finalizing ESMF
