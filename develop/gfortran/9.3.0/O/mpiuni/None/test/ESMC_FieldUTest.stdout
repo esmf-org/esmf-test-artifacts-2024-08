@@ -1,0 +1,152 @@
+2024-06-19 01:44:53
+Beginning Test, file ESMC_FieldUTest.c, line 76
+Beginning Test, file ESMC_FieldUTest.c, line 76NUMBER_OF_PROCESSORS 1
+PASS MeshCreate, ESMC_FieldUTest.c, line 88
+PASS MeshVTKHeader, ESMC_FieldUTest.c, line 97
+PASS MeshVTKBody, ESMC_FieldUTest.c, line 116
+PASS MeshAddNodes, ESMC_FieldUTest.c, line 136
+PASS MeshAddElements, ESMC_FieldUTest.c, line 146
+PASS ArraySpecSet, ESMC_FieldUTest.c, line 154
+PASS Set up gridToFieldMap, ESMC_FieldUTest.c, line 164
+PASS Set up ungriddedLBound, ESMC_FieldUTest.c, line 175
+PASS Set up ungriddedUBound, ESMC_FieldUTest.c, line 186
+PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 195
+PASS Create ESMC_Field object, ESMC_FieldUTest.c, line 205
+PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 213
+PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 221
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 229
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'field1'
+ Base name    = field1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = field1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Integer*4 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 1
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x1b209b0:
+            rank = 1, typekind = 3, base_addr = 0x1b5dc90
+            dim[0] = 372  
+  Integer, *4, Dim 1, Data values:
+( 1) =  -569836072
+( 2) =  32745
+( 3) =  -569836072
+( 4) =  32745
+( 5) =  28695680
+( 6) =  0
+( 7) =  28695680
+( 8) =  0
+( 9) =  65
+(10) =  66
+  skipping to end ...
+(363) =  1760
+(364) =  1761
+(365) =  1762
+(366) =  1763
+(367) =  1764
+(368) =  1765
+(369) =  1766
+(370) =  1767
+(371) =  1768
+(372) =  1769
+dim 1: [0]: [1 [1 [1, 372] 372] 372]
+--- ESMCI::Array::print end ---
+PASS Print an ESMC_Field object, ESMC_FieldUTest.c, line 237
+PASS Destroy ESMC_Field object, ESMC_FieldUTest.c, line 245
+PASS Get an ESMC_Mesh object from ESMC_Field object, ESMC_FieldUTest.c, line 253
+PASS Get an ESMC_Array object from ESMC_Field object, ESMC_FieldUTest.c, line 261
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 269
+ arrayrank =            1
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+           1          -1          -1                0           0
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'field2'
+ Base name    = field2
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = field2
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 1
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x1b628e0:
+            rank = 1, typekind = 6, base_addr = 0x1b62c10
+            dim[0] = 608  
+  Real, *8, Dim 1, Data values:
+( 1) =  6.94866e-310
+( 2) =  6.94866e-310
+( 3) =  1.41876e-316
+( 4) =  1.41876e-316
+( 5) =  1.90131e-311
+( 6) =  1.90555e-311
+( 7) =  1.9098e-311
+( 8) =  1.91404e-311
+( 9) =  1.91828e-311
+(10) =  1.92253e-311
+  skipping to end ...
+(599) =  3.28697e-311
+(600) =  3.29122e-311
+(601) =  3.29546e-311
+(602) =  3.2997e-311
+(603) =  3.30395e-311
+(604) =  3.32092e-311
+(605) =  3.32941e-311
+(606) =  3.50342e-311
+(607) =  3.50766e-311
+(608) =  3.5119e-311
+dim 1: [0]: [1 [1 [1, 608] 608] 608]
+--- ESMCI::Array::print end ---
+PASS Print an ESMC_Field object, ESMC_FieldUTest.c, line 277
+PASS Destroy ESMC_Field object, ESMC_FieldUTest.c, line 285
+PASS Destroy ESMC_Mesh object, ESMC_FieldUTest.c, line 293
+PASS Create ESMC_Field object from grid and arrayspec, ESMC_FieldUTest.c, line 307
+PASS Create ESMC_Field object from grid and arrayspec with null optional arguments, ESMC_FieldUTest.c, line 315
+PASS LocStreamCreateLocal, ESMC_FieldUTest.c, line 326
+PASS LocStreamAddKeyAlloc, ESMC_FieldUTest.c, line 335
+PASS LocStreamGetKeyPtr, ESMC_FieldUTest.c, line 343
+PASS LocStreamAddKeyAlloc, ESMC_FieldUTest.c, line 366
+PASS LocStreamGetKeyPtr, ESMC_FieldUTest.c, line 374
+PASS LocStreamAddKeyAlloc, ESMC_FieldUTest.c, line 398
+PASS LocStreamGetKeyPtr, ESMC_FieldUTest.c, line 406
+PASS Create ESMC_Field object on LocStream using TypeKind, ESMC_FieldUTest.c, line 430
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldUTest.c, line 438
+Ending Test, file ESMC_FieldUTest.c, line 499
+Ending Test, file ESMC_FieldUTest.c, line 499 PET 0 Test Elapsed Time 15.594 msec.
+ arrayrank =            1
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+           1          -1          -1                0           0
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
