@@ -1,0 +1,60 @@
+2024-06-23 01:56:49
+20240623 021229.402 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240623 021229.402 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240623 021229.402 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240623 021229.402 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240623 021229.402 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240623 021229.402 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240623 021229.402 INFO             PET0 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240623 021229.402 INFO             PET0 ESMF library build date/time: "Jun 23 2024" "01:54:32"
+20240623 021229.402 INFO             PET0 ESMF library build location : /scratch/cluster/theurich/ESMF-Nightly-Testing/intel_20.0.1_mpiuni_O_develop/esmf
+20240623 021229.402 INFO             PET0 ESMF_COMM                   : mpiuni
+20240623 021229.406 INFO             PET0 ESMF_MOAB                   : enabled
+20240623 021229.406 INFO             PET0 ESMF_LAPACK                 : enabled
+20240623 021229.406 INFO             PET0 ESMF_NETCDF                 : enabled
+20240623 021229.406 INFO             PET0 ESMF_PNETCDF                : disabled
+20240623 021229.406 INFO             PET0 ESMF_PIO                    : disabled
+20240623 021229.406 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240623 021229.410 INFO             PET0  Beginning Test, file ESMF_BaseUTest.F90, line 84
+20240623 021229.410 INFO             PET0  NUMBER_OF_PROCESSORS           1
+20240623 021229.410 INFO             PET0  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 94
+20240623 021229.410 INFO             PET0  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 103
+20240623 021229.410 ERROR            PET0 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used after deletion  - Bad Object
+20240623 021229.410 INFO             PET0  PASS  Destroy a destroyed Base, ESMF_BaseUTest.F90, line 115
+20240623 021229.410 ERROR            PET0 ESMF_Base.F90:354 ESMF_BaseDestroy Object being used before creation  - Bad Object
+20240623 021229.410 INFO             PET0  PASS  Destroy a non-created Base, ESMF_BaseUTest.F90, line 124
+20240623 021229.410 ERROR            PET0 ESMF_Base.F90:933 ESMF_BasePrint Object being used after deletion  - Bad Object
+20240623 021229.410 INFO             PET0  PASS  ESMF_BasePrint of deleted Base, ESMF_BaseUTest.F90, line 134
+20240623 021229.410 ERROR            PET0 ESMF_Base.F90:933 ESMF_BasePrint Object being used before creation  - Bad Object
+20240623 021229.410 INFO             PET0  PASS  ESMF_BasePrint of non-created Base, ESMF_BaseUTest.F90, line 144
+20240623 021229.410 INFO             PET0  PASS  ESMF_SetName of non-created Base, ESMF_BaseUTest.F90, line 154
+20240623 021229.410 INFO             PET0  PASS  ESMF_SetName of deleted Base, ESMF_BaseUTest.F90, line 165
+20240623 021229.410 ERROR            PET0 ESMCI_Base_F.C:79 c_esmc_basecreate() test/object must not have a slash (/) in its name
+20240623 021229.410 ERROR            PET0 ESMF_Base.F90:281 ESMF_BaseCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240623 021229.410 INFO             PET0  PASS  ESMF_BaseCreate with slash in name, ESMF_BaseUTest.F90, line 180
+20240623 021229.410 INFO             PET0  PASS  ESMF_BaseCreate, ESMF_BaseUTest.F90, line 188
+20240623 021229.410 ERROR            PET0 ESMCI_Base_F.C:598 c_esmc_setname() fred/jones must not have a slash (/) in its name
+20240623 021229.410 INFO             PET0  PASS  ESMF_SetName with slash in its name, ESMF_BaseUTest.F90, line 198
+20240623 021229.410 INFO             PET0  PASS  ESMF_SetName, ESMF_BaseUTest.F90, line 207
+20240623 021229.411 INFO             PET0  PASS  ESMF_GetName, ESMF_BaseUTest.F90, line 216
+20240623 021229.411 INFO             PET0  PASS  ESMF_BaseValidate, ESMF_BaseUTest.F90, line 225
+20240623 021229.411 INFO             PET0  PASS  ESMF_BaseGetID, ESMF_BaseUTest.F90, line 233
+20240623 021229.411 INFO             PET0  PASS  ESMF_BaseGetVMId of original Base, ESMF_BaseUTest.F90, line 241
+20240623 021229.411 INFO             PET0  PASS  ESMF_BaseSetVMId a new VMId into the Base, ESMF_BaseUTest.F90, line 250
+20240623 021229.413 INFO             PET0  PASS  ESMF_BaseGetVMId new VMid, ESMF_BaseUTest.F90, line 258
+20240623 021229.413 INFO             PET0  PASS  ESMF_BaseSetVMId reset the original VMId into the Base, ESMF_BaseUTest.F90, line 265
+20240623 021229.413 INFO             PET0  PASS  ESMF_BasePrint brief, ESMF_BaseUTest.F90, line 275
+20240623 021229.413 INFO             PET0  PASS  ESMF_BasePrint debug, ESMF_BaseUTest.F90, line 284
+20240623 021229.413 INFO             PET0  PASS  ESMF_BaseSerialize - inquire only option, ESMF_BaseUTest.F90, line 305
+20240623 021229.414 INFO             PET0  PASS  ESMF_BaseSerialize - perform serialization, ESMF_BaseUTest.F90, line 322
+20240623 021229.414 INFO             PET0  PASS  Compare calculated buffer size with actual size, ESMF_BaseUTest.F90, line 334
+20240623 021229.414 INFO             PET0  PASS  ESMF_BaseDeserialize - perform deserialization, ESMF_BaseUTest.F90, line 348
+20240623 021229.414 INFO             PET0  PASS  Compare serialize/deserialize offsets, ESMF_BaseUTest.F90, line 357
+20240623 021229.414 INFO             PET0  PASS  Creating VMId for inquiry, ESMF_BaseUTest.F90, line 367
+20240623 021229.414 INFO             PET0  PASS  ESMF_BaseDeserializeID/VMId - perform deserialization inquiry, ESMF_BaseUTest.F90, line 379
+20240623 021229.414 INFO             PET0  PASS  Compare original vs inquired ids, ESMF_BaseUTest.F90, line 389
+20240623 021229.414 INFO             PET0  PASS  Compare original vs inquired VMId inquiry, ESMF_BaseUTest.F90, line 405
+20240623 021229.414 INFO             PET0  PASS  Compare original vs inquired VMIds, ESMF_BaseUTest.F90, line 415
+20240623 021229.414 INFO             PET0  PASS  ESMF_Destroy, ESMF_BaseUTest.F90, line 431
+20240623 021229.414 INFO             PET0  Ending Test, file ESMF_BaseUTest.F90, line 439
+20240623 021229.414 INFO             PET0  Finalizing ESMF
