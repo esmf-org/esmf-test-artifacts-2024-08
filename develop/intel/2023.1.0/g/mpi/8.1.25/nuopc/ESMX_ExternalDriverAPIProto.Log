@@ -1,0 +1,2117 @@
+2024-06-24 03:49:26
+20240624 042508.339 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240624 042508.339 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240624 042508.339 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240624 042508.339 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240624 042508.339 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET0 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240624 042508.339 INFO             PET0 ESMF library build date/time: "Jun 24 2024" "03:48:34"
+20240624 042508.339 INFO             PET0 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240624 042508.339 INFO             PET0 ESMF_COMM                   : mpi
+20240624 042508.339 INFO             PET0 ESMF_MOAB                   : enabled
+20240624 042508.339 INFO             PET0 ESMF_LAPACK                 : enabled
+20240624 042508.339 INFO             PET0 ESMF_NETCDF                 : enabled
+20240624 042508.339 INFO             PET0 ESMF_PNETCDF                : disabled
+20240624 042508.339 INFO             PET0 ESMF_PIO                    : enabled
+20240624 042508.339 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240624 042508.340 INFO             PET0 externalApp STARTING
+20240624 042508.361 INFO             PET0 ESMX_Driver - Creating model component ATM with petList of size 2 :
+20240624 042508.361 INFO             PET0       0      1
+20240624 042508.361 DEBUG            PET0 Generic SetVM() is executing for: ATM
+20240624 042508.361 DEBUG            PET0 Generic SetVM() found no NUOPC Hint for: ATM
+20240624 042508.361 DEBUG            PET0 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: ATM
+20240624 042508.368 INFO             PET0 ESMX_Driver - Creating model component OCN with petList of size 2 :
+20240624 042508.368 INFO             PET0       2      3
+20240624 042508.368 DEBUG            PET0 Generic SetVM() is executing for: OCN
+20240624 042508.368 DEBUG            PET0 Generic SetVM() found no NUOPC Hint for: OCN
+20240624 042508.368 DEBUG            PET0 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: OCN
+20240624 042508.369 INFO             PET0 ESMX_Driver - Creating connector component ESMX_Driver-TO-ATM without petList.
+20240624 042508.377 INFO             PET0 ESMX_Driver - Creating connector component ESMX_Driver-TO-OCN without petList.
+20240624 042508.385 INFO             PET0 ESMX_Driver - Creating connector component ATM-TO-ESMX_Driver without petList.
+20240624 042508.392 INFO             PET0 ESMX_Driver - Creating connector component OCN-TO-ESMX_Driver without petList.
+20240624 042508.401 INFO             PET0 ATM: InitializeP0 intro.
+20240624 042508.401 INFO             PET0   >>>ATM: entered Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.402 INFO             PET0   <<<ATM: leaving Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.402 INFO             PET0 ATM: InitializeP0 extro.
+20240624 042508.408 INFO             PET0 ESMX_Driver-TO-ATM: InitializeP0 intro.
+20240624 042508.409 INFO             PET0 ESMX_Driver-TO-ATM: InitializeP0 extro.
+20240624 042508.409 INFO             PET0 ESMX_Driver-TO-OCN: InitializeP0 intro.
+20240624 042508.410 INFO             PET0 ESMX_Driver-TO-OCN: InitializeP0 extro.
+20240624 042508.410 INFO             PET0 ATM-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.411 INFO             PET0 ATM-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.411 INFO             PET0 OCN-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.412 INFO             PET0 OCN-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.416 INFO             PET0 ESMX_Driver - Creating connector component ATM-TO-OCN with petList of size 4 :
+20240624 042508.416 INFO             PET0       0      1      2      3
+20240624 042508.423 INFO             PET0 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.423 INFO             PET0 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.423 INFO             PET0 ESMX_Driver - Creating connector component OCN-TO-ATM with petList of size 4 :
+20240624 042508.423 INFO             PET0       2      3      0      1
+20240624 042508.435 INFO             PET0 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.435 INFO             PET0 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.437 INFO             PET0 ESMX_Driver: IInitAdvertise intro.
+20240624 042508.437 INFO             PET0 ESMX_Driver: IInitAdvertise extro.
+20240624 042508.437 INFO             PET0 ATM: InitializeIPDvXp01 intro.
+20240624 042508.437 INFO             PET0   >>>ATM: entered Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.440 INFO             PET0   <<<ATM: leaving Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.440 INFO             PET0 ATM: InitializeIPDvXp01 extro.
+20240624 042508.446 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.453 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.454 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.463 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.463 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.470 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.470 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.478 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.479 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.483 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.484 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.489 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.490 INFO             PET0 ESMX_Driver: IInitAdvertiseFinish intro.
+20240624 042508.490 INFO             PET0 ESMX_Driver: IInitAdvertiseFinish extro.
+20240624 042508.490 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.497 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.497 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.506 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.506 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.513 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.513 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.521 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.521 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.525 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.526 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.531 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.532 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.538 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.538 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.547 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.547 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.554 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.554 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.562 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.562 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.567 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.567 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.573 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.574 INFO             PET0 ESMX_Driver: IInitModifyCplLists intro.
+20240624 042508.574 INFO             PET0 ESMX_Driver: IInitModifyCplLists extro.
+20240624 042508.575 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.583 INFO             PET0 ATM-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.583 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.592 INFO             PET0 ATM-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.592 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.600 INFO             PET0 OCN-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.600 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.608 INFO             PET0 OCN-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.608 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.613 INFO             PET0 ESMX_Driver-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.613 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.619 INFO             PET0 ESMX_Driver-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.619 INFO             PET0 ESMX_Driver: InitializeIPDv02p3 intro.
+20240624 042508.619 INFO             PET0   >>>ESMX_Driver: entered Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042508.620 INFO             PET0   ESMX_Driver: IInitCheck intro.
+20240624 042508.621 INFO             PET0   ESMX_Driver: IInitCheck extro.
+20240624 042508.621 INFO             PET0   ATM: InitializeIPDvXp04 intro.
+20240624 042508.621 INFO             PET0     >>>ATM: entered Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.696 INFO             PET0     <<<ATM: leaving Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.696 INFO             PET0   ATM: InitializeIPDvXp04 extro.
+20240624 042508.749 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.761 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.761 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.779 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.779 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.794 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.794 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.811 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.812 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.820 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.820 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.831 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.832 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.878 DEBUG            PET0     about to destroy Grid: 0x786020
+20240624 042508.878 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.879 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.897 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.897 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.952 DEBUG            PET0     about to destroy Grid: 0x7af0d0
+20240624 042508.952 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.952 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.969 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.970 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.978 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.978 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.989 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.989 INFO             PET0   ESMX_Driver: IInitRealize intro.
+20240624 042508.991 INFO             PET0   ESMX_Driver: IInitRealize extro.
+20240624 042508.991 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.004 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.004 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.021 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.021 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.035 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.035 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.052 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.052 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.060 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.060 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.071 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.071 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.086 INFO             PET0   ATM-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.086 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.329 INFO             PET0   ATM-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.329 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.347 INFO             PET0   OCN-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.348 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.552 INFO             PET0   OCN-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.552 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET0   ESMX_Driver-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.553 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET0   ESMX_Driver-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.554 INFO             PET0   ATM: InitializeIPDvXp07 intro.
+20240624 042509.554 INFO             PET0     >>>ATM: entered Initialize (phase=IPDvXp07) without valid internal Clock.
+20240624 042509.554 INFO             PET0     <<<ATM: leaving Initialize (phase=IPDvXp07) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET0   ATM: InitializeIPDvXp07 extro.
+20240624 042509.554 INFO             PET0   <<<ESMX_Driver: leaving Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET0 ESMX_Driver: InitializeIPDv02p3 extro.
+20240624 042509.554 INFO             PET0 ESMX_Driver: InitializeIPDv02p5 intro.
+20240624 042509.554 INFO             PET0   >>>ESMX_Driver: entered Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET0   ESMX_Driver: InitializeIPDv02p5Data intro.
+20240624 042509.555 INFO             PET0     ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.555 INFO             PET0     ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.555 INFO             PET0     ATM: InitializeIPDv01p5 intro.
+20240624 042509.555 INFO             PET0       >>>ATM: entered Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET0       <<<ATM: leaving Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET0     ATM: InitializeIPDv01p5 extro.
+20240624 042509.559 INFO             PET0     ESMX_Driver: loopDataDependentInitialize intro.
+20240624 042509.559 INFO             PET0       ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET0         >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET0         <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET0       ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.559 INFO             PET0       OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET0         >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET0         <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET0       OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET0       ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.560 INFO             PET0       ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.560 INFO             PET0     ESMX_Driver: loopDataDependentInitialize extro.
+20240624 042509.560 INFO             PET0   ESMX_Driver: InitializeIPDv02p5Data extro.
+20240624 042509.561 INFO             PET0   <<<ESMX_Driver: leaving Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.561 INFO             PET0 ESMX_Driver: InitializeIPDv02p5 extro.
+20240624 042509.592 INFO             PET0 ESMX_Driver: Run intro.
+20240624 042509.592 INFO             PET0   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.592 INFO             PET0   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.592 INFO             PET0     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.592 INFO             PET0     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.592 INFO             PET0   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.593 INFO             PET0   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET0     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET0     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET0   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.593 INFO             PET0   ATM-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET0     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET0     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET0   ATM-TO-OCN: Run extro.
+20240624 042509.593 INFO             PET0   OCN-TO-ATM: Run intro.
+20240624 042509.593 INFO             PET0     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET0     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET0   OCN-TO-ATM: Run extro.
+20240624 042509.595 INFO             PET0   ATM: Run intro.
+20240624 042509.595 INFO             PET0     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET0     TAWAS Advance(): vm located at: 0x6604b0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.595 INFO             PET0     TAWAS Advance(): localPet=0 mypthid=139784421823744 ssiLocalPet=0 currentSsiPe=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.595 INFO             PET0     TAWAS Advance():  SSIPE=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.595 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.595 INFO             PET0     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.595 INFO             PET0     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.595 INFO             PET0     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.595 INFO             PET0     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.595 INFO             PET0     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.595 INFO             PET0     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.595 INFO             PET0     thread_num=   0   currentSsiPe=   0   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.595 INFO             PET0     ------>Advancing TAWAS from: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET0     ---------------------> to: 2010  6  1  0 15  0   0
+20240624 042509.595 INFO             PET0     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.595 INFO             PET0   ATM: Run extro.
+20240624 042509.596 INFO             PET0   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.596 INFO             PET0     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET0     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET0   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.596 INFO             PET0   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.596 INFO             PET0     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET0     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET0   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.597 INFO             PET0   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 15  0   0
+20240624 042509.597 INFO             PET0 ESMX_Driver: Run extro.
+20240624 042509.599 INFO             PET0 ESMX_Driver: Run intro.
+20240624 042509.599 INFO             PET0   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.599 INFO             PET0   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.599 INFO             PET0     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.600 INFO             PET0   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET0     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.600 INFO             PET0   ATM-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET0     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET0   ATM-TO-OCN: Run extro.
+20240624 042509.600 INFO             PET0   OCN-TO-ATM: Run intro.
+20240624 042509.600 INFO             PET0     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.602 INFO             PET0     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.602 INFO             PET0   OCN-TO-ATM: Run extro.
+20240624 042509.602 INFO             PET0   ATM: Run intro.
+20240624 042509.602 INFO             PET0     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET0     TAWAS Advance(): vm located at: 0x6604b0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET0     TAWAS Advance(): localPet=0 mypthid=139784421823744 ssiLocalPet=0 currentSsiPe=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET0     TAWAS Advance():  SSIPE=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.602 INFO             PET0     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET0     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.602 INFO             PET0     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.602 INFO             PET0     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.602 INFO             PET0     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.602 INFO             PET0     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET0     thread_num=   0   currentSsiPe=   0   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.602 INFO             PET0     ------>Advancing TAWAS from: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET0     ---------------------> to: 2010  6  1  0 30  0   0
+20240624 042509.602 INFO             PET0     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.602 INFO             PET0   ATM: Run extro.
+20240624 042509.602 INFO             PET0   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.602 INFO             PET0     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.602 INFO             PET0     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET0   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.603 INFO             PET0   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.603 INFO             PET0     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET0     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET0   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.604 INFO             PET0   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 30  0   0
+20240624 042509.604 INFO             PET0 ESMX_Driver: Run extro.
+20240624 042509.606 INFO             PET0 ESMX_Driver: Run intro.
+20240624 042509.606 INFO             PET0   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.606 INFO             PET0   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.606 INFO             PET0     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.606 INFO             PET0     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.606 INFO             PET0   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.607 INFO             PET0   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET0     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET0     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET0   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.607 INFO             PET0   ATM-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET0     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET0     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET0   ATM-TO-OCN: Run extro.
+20240624 042509.607 INFO             PET0   OCN-TO-ATM: Run intro.
+20240624 042509.607 INFO             PET0     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET0     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET0   OCN-TO-ATM: Run extro.
+20240624 042509.609 INFO             PET0   ATM: Run intro.
+20240624 042509.609 INFO             PET0     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET0     TAWAS Advance(): vm located at: 0x6604b0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET0     TAWAS Advance(): localPet=0 mypthid=139784421823744 ssiLocalPet=0 currentSsiPe=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET0     TAWAS Advance():  SSIPE=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.609 INFO             PET0     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET0     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.609 INFO             PET0     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.609 INFO             PET0     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.609 INFO             PET0     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.609 INFO             PET0     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET0     thread_num=   0   currentSsiPe=   0   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.609 INFO             PET0     ------>Advancing TAWAS from: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET0     ---------------------> to: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET0     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET0   ATM: Run extro.
+20240624 042509.609 INFO             PET0   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.609 INFO             PET0     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.609 INFO             PET0     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.609 INFO             PET0   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.609 INFO             PET0   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.610 INFO             PET0     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET0     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET0   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.611 INFO             PET0   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 45  0   0
+20240624 042509.611 INFO             PET0 ESMX_Driver: Run extro.
+20240624 042509.613 INFO             PET0 ESMX_Driver: Run intro.
+20240624 042509.613 INFO             PET0   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.613 INFO             PET0   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.613 INFO             PET0     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET0     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET0   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.613 INFO             PET0   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.613 INFO             PET0     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET0     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET0   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.614 INFO             PET0   ATM-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET0     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET0     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET0   ATM-TO-OCN: Run extro.
+20240624 042509.614 INFO             PET0   OCN-TO-ATM: Run intro.
+20240624 042509.614 INFO             PET0     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET0     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET0   OCN-TO-ATM: Run extro.
+20240624 042509.615 INFO             PET0   ATM: Run intro.
+20240624 042509.615 INFO             PET0     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET0     TAWAS Advance(): vm located at: 0x6604b0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET0     TAWAS Advance(): localPet=0 mypthid=139784421823744 ssiLocalPet=0 currentSsiPe=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET0     TAWAS Advance():  SSIPE=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET0     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.616 INFO             PET0     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET0     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.616 INFO             PET0     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.616 INFO             PET0     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.616 INFO             PET0     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.616 INFO             PET0     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET0     thread_num=   0   currentSsiPe=   0   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.616 INFO             PET0     ------>Advancing TAWAS from: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET0     ---------------------> to: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET0     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET0   ATM: Run extro.
+20240624 042509.616 INFO             PET0   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.616 INFO             PET0     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.616 INFO             PET0     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.616 INFO             PET0   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.616 INFO             PET0   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.616 INFO             PET0     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.618 INFO             PET0     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.618 INFO             PET0   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.618 INFO             PET0   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  1  0  0   0
+20240624 042509.618 INFO             PET0 ESMX_Driver: Run extro.
+20240624 042509.620 INFO             PET0 ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET0   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.620 INFO             PET0   ESMX_Driver-TO-ATM: Finalize intro.
+20240624 042509.620 INFO             PET0   ESMX_Driver-TO-ATM: Finalize extro.
+20240624 042509.620 INFO             PET0   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.620 INFO             PET0   ESMX_Driver-TO-OCN: Finalize intro.
+20240624 042509.620 INFO             PET0   ESMX_Driver-TO-OCN: Finalize extro.
+20240624 042509.620 INFO             PET0   Calling Finalize phase 1 for connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.620 INFO             PET0   ATM-TO-ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET0   ATM-TO-ESMX_Driver: Finalize extro.
+20240624 042509.620 INFO             PET0   Calling Finalize phase 1 for connectorComp: ATM-TO-OCN
+20240624 042509.620 INFO             PET0   ATM-TO-OCN: Finalize intro.
+20240624 042509.621 INFO             PET0   ATM-TO-OCN: Finalize extro.
+20240624 042509.621 INFO             PET0   Calling Finalize phase 1 for connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.621 INFO             PET0   OCN-TO-ESMX_Driver: Finalize intro.
+20240624 042509.621 INFO             PET0   OCN-TO-ESMX_Driver: Finalize extro.
+20240624 042509.621 INFO             PET0   Calling Finalize phase 1 for connectorComp: OCN-TO-ATM
+20240624 042509.621 INFO             PET0   OCN-TO-ATM: Finalize intro.
+20240624 042509.621 INFO             PET0   OCN-TO-ATM: Finalize extro.
+20240624 042509.621 INFO             PET0   Calling Finalize phase 1 for modelComp: ATM
+20240624 042509.621 INFO             PET0   ATM: Finalize intro.
+20240624 042509.621 INFO             PET0     >>>ATM: entered Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.621 INFO             PET0     <<<ATM: leaving Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.621 INFO             PET0   ATM: Finalize extro.
+20240624 042509.621 INFO             PET0   Calling Finalize phase 1 for modelComp: OCN
+20240624 042509.621 INFO             PET0   Delete modelComp: ATM
+20240624 042509.622 INFO             PET0   Delete modelComp: OCN
+20240624 042509.622 INFO             PET0   Delete connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.622 INFO             PET0   Delete connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.622 INFO             PET0   Delete connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.622 INFO             PET0   Delete connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.622 INFO             PET0   Delete connectorComp: ATM-TO-OCN
+20240624 042509.622 INFO             PET0   Delete connectorComp: OCN-TO-ATM
+20240624 042509.622 INFO             PET0 ESMX_Driver: Finalize extro.
+20240624 042509.622 INFO             PET0 externalApp FINISHED
+20240624 042509.622 INFO             PET0  Finalizing ESMF
+20240624 042508.339 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240624 042508.339 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240624 042508.339 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240624 042508.339 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240624 042508.339 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET1 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240624 042508.339 INFO             PET1 ESMF library build date/time: "Jun 24 2024" "03:48:34"
+20240624 042508.339 INFO             PET1 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240624 042508.339 INFO             PET1 ESMF_COMM                   : mpi
+20240624 042508.339 INFO             PET1 ESMF_MOAB                   : enabled
+20240624 042508.339 INFO             PET1 ESMF_LAPACK                 : enabled
+20240624 042508.339 INFO             PET1 ESMF_NETCDF                 : enabled
+20240624 042508.339 INFO             PET1 ESMF_PNETCDF                : disabled
+20240624 042508.339 INFO             PET1 ESMF_PIO                    : enabled
+20240624 042508.339 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240624 042508.340 INFO             PET1 externalApp STARTING
+20240624 042508.361 INFO             PET1 ESMX_Driver - Creating model component ATM with petList of size 2 :
+20240624 042508.361 INFO             PET1       0      1
+20240624 042508.361 DEBUG            PET1 Generic SetVM() is executing for: ATM
+20240624 042508.361 DEBUG            PET1 Generic SetVM() found no NUOPC Hint for: ATM
+20240624 042508.361 DEBUG            PET1 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: ATM
+20240624 042508.368 INFO             PET1 ESMX_Driver - Creating model component OCN with petList of size 2 :
+20240624 042508.368 INFO             PET1       2      3
+20240624 042508.368 DEBUG            PET1 Generic SetVM() is executing for: OCN
+20240624 042508.368 DEBUG            PET1 Generic SetVM() found no NUOPC Hint for: OCN
+20240624 042508.368 DEBUG            PET1 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: OCN
+20240624 042508.369 INFO             PET1 ESMX_Driver - Creating connector component ESMX_Driver-TO-ATM without petList.
+20240624 042508.380 INFO             PET1 ESMX_Driver - Creating connector component ESMX_Driver-TO-OCN without petList.
+20240624 042508.387 INFO             PET1 ESMX_Driver - Creating connector component ATM-TO-ESMX_Driver without petList.
+20240624 042508.395 INFO             PET1 ESMX_Driver - Creating connector component OCN-TO-ESMX_Driver without petList.
+20240624 042508.404 INFO             PET1 ATM: InitializeP0 intro.
+20240624 042508.404 INFO             PET1   >>>ATM: entered Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.406 INFO             PET1   <<<ATM: leaving Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.406 INFO             PET1 ATM: InitializeP0 extro.
+20240624 042508.409 INFO             PET1 ESMX_Driver-TO-ATM: InitializeP0 intro.
+20240624 042508.409 INFO             PET1 ESMX_Driver-TO-ATM: InitializeP0 extro.
+20240624 042508.410 INFO             PET1 ESMX_Driver-TO-OCN: InitializeP0 intro.
+20240624 042508.411 INFO             PET1 ESMX_Driver-TO-OCN: InitializeP0 extro.
+20240624 042508.412 INFO             PET1 ATM-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.412 INFO             PET1 ATM-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.413 INFO             PET1 OCN-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.414 INFO             PET1 OCN-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.418 INFO             PET1 ESMX_Driver - Creating connector component ATM-TO-OCN with petList of size 4 :
+20240624 042508.418 INFO             PET1       0      1      2      3
+20240624 042508.426 INFO             PET1 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.426 INFO             PET1 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.426 INFO             PET1 ESMX_Driver - Creating connector component OCN-TO-ATM with petList of size 4 :
+20240624 042508.426 INFO             PET1       2      3      0      1
+20240624 042508.435 INFO             PET1 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.435 INFO             PET1 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.439 INFO             PET1 ESMX_Driver: IInitAdvertise intro.
+20240624 042508.439 INFO             PET1 ESMX_Driver: IInitAdvertise extro.
+20240624 042508.439 INFO             PET1 ATM: InitializeIPDvXp01 intro.
+20240624 042508.439 INFO             PET1   >>>ATM: entered Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.444 INFO             PET1   <<<ATM: leaving Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.444 INFO             PET1 ATM: InitializeIPDvXp01 extro.
+20240624 042508.447 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.454 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.454 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.463 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.463 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.470 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.470 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.479 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.479 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.484 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.484 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.490 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.490 INFO             PET1 ESMX_Driver: IInitAdvertiseFinish intro.
+20240624 042508.490 INFO             PET1 ESMX_Driver: IInitAdvertiseFinish extro.
+20240624 042508.491 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.497 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.497 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.506 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.506 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.513 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.513 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.521 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.521 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.526 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.526 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.532 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.532 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.538 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.539 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.548 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.548 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.555 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.555 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.563 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.563 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.568 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.568 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.574 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.574 INFO             PET1 ESMX_Driver: IInitModifyCplLists intro.
+20240624 042508.575 INFO             PET1 ESMX_Driver: IInitModifyCplLists extro.
+20240624 042508.576 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.583 INFO             PET1 ATM-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.583 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.592 INFO             PET1 ATM-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.593 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.600 INFO             PET1 OCN-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.600 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.608 INFO             PET1 OCN-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.609 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.613 INFO             PET1 ESMX_Driver-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.613 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.619 INFO             PET1 ESMX_Driver-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.620 INFO             PET1 ESMX_Driver: InitializeIPDv02p3 intro.
+20240624 042508.620 INFO             PET1   >>>ESMX_Driver: entered Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042508.620 INFO             PET1   ESMX_Driver: IInitCheck intro.
+20240624 042508.622 INFO             PET1   ESMX_Driver: IInitCheck extro.
+20240624 042508.622 INFO             PET1   ATM: InitializeIPDvXp04 intro.
+20240624 042508.622 INFO             PET1     >>>ATM: entered Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.700 INFO             PET1     <<<ATM: leaving Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.700 INFO             PET1   ATM: InitializeIPDvXp04 extro.
+20240624 042508.750 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.761 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.762 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.780 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.780 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.794 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.795 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.812 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.812 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.820 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.821 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.832 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.832 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.879 DEBUG            PET1     about to destroy Grid: 0x781460
+20240624 042508.879 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.879 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.897 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.898 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.952 DEBUG            PET1     about to destroy Grid: 0x7aa190
+20240624 042508.952 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.953 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.970 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.970 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.978 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.979 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.990 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.990 INFO             PET1   ESMX_Driver: IInitRealize intro.
+20240624 042508.992 INFO             PET1   ESMX_Driver: IInitRealize extro.
+20240624 042508.993 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.004 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.004 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.022 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.022 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.035 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.036 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.052 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.052 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.060 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.060 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.071 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.071 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.086 INFO             PET1   ATM-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.086 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.329 INFO             PET1   ATM-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.329 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.347 INFO             PET1   OCN-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.348 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.552 INFO             PET1   OCN-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.552 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET1   ESMX_Driver-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.553 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET1   ESMX_Driver-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.554 INFO             PET1   ATM: InitializeIPDvXp07 intro.
+20240624 042509.554 INFO             PET1     >>>ATM: entered Initialize (phase=IPDvXp07) without valid internal Clock.
+20240624 042509.554 INFO             PET1     <<<ATM: leaving Initialize (phase=IPDvXp07) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET1   ATM: InitializeIPDvXp07 extro.
+20240624 042509.554 INFO             PET1   <<<ESMX_Driver: leaving Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET1 ESMX_Driver: InitializeIPDv02p3 extro.
+20240624 042509.555 INFO             PET1 ESMX_Driver: InitializeIPDv02p5 intro.
+20240624 042509.555 INFO             PET1   >>>ESMX_Driver: entered Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET1   ESMX_Driver: InitializeIPDv02p5Data intro.
+20240624 042509.556 INFO             PET1     ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.556 INFO             PET1     ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.556 INFO             PET1     ATM: InitializeIPDv01p5 intro.
+20240624 042509.556 INFO             PET1       >>>ATM: entered Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.557 INFO             PET1       <<<ATM: leaving Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.557 INFO             PET1     ATM: InitializeIPDv01p5 extro.
+20240624 042509.559 INFO             PET1     ESMX_Driver: loopDataDependentInitialize intro.
+20240624 042509.559 INFO             PET1       ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET1         >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET1         <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET1       ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET1       OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.560 INFO             PET1         >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET1         <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET1       OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET1       ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.560 INFO             PET1       ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.560 INFO             PET1     ESMX_Driver: loopDataDependentInitialize extro.
+20240624 042509.560 INFO             PET1   ESMX_Driver: InitializeIPDv02p5Data extro.
+20240624 042509.561 INFO             PET1   <<<ESMX_Driver: leaving Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.561 INFO             PET1 ESMX_Driver: InitializeIPDv02p5 extro.
+20240624 042509.592 INFO             PET1 ESMX_Driver: Run intro.
+20240624 042509.592 INFO             PET1   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.592 INFO             PET1   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.593 INFO             PET1     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET1     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET1   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.593 INFO             PET1   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET1     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET1     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET1   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.593 INFO             PET1   ATM-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET1     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET1     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET1   ATM-TO-OCN: Run extro.
+20240624 042509.594 INFO             PET1   OCN-TO-ATM: Run intro.
+20240624 042509.594 INFO             PET1     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET1     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET1   OCN-TO-ATM: Run extro.
+20240624 042509.595 INFO             PET1   ATM: Run intro.
+20240624 042509.595 INFO             PET1     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET1     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET1     TAWAS Advance(): vm located at: 0x65ef20
+20240624 042509.595 INFO             PET1     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.595 INFO             PET1     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.595 INFO             PET1     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.595 INFO             PET1     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.595 INFO             PET1     TAWAS Advance(): localPet=1 mypthid=140118222001408 ssiLocalPet=1 currentSsiPe=1
+20240624 042509.595 INFO             PET1     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.595 INFO             PET1     TAWAS Advance():  SSIPE=1
+20240624 042509.595 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.595 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.595 INFO             PET1     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.595 INFO             PET1     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.595 INFO             PET1     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.595 INFO             PET1     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.595 INFO             PET1     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.595 INFO             PET1     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.596 INFO             PET1     thread_num=   0   currentSsiPe=   1   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.596 INFO             PET1     ------>Advancing TAWAS from: 2010  6  1  0  0  0   0
+20240624 042509.596 INFO             PET1     ---------------------> to: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET1     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET1   ATM: Run extro.
+20240624 042509.596 INFO             PET1   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.596 INFO             PET1     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET1     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET1   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.596 INFO             PET1   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.597 INFO             PET1     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET1     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET1   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.597 INFO             PET1   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 15  0   0
+20240624 042509.597 INFO             PET1 ESMX_Driver: Run extro.
+20240624 042509.599 INFO             PET1 ESMX_Driver: Run intro.
+20240624 042509.599 INFO             PET1   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.600 INFO             PET1   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.600 INFO             PET1     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET1     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET1   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.600 INFO             PET1   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET1     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET1     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET1   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.600 INFO             PET1   ATM-TO-OCN: Run intro.
+20240624 042509.601 INFO             PET1     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET1     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET1   ATM-TO-OCN: Run extro.
+20240624 042509.601 INFO             PET1   OCN-TO-ATM: Run intro.
+20240624 042509.601 INFO             PET1     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.602 INFO             PET1     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.602 INFO             PET1   OCN-TO-ATM: Run extro.
+20240624 042509.602 INFO             PET1   ATM: Run intro.
+20240624 042509.602 INFO             PET1     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET1     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET1     TAWAS Advance(): vm located at: 0x65ef20
+20240624 042509.602 INFO             PET1     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET1     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET1     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET1     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET1     TAWAS Advance(): localPet=1 mypthid=140118222001408 ssiLocalPet=1 currentSsiPe=1
+20240624 042509.602 INFO             PET1     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET1     TAWAS Advance():  SSIPE=1
+20240624 042509.602 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.602 INFO             PET1     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET1     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.602 INFO             PET1     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.602 INFO             PET1     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.602 INFO             PET1     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.602 INFO             PET1     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET1     thread_num=   0   currentSsiPe=   1   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.602 INFO             PET1     ------>Advancing TAWAS from: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET1     ---------------------> to: 2010  6  1  0 30  0   0
+20240624 042509.603 INFO             PET1     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.603 INFO             PET1   ATM: Run extro.
+20240624 042509.603 INFO             PET1   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.603 INFO             PET1     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET1     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET1   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.603 INFO             PET1   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.603 INFO             PET1     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET1     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET1   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.604 INFO             PET1   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 30  0   0
+20240624 042509.604 INFO             PET1 ESMX_Driver: Run extro.
+20240624 042509.606 INFO             PET1 ESMX_Driver: Run intro.
+20240624 042509.606 INFO             PET1   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.607 INFO             PET1   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.607 INFO             PET1     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET1     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET1   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.607 INFO             PET1   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET1     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET1     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET1   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.607 INFO             PET1   ATM-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET1     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET1     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET1   ATM-TO-OCN: Run extro.
+20240624 042509.608 INFO             PET1   OCN-TO-ATM: Run intro.
+20240624 042509.608 INFO             PET1     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET1     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET1   OCN-TO-ATM: Run extro.
+20240624 042509.609 INFO             PET1   ATM: Run intro.
+20240624 042509.609 INFO             PET1     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET1     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET1     TAWAS Advance(): vm located at: 0x65ef20
+20240624 042509.609 INFO             PET1     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET1     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET1     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET1     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET1     TAWAS Advance(): localPet=1 mypthid=140118222001408 ssiLocalPet=1 currentSsiPe=1
+20240624 042509.609 INFO             PET1     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET1     TAWAS Advance():  SSIPE=1
+20240624 042509.609 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.609 INFO             PET1     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET1     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.609 INFO             PET1     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.609 INFO             PET1     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.609 INFO             PET1     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.609 INFO             PET1     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET1     thread_num=   0   currentSsiPe=   1   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.609 INFO             PET1     ------>Advancing TAWAS from: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET1     ---------------------> to: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET1     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET1   ATM: Run extro.
+20240624 042509.610 INFO             PET1   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.610 INFO             PET1     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET1     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET1   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.610 INFO             PET1   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.610 INFO             PET1     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET1     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET1   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.610 INFO             PET1   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 45  0   0
+20240624 042509.611 INFO             PET1 ESMX_Driver: Run extro.
+20240624 042509.613 INFO             PET1 ESMX_Driver: Run intro.
+20240624 042509.613 INFO             PET1   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.613 INFO             PET1   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.613 INFO             PET1     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET1     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET1   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.614 INFO             PET1   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET1     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET1     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET1   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.614 INFO             PET1   ATM-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET1     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET1     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET1   ATM-TO-OCN: Run extro.
+20240624 042509.615 INFO             PET1   OCN-TO-ATM: Run intro.
+20240624 042509.615 INFO             PET1     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET1     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET1   OCN-TO-ATM: Run extro.
+20240624 042509.616 INFO             PET1   ATM: Run intro.
+20240624 042509.616 INFO             PET1     >>>ATM: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET1     TAWAS Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET1     TAWAS Advance(): vm located at: 0x65ef20
+20240624 042509.616 INFO             PET1     TAWAS Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET1     TAWAS Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET1     TAWAS Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET1     TAWAS Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET1     TAWAS Advance(): localPet=1 mypthid=140118222001408 ssiLocalPet=1 currentSsiPe=1
+20240624 042509.616 INFO             PET1     TAWAS Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET1     TAWAS Advance():  SSIPE=1
+20240624 042509.616 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET1     TAWAS Advance(): Current system level OMP_NUM_PROCS setting for local PET: 1
+20240624 042509.616 INFO             PET1     TAWAS Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET1     TAWAS Advance(): PET=0 lpid=0 tid=0 pid=0 peCount=1 accCount=0
+20240624 042509.616 INFO             PET1     TAWAS Advance():  PE=0 SSI=0 SSIPE=0
+20240624 042509.616 INFO             PET1     TAWAS Advance(): PET=1 lpid=1 tid=0 pid=1 peCount=1 accCount=0
+20240624 042509.616 INFO             PET1     TAWAS Advance():  PE=1 SSI=0 SSIPE=1
+20240624 042509.616 INFO             PET1     TAWAS Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET1     thread_num=   0   currentSsiPe=   1   num_threads=   1   max_threads=   1   num_procs=   1
+20240624 042509.616 INFO             PET1     ------>Advancing TAWAS from: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET1     ---------------------> to: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET1     <<<ATM: leaving Run (phase=RunPhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET1   ATM: Run extro.
+20240624 042509.617 INFO             PET1   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.617 INFO             PET1     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET1     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET1   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.617 INFO             PET1   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.617 INFO             PET1     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET1     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET1   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.617 INFO             PET1   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  1  0  0   0
+20240624 042509.617 INFO             PET1 ESMX_Driver: Run extro.
+20240624 042509.620 INFO             PET1 ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET1   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.620 INFO             PET1   ESMX_Driver-TO-ATM: Finalize intro.
+20240624 042509.620 INFO             PET1   ESMX_Driver-TO-ATM: Finalize extro.
+20240624 042509.620 INFO             PET1   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.620 INFO             PET1   ESMX_Driver-TO-OCN: Finalize intro.
+20240624 042509.620 INFO             PET1   ESMX_Driver-TO-OCN: Finalize extro.
+20240624 042509.620 INFO             PET1   Calling Finalize phase 1 for connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.621 INFO             PET1   ATM-TO-ESMX_Driver: Finalize intro.
+20240624 042509.621 INFO             PET1   ATM-TO-ESMX_Driver: Finalize extro.
+20240624 042509.621 INFO             PET1   Calling Finalize phase 1 for connectorComp: ATM-TO-OCN
+20240624 042509.621 INFO             PET1   ATM-TO-OCN: Finalize intro.
+20240624 042509.621 INFO             PET1   ATM-TO-OCN: Finalize extro.
+20240624 042509.621 INFO             PET1   Calling Finalize phase 1 for connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.621 INFO             PET1   OCN-TO-ESMX_Driver: Finalize intro.
+20240624 042509.622 INFO             PET1   OCN-TO-ESMX_Driver: Finalize extro.
+20240624 042509.622 INFO             PET1   Calling Finalize phase 1 for connectorComp: OCN-TO-ATM
+20240624 042509.622 INFO             PET1   OCN-TO-ATM: Finalize intro.
+20240624 042509.622 INFO             PET1   OCN-TO-ATM: Finalize extro.
+20240624 042509.622 INFO             PET1   Calling Finalize phase 1 for modelComp: ATM
+20240624 042509.622 INFO             PET1   ATM: Finalize intro.
+20240624 042509.622 INFO             PET1     >>>ATM: entered Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.622 INFO             PET1     <<<ATM: leaving Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.622 INFO             PET1   ATM: Finalize extro.
+20240624 042509.622 INFO             PET1   Calling Finalize phase 1 for modelComp: OCN
+20240624 042509.623 INFO             PET1   Delete modelComp: ATM
+20240624 042509.623 INFO             PET1   Delete modelComp: OCN
+20240624 042509.623 INFO             PET1   Delete connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.623 INFO             PET1   Delete connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.623 INFO             PET1   Delete connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.623 INFO             PET1   Delete connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.623 INFO             PET1   Delete connectorComp: ATM-TO-OCN
+20240624 042509.623 INFO             PET1   Delete connectorComp: OCN-TO-ATM
+20240624 042509.624 INFO             PET1 ESMX_Driver: Finalize extro.
+20240624 042509.624 INFO             PET1 externalApp FINISHED
+20240624 042509.624 INFO             PET1  Finalizing ESMF
+20240624 042508.339 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240624 042508.339 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240624 042508.339 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240624 042508.339 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240624 042508.339 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET2 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240624 042508.339 INFO             PET2 ESMF library build date/time: "Jun 24 2024" "03:48:34"
+20240624 042508.339 INFO             PET2 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240624 042508.339 INFO             PET2 ESMF_COMM                   : mpi
+20240624 042508.339 INFO             PET2 ESMF_MOAB                   : enabled
+20240624 042508.339 INFO             PET2 ESMF_LAPACK                 : enabled
+20240624 042508.339 INFO             PET2 ESMF_NETCDF                 : enabled
+20240624 042508.339 INFO             PET2 ESMF_PNETCDF                : disabled
+20240624 042508.339 INFO             PET2 ESMF_PIO                    : enabled
+20240624 042508.339 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240624 042508.340 INFO             PET2 externalApp STARTING
+20240624 042508.361 INFO             PET2 ESMX_Driver - Creating model component ATM with petList of size 2 :
+20240624 042508.361 INFO             PET2       0      1
+20240624 042508.361 DEBUG            PET2 Generic SetVM() is executing for: ATM
+20240624 042508.361 DEBUG            PET2 Generic SetVM() found no NUOPC Hint for: ATM
+20240624 042508.361 DEBUG            PET2 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: ATM
+20240624 042508.368 INFO             PET2 ESMX_Driver - Creating model component OCN with petList of size 2 :
+20240624 042508.368 INFO             PET2       2      3
+20240624 042508.368 DEBUG            PET2 Generic SetVM() is executing for: OCN
+20240624 042508.368 DEBUG            PET2 Generic SetVM() found no NUOPC Hint for: OCN
+20240624 042508.368 DEBUG            PET2 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: OCN
+20240624 042508.372 INFO             PET2 ESMX_Driver - Creating connector component ESMX_Driver-TO-ATM without petList.
+20240624 042508.380 INFO             PET2 ESMX_Driver - Creating connector component ESMX_Driver-TO-OCN without petList.
+20240624 042508.387 INFO             PET2 ESMX_Driver - Creating connector component ATM-TO-ESMX_Driver without petList.
+20240624 042508.395 INFO             PET2 ESMX_Driver - Creating connector component OCN-TO-ESMX_Driver without petList.
+20240624 042508.404 INFO             PET2 OCN: InitializeP0 intro.
+20240624 042508.404 INFO             PET2   >>>OCN: entered Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.406 INFO             PET2   <<<OCN: leaving Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.406 INFO             PET2 OCN: InitializeP0 extro.
+20240624 042508.408 INFO             PET2 ESMX_Driver-TO-ATM: InitializeP0 intro.
+20240624 042508.409 INFO             PET2 ESMX_Driver-TO-ATM: InitializeP0 extro.
+20240624 042508.410 INFO             PET2 ESMX_Driver-TO-OCN: InitializeP0 intro.
+20240624 042508.411 INFO             PET2 ESMX_Driver-TO-OCN: InitializeP0 extro.
+20240624 042508.411 INFO             PET2 ATM-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.412 INFO             PET2 ATM-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.413 INFO             PET2 OCN-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.414 INFO             PET2 OCN-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.418 INFO             PET2 ESMX_Driver - Creating connector component ATM-TO-OCN with petList of size 4 :
+20240624 042508.418 INFO             PET2       0      1      2      3
+20240624 042508.426 INFO             PET2 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.426 INFO             PET2 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.426 INFO             PET2 ESMX_Driver - Creating connector component OCN-TO-ATM with petList of size 4 :
+20240624 042508.426 INFO             PET2       2      3      0      1
+20240624 042508.435 INFO             PET2 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.435 INFO             PET2 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.438 INFO             PET2 ESMX_Driver: IInitAdvertise intro.
+20240624 042508.438 INFO             PET2 ESMX_Driver: IInitAdvertise extro.
+20240624 042508.439 INFO             PET2 OCN: InitializeIPDvXp01 intro.
+20240624 042508.439 INFO             PET2   >>>OCN: entered Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.445 INFO             PET2   <<<OCN: leaving Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.445 INFO             PET2 OCN: InitializeIPDvXp01 extro.
+20240624 042508.446 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.454 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.454 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.463 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.463 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.470 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.470 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.479 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.479 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.484 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.484 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.490 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.490 INFO             PET2 ESMX_Driver: IInitAdvertiseFinish intro.
+20240624 042508.490 INFO             PET2 ESMX_Driver: IInitAdvertiseFinish extro.
+20240624 042508.491 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.497 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.497 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.506 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.506 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.513 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.513 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.521 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.521 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.526 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.526 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.532 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.532 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.538 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.539 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.548 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.548 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.555 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.555 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.563 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.563 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.568 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.568 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.574 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.574 INFO             PET2 ESMX_Driver: IInitModifyCplLists intro.
+20240624 042508.575 INFO             PET2 ESMX_Driver: IInitModifyCplLists extro.
+20240624 042508.576 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.583 INFO             PET2 ATM-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.583 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.592 INFO             PET2 ATM-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.593 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.600 INFO             PET2 OCN-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.600 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.608 INFO             PET2 OCN-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.609 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.613 INFO             PET2 ESMX_Driver-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.613 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.619 INFO             PET2 ESMX_Driver-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.620 INFO             PET2 ESMX_Driver: InitializeIPDv02p3 intro.
+20240624 042508.620 INFO             PET2   >>>ESMX_Driver: entered Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042508.620 INFO             PET2   ESMX_Driver: IInitCheck intro.
+20240624 042508.622 INFO             PET2   ESMX_Driver: IInitCheck extro.
+20240624 042508.622 INFO             PET2   OCN: InitializeIPDvXp04 intro.
+20240624 042508.622 INFO             PET2     >>>OCN: entered Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.748 INFO             PET2     <<<OCN: leaving Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.748 INFO             PET2   OCN: InitializeIPDvXp04 extro.
+20240624 042508.749 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.761 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.762 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.780 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.780 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.794 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.795 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.812 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.812 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.820 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.821 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.832 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.832 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.878 DEBUG            PET2     about to destroy Grid: 0x810230
+20240624 042508.879 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.879 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.897 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.898 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.952 DEBUG            PET2     about to destroy Grid: 0x801320
+20240624 042508.952 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.953 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.970 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.970 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.978 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.979 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.990 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.990 INFO             PET2   ESMX_Driver: IInitRealize intro.
+20240624 042508.992 INFO             PET2   ESMX_Driver: IInitRealize extro.
+20240624 042508.993 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.004 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.004 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.022 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.022 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.035 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.036 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.052 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.052 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.060 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.060 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.071 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.071 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.086 INFO             PET2   ATM-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.086 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.329 INFO             PET2   ATM-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.329 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.347 INFO             PET2   OCN-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.348 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.552 INFO             PET2   OCN-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.552 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET2   ESMX_Driver-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.553 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET2   ESMX_Driver-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.554 INFO             PET2   OCN: InitializeIPDvXp07 intro.
+20240624 042509.554 INFO             PET2     >>>OCN: entered Initialize (phase=IPDvXp07) without valid internal Clock.
+20240624 042509.554 INFO             PET2     <<<OCN: leaving Initialize (phase=IPDvXp07) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET2   OCN: InitializeIPDvXp07 extro.
+20240624 042509.555 INFO             PET2   <<<ESMX_Driver: leaving Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET2 ESMX_Driver: InitializeIPDv02p3 extro.
+20240624 042509.555 INFO             PET2 ESMX_Driver: InitializeIPDv02p5 intro.
+20240624 042509.555 INFO             PET2   >>>ESMX_Driver: entered Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET2   ESMX_Driver: InitializeIPDv02p5Data intro.
+20240624 042509.556 INFO             PET2     ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.556 INFO             PET2     ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.556 INFO             PET2     OCN: InitializeIPDv01p5 intro.
+20240624 042509.556 INFO             PET2       >>>OCN: entered Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.557 INFO             PET2       <<<OCN: leaving Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.557 INFO             PET2     OCN: InitializeIPDv01p5 extro.
+20240624 042509.559 INFO             PET2     ESMX_Driver: loopDataDependentInitialize intro.
+20240624 042509.559 INFO             PET2       ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET2         >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET2         <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET2       ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET2       OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.560 INFO             PET2         >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET2         <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET2       OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET2       ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.560 INFO             PET2       ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.560 INFO             PET2     ESMX_Driver: loopDataDependentInitialize extro.
+20240624 042509.560 INFO             PET2   ESMX_Driver: InitializeIPDv02p5Data extro.
+20240624 042509.561 INFO             PET2   <<<ESMX_Driver: leaving Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.561 INFO             PET2 ESMX_Driver: InitializeIPDv02p5 extro.
+20240624 042509.592 INFO             PET2 ESMX_Driver: Run intro.
+20240624 042509.592 INFO             PET2   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.592 INFO             PET2   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.593 INFO             PET2     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET2     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET2   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.593 INFO             PET2   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET2     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET2     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET2   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.593 INFO             PET2   ATM-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET2     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET2     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET2   ATM-TO-OCN: Run extro.
+20240624 042509.594 INFO             PET2   OCN-TO-ATM: Run intro.
+20240624 042509.594 INFO             PET2     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET2     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.595 INFO             PET2   OCN-TO-ATM: Run extro.
+20240624 042509.595 INFO             PET2   OCN: Run intro.
+20240624 042509.595 INFO             PET2     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.595 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.595 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.595 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.595 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.595 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.595 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.595 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.595 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.595 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.595 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.595 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.595 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.596 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.596 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.596 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.596 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0  0  0   0
+20240624 042509.596 INFO             PET2     ---------------------> to: 2010  6  1  0  5  0   0
+20240624 042509.596 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.596 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.596 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.596 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.596 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.596 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.596 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.596 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.596 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.596 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.596 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.596 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0  5  0   0
+20240624 042509.596 INFO             PET2     ---------------------> to: 2010  6  1  0 10  0   0
+20240624 042509.596 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.596 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.596 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.596 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.596 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.596 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.596 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.596 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.596 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.596 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.596 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.596 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.596 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.596 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 10  0   0
+20240624 042509.596 INFO             PET2     ---------------------> to: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET2     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET2   OCN: Run extro.
+20240624 042509.597 INFO             PET2   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.597 INFO             PET2     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET2     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET2   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.597 INFO             PET2   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.597 INFO             PET2     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET2     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET2   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.597 INFO             PET2   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 15  0   0
+20240624 042509.597 INFO             PET2 ESMX_Driver: Run extro.
+20240624 042509.599 INFO             PET2 ESMX_Driver: Run intro.
+20240624 042509.599 INFO             PET2   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.600 INFO             PET2   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.600 INFO             PET2     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET2     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET2   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.600 INFO             PET2   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET2     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET2     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET2   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.600 INFO             PET2   ATM-TO-OCN: Run intro.
+20240624 042509.601 INFO             PET2     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET2     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET2   ATM-TO-OCN: Run extro.
+20240624 042509.601 INFO             PET2   OCN-TO-ATM: Run intro.
+20240624 042509.601 INFO             PET2     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET2     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET2   OCN-TO-ATM: Run extro.
+20240624 042509.602 INFO             PET2   OCN: Run intro.
+20240624 042509.602 INFO             PET2     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.602 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.602 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.602 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.602 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.602 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.602 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.602 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.602 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.602 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.602 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 15  0   0
+20240624 042509.603 INFO             PET2     ---------------------> to: 2010  6  1  0 20  0   0
+20240624 042509.603 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.603 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.603 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.603 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.603 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.603 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.603 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.603 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.603 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.603 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.603 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.603 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 20  0   0
+20240624 042509.603 INFO             PET2     ---------------------> to: 2010  6  1  0 25  0   0
+20240624 042509.603 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.603 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.603 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.603 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.603 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.603 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.603 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.603 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.603 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.603 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.603 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.603 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.603 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.603 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 25  0   0
+20240624 042509.603 INFO             PET2     ---------------------> to: 2010  6  1  0 30  0   0
+20240624 042509.603 INFO             PET2     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.603 INFO             PET2   OCN: Run extro.
+20240624 042509.604 INFO             PET2   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.604 INFO             PET2     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET2     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET2   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.604 INFO             PET2   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.604 INFO             PET2     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET2     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.604 INFO             PET2   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.604 INFO             PET2   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 30  0   0
+20240624 042509.604 INFO             PET2 ESMX_Driver: Run extro.
+20240624 042509.606 INFO             PET2 ESMX_Driver: Run intro.
+20240624 042509.606 INFO             PET2   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.607 INFO             PET2   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.607 INFO             PET2     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET2     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET2   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.607 INFO             PET2   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET2     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET2     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET2   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.607 INFO             PET2   ATM-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET2     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET2     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET2   ATM-TO-OCN: Run extro.
+20240624 042509.608 INFO             PET2   OCN-TO-ATM: Run intro.
+20240624 042509.608 INFO             PET2     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET2     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET2   OCN-TO-ATM: Run extro.
+20240624 042509.609 INFO             PET2   OCN: Run intro.
+20240624 042509.609 INFO             PET2     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.609 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.609 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.609 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.609 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.609 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.609 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.609 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.609 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.609 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.609 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET2     ---------------------> to: 2010  6  1  0 35  0   0
+20240624 042509.609 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.609 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.609 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.610 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.610 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.610 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.610 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.610 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.610 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.610 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.610 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.610 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.610 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.610 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 35  0   0
+20240624 042509.610 INFO             PET2     ---------------------> to: 2010  6  1  0 40  0   0
+20240624 042509.610 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.610 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.610 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.610 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.610 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.610 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.610 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.610 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.610 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.610 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.610 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.610 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.610 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.610 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.610 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.610 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.610 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.610 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.610 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.610 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 40  0   0
+20240624 042509.610 INFO             PET2     ---------------------> to: 2010  6  1  0 45  0   0
+20240624 042509.610 INFO             PET2     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.610 INFO             PET2   OCN: Run extro.
+20240624 042509.610 INFO             PET2   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.610 INFO             PET2     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET2     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET2   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.611 INFO             PET2   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.611 INFO             PET2     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET2     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.611 INFO             PET2   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.611 INFO             PET2   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 45  0   0
+20240624 042509.611 INFO             PET2 ESMX_Driver: Run extro.
+20240624 042509.613 INFO             PET2 ESMX_Driver: Run intro.
+20240624 042509.613 INFO             PET2   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.613 INFO             PET2   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.613 INFO             PET2     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET2     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET2   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.614 INFO             PET2   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET2     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET2     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.614 INFO             PET2   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.614 INFO             PET2   ATM-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET2     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET2     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET2   ATM-TO-OCN: Run extro.
+20240624 042509.615 INFO             PET2   OCN-TO-ATM: Run intro.
+20240624 042509.615 INFO             PET2     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET2     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET2   OCN-TO-ATM: Run extro.
+20240624 042509.615 INFO             PET2   OCN: Run intro.
+20240624 042509.616 INFO             PET2     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.616 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.616 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.616 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.616 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.616 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.616 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET2     ---------------------> to: 2010  6  1  0 50  0   0
+20240624 042509.616 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.616 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.616 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.616 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.616 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.616 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.616 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.616 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 50  0   0
+20240624 042509.617 INFO             PET2     ---------------------> to: 2010  6  1  0 55  0   0
+20240624 042509.617 INFO             PET2     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.617 INFO             PET2     LUMO Advance(): vm located at: 0x665ea0
+20240624 042509.617 INFO             PET2     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.617 INFO             PET2     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.617 INFO             PET2     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.617 INFO             PET2     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.617 INFO             PET2     LUMO Advance(): localPet=0 mypthid=139652123694336 ssiLocalPet=0 currentSsiPe=129
+20240624 042509.617 INFO             PET2     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.617 INFO             PET2     LUMO Advance():  SSIPE=1
+20240624 042509.617 INFO             PET2     LUMO Advance():  SSIPE=129
+20240624 042509.617 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.617 INFO             PET2     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.617 INFO             PET2     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.617 INFO             PET2     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.617 INFO             PET2     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.617 INFO             PET2     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.617 INFO             PET2     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.617 INFO             PET2     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.617 INFO             PET2     thread_num=   0   currentSsiPe= 129   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.617 INFO             PET2     ------>Advancing LUMO from: 2010  6  1  0 55  0   0
+20240624 042509.617 INFO             PET2     ---------------------> to: 2010  6  1  1  0  0   0
+20240624 042509.617 INFO             PET2     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.617 INFO             PET2   OCN: Run extro.
+20240624 042509.617 INFO             PET2   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.617 INFO             PET2     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET2     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET2   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.618 INFO             PET2   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.618 INFO             PET2     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.618 INFO             PET2     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.618 INFO             PET2   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.618 INFO             PET2   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  1  0  0   0
+20240624 042509.618 INFO             PET2 ESMX_Driver: Run extro.
+20240624 042509.620 INFO             PET2 ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET2   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.620 INFO             PET2   ESMX_Driver-TO-ATM: Finalize intro.
+20240624 042509.620 INFO             PET2   ESMX_Driver-TO-ATM: Finalize extro.
+20240624 042509.620 INFO             PET2   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.620 INFO             PET2   ESMX_Driver-TO-OCN: Finalize intro.
+20240624 042509.620 INFO             PET2   ESMX_Driver-TO-OCN: Finalize extro.
+20240624 042509.620 INFO             PET2   Calling Finalize phase 1 for connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.621 INFO             PET2   ATM-TO-ESMX_Driver: Finalize intro.
+20240624 042509.621 INFO             PET2   ATM-TO-ESMX_Driver: Finalize extro.
+20240624 042509.621 INFO             PET2   Calling Finalize phase 1 for connectorComp: ATM-TO-OCN
+20240624 042509.621 INFO             PET2   ATM-TO-OCN: Finalize intro.
+20240624 042509.621 INFO             PET2   ATM-TO-OCN: Finalize extro.
+20240624 042509.621 INFO             PET2   Calling Finalize phase 1 for connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.621 INFO             PET2   OCN-TO-ESMX_Driver: Finalize intro.
+20240624 042509.622 INFO             PET2   OCN-TO-ESMX_Driver: Finalize extro.
+20240624 042509.622 INFO             PET2   Calling Finalize phase 1 for connectorComp: OCN-TO-ATM
+20240624 042509.622 INFO             PET2   OCN-TO-ATM: Finalize intro.
+20240624 042509.622 INFO             PET2   OCN-TO-ATM: Finalize extro.
+20240624 042509.622 INFO             PET2   Calling Finalize phase 1 for modelComp: ATM
+20240624 042509.622 INFO             PET2   Calling Finalize phase 1 for modelComp: OCN
+20240624 042509.622 INFO             PET2   OCN: Finalize intro.
+20240624 042509.622 INFO             PET2     >>>OCN: entered Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.622 INFO             PET2     <<<OCN: leaving Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.622 INFO             PET2   OCN: Finalize extro.
+20240624 042509.622 INFO             PET2   Delete modelComp: ATM
+20240624 042509.623 INFO             PET2   Delete modelComp: OCN
+20240624 042509.623 INFO             PET2   Delete connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.623 INFO             PET2   Delete connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.623 INFO             PET2   Delete connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.623 INFO             PET2   Delete connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.623 INFO             PET2   Delete connectorComp: ATM-TO-OCN
+20240624 042509.623 INFO             PET2   Delete connectorComp: OCN-TO-ATM
+20240624 042509.623 INFO             PET2 ESMX_Driver: Finalize extro.
+20240624 042509.624 INFO             PET2 externalApp FINISHED
+20240624 042509.624 INFO             PET2  Finalizing ESMF
+20240624 042508.339 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240624 042508.339 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240624 042508.339 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240624 042508.339 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240624 042508.339 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240624 042508.339 INFO             PET3 Running with ESMF Version   : v8.7.0b07-2-ga1ccd5de8a
+20240624 042508.339 INFO             PET3 ESMF library build date/time: "Jun 24 2024" "03:48:34"
+20240624 042508.339 INFO             PET3 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240624 042508.339 INFO             PET3 ESMF_COMM                   : mpi
+20240624 042508.339 INFO             PET3 ESMF_MOAB                   : enabled
+20240624 042508.339 INFO             PET3 ESMF_LAPACK                 : enabled
+20240624 042508.339 INFO             PET3 ESMF_NETCDF                 : enabled
+20240624 042508.339 INFO             PET3 ESMF_PNETCDF                : disabled
+20240624 042508.339 INFO             PET3 ESMF_PIO                    : enabled
+20240624 042508.339 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240624 042508.340 INFO             PET3 externalApp STARTING
+20240624 042508.361 INFO             PET3 ESMX_Driver - Creating model component ATM with petList of size 2 :
+20240624 042508.361 INFO             PET3       0      1
+20240624 042508.361 DEBUG            PET3 Generic SetVM() is executing for: ATM
+20240624 042508.361 DEBUG            PET3 Generic SetVM() found no NUOPC Hint for: ATM
+20240624 042508.361 DEBUG            PET3 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: ATM
+20240624 042508.368 INFO             PET3 ESMX_Driver - Creating model component OCN with petList of size 2 :
+20240624 042508.368 INFO             PET3       2      3
+20240624 042508.368 DEBUG            PET3 Generic SetVM() is executing for: OCN
+20240624 042508.368 DEBUG            PET3 Generic SetVM() found no NUOPC Hint for: OCN
+20240624 042508.368 DEBUG            PET3 Generic SetVM() therefore is NOT calling ESMF_GridCompSetVMMaxPEs() for: OCN
+20240624 042508.371 INFO             PET3 ESMX_Driver - Creating connector component ESMX_Driver-TO-ATM without petList.
+20240624 042508.377 INFO             PET3 ESMX_Driver - Creating connector component ESMX_Driver-TO-OCN without petList.
+20240624 042508.385 INFO             PET3 ESMX_Driver - Creating connector component ATM-TO-ESMX_Driver without petList.
+20240624 042508.392 INFO             PET3 ESMX_Driver - Creating connector component OCN-TO-ESMX_Driver without petList.
+20240624 042508.401 INFO             PET3 OCN: InitializeP0 intro.
+20240624 042508.401 INFO             PET3   >>>OCN: entered Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.402 INFO             PET3   <<<OCN: leaving Initialize (phase=<none>) without valid internal Clock.
+20240624 042508.402 INFO             PET3 OCN: InitializeP0 extro.
+20240624 042508.408 INFO             PET3 ESMX_Driver-TO-ATM: InitializeP0 intro.
+20240624 042508.409 INFO             PET3 ESMX_Driver-TO-ATM: InitializeP0 extro.
+20240624 042508.410 INFO             PET3 ESMX_Driver-TO-OCN: InitializeP0 intro.
+20240624 042508.410 INFO             PET3 ESMX_Driver-TO-OCN: InitializeP0 extro.
+20240624 042508.411 INFO             PET3 ATM-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.412 INFO             PET3 ATM-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.413 INFO             PET3 OCN-TO-ESMX_Driver: InitializeP0 intro.
+20240624 042508.413 INFO             PET3 OCN-TO-ESMX_Driver: InitializeP0 extro.
+20240624 042508.416 INFO             PET3 ESMX_Driver - Creating connector component ATM-TO-OCN with petList of size 4 :
+20240624 042508.416 INFO             PET3       0      1      2      3
+20240624 042508.426 INFO             PET3 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.426 INFO             PET3 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.426 INFO             PET3 ESMX_Driver - Creating connector component OCN-TO-ATM with petList of size 4 :
+20240624 042508.426 INFO             PET3       2      3      0      1
+20240624 042508.435 INFO             PET3 ESMX_Driver - Setting Verbosity on created component to: low
+20240624 042508.435 INFO             PET3 ESMX_Driver - Setting Profiling on created component to:          0
+20240624 042508.437 INFO             PET3 ESMX_Driver: IInitAdvertise intro.
+20240624 042508.437 INFO             PET3 ESMX_Driver: IInitAdvertise extro.
+20240624 042508.437 INFO             PET3 OCN: InitializeIPDvXp01 intro.
+20240624 042508.437 INFO             PET3   >>>OCN: entered Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.441 INFO             PET3   <<<OCN: leaving Initialize (phase=IPDvXp01) without valid internal Clock.
+20240624 042508.441 INFO             PET3 OCN: InitializeIPDvXp01 extro.
+20240624 042508.446 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.453 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.454 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.463 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.463 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p1 intro.
+20240624 042508.470 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p1 extro.
+20240624 042508.470 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.478 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.479 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p1 intro.
+20240624 042508.483 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p1 extro.
+20240624 042508.484 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p1 intro.
+20240624 042508.489 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p1 extro.
+20240624 042508.490 INFO             PET3 ESMX_Driver: IInitAdvertiseFinish intro.
+20240624 042508.490 INFO             PET3 ESMX_Driver: IInitAdvertiseFinish extro.
+20240624 042508.490 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.497 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.497 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.506 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.506 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p2a intro.
+20240624 042508.513 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p2a extro.
+20240624 042508.513 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.521 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.521 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p2a intro.
+20240624 042508.525 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p2a extro.
+20240624 042508.526 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p2a intro.
+20240624 042508.531 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p2a extro.
+20240624 042508.532 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.538 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.538 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.547 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.547 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p2b intro.
+20240624 042508.554 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p2b extro.
+20240624 042508.554 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.562 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.563 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p2b intro.
+20240624 042508.567 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p2b extro.
+20240624 042508.567 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p2b intro.
+20240624 042508.573 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p2b extro.
+20240624 042508.574 INFO             PET3 ESMX_Driver: IInitModifyCplLists intro.
+20240624 042508.574 INFO             PET3 ESMX_Driver: IInitModifyCplLists extro.
+20240624 042508.575 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.583 INFO             PET3 ATM-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.583 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.592 INFO             PET3 ATM-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.592 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p3 intro.
+20240624 042508.600 INFO             PET3 OCN-TO-ESMX_Driver: InitializeIPDv05p3 extro.
+20240624 042508.600 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.608 INFO             PET3 OCN-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.608 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p3 intro.
+20240624 042508.613 INFO             PET3 ESMX_Driver-TO-ATM: InitializeIPDv05p3 extro.
+20240624 042508.613 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p3 intro.
+20240624 042508.619 INFO             PET3 ESMX_Driver-TO-OCN: InitializeIPDv05p3 extro.
+20240624 042508.619 INFO             PET3 ESMX_Driver: InitializeIPDv02p3 intro.
+20240624 042508.619 INFO             PET3   >>>ESMX_Driver: entered Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042508.620 INFO             PET3   ESMX_Driver: IInitCheck intro.
+20240624 042508.621 INFO             PET3   ESMX_Driver: IInitCheck extro.
+20240624 042508.621 INFO             PET3   OCN: InitializeIPDvXp04 intro.
+20240624 042508.621 INFO             PET3     >>>OCN: entered Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.743 INFO             PET3     <<<OCN: leaving Initialize (phase=IPDvXp04) without valid internal Clock.
+20240624 042508.743 INFO             PET3   OCN: InitializeIPDvXp04 extro.
+20240624 042508.749 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.761 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.761 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.779 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.779 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p4 intro.
+20240624 042508.794 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p4 extro.
+20240624 042508.794 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.811 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.812 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p4 intro.
+20240624 042508.820 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p4 extro.
+20240624 042508.820 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p4 intro.
+20240624 042508.831 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p4 extro.
+20240624 042508.832 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.878 DEBUG            PET3     about to destroy Grid: 0x80e4d0
+20240624 042508.878 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.878 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.897 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.897 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p5 intro.
+20240624 042508.952 DEBUG            PET3     about to destroy Grid: 0x7ff5a0
+20240624 042508.952 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p5 extro.
+20240624 042508.952 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.969 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.970 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p5 intro.
+20240624 042508.978 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p5 extro.
+20240624 042508.978 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p5 intro.
+20240624 042508.989 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p5 extro.
+20240624 042508.989 INFO             PET3   ESMX_Driver: IInitRealize intro.
+20240624 042508.991 INFO             PET3   ESMX_Driver: IInitRealize extro.
+20240624 042508.991 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.004 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.004 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.021 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.021 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p6a intro.
+20240624 042509.035 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p6a extro.
+20240624 042509.035 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.052 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.052 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p6a intro.
+20240624 042509.060 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p6a extro.
+20240624 042509.060 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p6a intro.
+20240624 042509.071 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p6a extro.
+20240624 042509.071 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.086 INFO             PET3   ATM-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.086 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.329 INFO             PET3   ATM-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.329 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p6b intro.
+20240624 042509.347 INFO             PET3   OCN-TO-ESMX_Driver: InitializeIPDv05p6b extro.
+20240624 042509.348 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.552 INFO             PET3   OCN-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.552 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET3   ESMX_Driver-TO-ATM: InitializeIPDv05p6b extro.
+20240624 042509.553 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p6b intro.
+20240624 042509.553 INFO             PET3   ESMX_Driver-TO-OCN: InitializeIPDv05p6b extro.
+20240624 042509.554 INFO             PET3   OCN: InitializeIPDvXp07 intro.
+20240624 042509.554 INFO             PET3     >>>OCN: entered Initialize (phase=IPDvXp07) without valid internal Clock.
+20240624 042509.554 INFO             PET3     <<<OCN: leaving Initialize (phase=IPDvXp07) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET3   OCN: InitializeIPDvXp07 extro.
+20240624 042509.554 INFO             PET3   <<<ESMX_Driver: leaving Initialize (phase=ExternalRealize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.554 INFO             PET3 ESMX_Driver: InitializeIPDv02p3 extro.
+20240624 042509.554 INFO             PET3 ESMX_Driver: InitializeIPDv02p5 intro.
+20240624 042509.554 INFO             PET3   >>>ESMX_Driver: entered Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.555 INFO             PET3   ESMX_Driver: InitializeIPDv02p5Data intro.
+20240624 042509.555 INFO             PET3     ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.555 INFO             PET3     ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.555 INFO             PET3     OCN: InitializeIPDv01p5 intro.
+20240624 042509.555 INFO             PET3       >>>OCN: entered Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.556 INFO             PET3       <<<OCN: leaving Initialize (phase=IPDvXp08) with current time: 2010  6  1  0  0  0   0
+20240624 042509.556 INFO             PET3     OCN: InitializeIPDv01p5 extro.
+20240624 042509.559 INFO             PET3     ESMX_Driver: loopDataDependentInitialize intro.
+20240624 042509.559 INFO             PET3       ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET3         >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET3         <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.559 INFO             PET3       ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.559 INFO             PET3       OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.559 INFO             PET3         >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET3         <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.560 INFO             PET3       OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.560 INFO             PET3       ESMX_Driver: InternalInitializeComplete intro.
+20240624 042509.560 INFO             PET3       ESMX_Driver: InternalInitializeComplete extro.
+20240624 042509.560 INFO             PET3     ESMX_Driver: loopDataDependentInitialize extro.
+20240624 042509.560 INFO             PET3   ESMX_Driver: InitializeIPDv02p5Data extro.
+20240624 042509.561 INFO             PET3   <<<ESMX_Driver: leaving Initialize (phase=ExternalDataInitialize) with current time: 2010  6  1  0  0  0   0
+20240624 042509.561 INFO             PET3 ESMX_Driver: InitializeIPDv02p5 extro.
+20240624 042509.592 INFO             PET3 ESMX_Driver: Run intro.
+20240624 042509.592 INFO             PET3   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.592 INFO             PET3   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.592 INFO             PET3     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.592 INFO             PET3     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.592 INFO             PET3   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.592 INFO             PET3   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET3     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET3     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.593 INFO             PET3   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.593 INFO             PET3   ATM-TO-OCN: Run intro.
+20240624 042509.593 INFO             PET3     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET3     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET3   ATM-TO-OCN: Run extro.
+20240624 042509.594 INFO             PET3   OCN-TO-ATM: Run intro.
+20240624 042509.594 INFO             PET3     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET3     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.594 INFO             PET3   OCN-TO-ATM: Run extro.
+20240624 042509.595 INFO             PET3   OCN: Run intro.
+20240624 042509.595 INFO             PET3     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.595 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.595 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=65
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.595 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.595 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.595 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.595 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.595 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.595 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.595 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.595 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0  0  0   0
+20240624 042509.595 INFO             PET3     ---------------------> to: 2010  6  1  0  5  0   0
+20240624 042509.595 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.595 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.595 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.595 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.595 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.595 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.595 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.595 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.595 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.595 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.595 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.595 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.595 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0  5  0   0
+20240624 042509.595 INFO             PET3     ---------------------> to: 2010  6  1  0 10  0   0
+20240624 042509.595 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.595 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.596 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.596 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.596 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.596 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.596 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.596 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.596 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.596 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.596 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.596 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.596 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.596 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.596 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.596 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.596 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.596 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.596 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.596 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 10  0   0
+20240624 042509.596 INFO             PET3     ---------------------> to: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET3     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.596 INFO             PET3   OCN: Run extro.
+20240624 042509.596 INFO             PET3   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.596 INFO             PET3     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET3     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.596 INFO             PET3   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.596 INFO             PET3   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.596 INFO             PET3     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET3     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.597 INFO             PET3   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.597 INFO             PET3   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 15  0   0
+20240624 042509.597 INFO             PET3 ESMX_Driver: Run extro.
+20240624 042509.599 INFO             PET3 ESMX_Driver: Run intro.
+20240624 042509.599 INFO             PET3   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.599 INFO             PET3   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.599 INFO             PET3     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET3     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET3   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.600 INFO             PET3   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET3     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET3     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.600 INFO             PET3   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.600 INFO             PET3   ATM-TO-OCN: Run intro.
+20240624 042509.600 INFO             PET3     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET3     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET3   ATM-TO-OCN: Run extro.
+20240624 042509.601 INFO             PET3   OCN-TO-ATM: Run intro.
+20240624 042509.601 INFO             PET3     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET3     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.601 INFO             PET3   OCN-TO-ATM: Run extro.
+20240624 042509.601 INFO             PET3   OCN: Run intro.
+20240624 042509.602 INFO             PET3     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.602 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.602 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.602 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 15  0   0
+20240624 042509.602 INFO             PET3     ---------------------> to: 2010  6  1  0 20  0   0
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.602 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.602 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.602 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 20  0   0
+20240624 042509.602 INFO             PET3     ---------------------> to: 2010  6  1  0 25  0   0
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.602 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.602 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.602 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.602 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.602 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.602 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.602 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.602 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.602 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.602 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 25  0   0
+20240624 042509.602 INFO             PET3     ---------------------> to: 2010  6  1  0 30  0   0
+20240624 042509.602 INFO             PET3     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.602 INFO             PET3   OCN: Run extro.
+20240624 042509.603 INFO             PET3   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.603 INFO             PET3     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET3     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET3   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.603 INFO             PET3   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.603 INFO             PET3     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET3     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.603 INFO             PET3   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.603 INFO             PET3   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 30  0   0
+20240624 042509.603 INFO             PET3 ESMX_Driver: Run extro.
+20240624 042509.606 INFO             PET3 ESMX_Driver: Run intro.
+20240624 042509.606 INFO             PET3   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.606 INFO             PET3   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.606 INFO             PET3     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.606 INFO             PET3     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.606 INFO             PET3   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.607 INFO             PET3   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET3     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET3     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.607 INFO             PET3   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.607 INFO             PET3   ATM-TO-OCN: Run intro.
+20240624 042509.607 INFO             PET3     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET3     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET3   ATM-TO-OCN: Run extro.
+20240624 042509.608 INFO             PET3   OCN-TO-ATM: Run intro.
+20240624 042509.608 INFO             PET3     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET3     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.608 INFO             PET3   OCN-TO-ATM: Run extro.
+20240624 042509.608 INFO             PET3   OCN: Run intro.
+20240624 042509.608 INFO             PET3     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.609 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.609 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.609 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 30  0   0
+20240624 042509.609 INFO             PET3     ---------------------> to: 2010  6  1  0 35  0   0
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.609 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.609 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.609 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 35  0   0
+20240624 042509.609 INFO             PET3     ---------------------> to: 2010  6  1  0 40  0   0
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.609 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.609 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.609 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.609 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.609 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.609 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.609 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.609 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.609 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.609 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 40  0   0
+20240624 042509.609 INFO             PET3     ---------------------> to: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET3     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.609 INFO             PET3   OCN: Run extro.
+20240624 042509.609 INFO             PET3   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.609 INFO             PET3     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET3     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET3   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.610 INFO             PET3   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.610 INFO             PET3     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET3     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.610 INFO             PET3   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.610 INFO             PET3   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  0 45  0   0
+20240624 042509.610 INFO             PET3 ESMX_Driver: Run extro.
+20240624 042509.613 INFO             PET3 ESMX_Driver: Run intro.
+20240624 042509.613 INFO             PET3   >>>ESMX_Driver entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.613 INFO             PET3   ESMX_Driver-TO-ATM: Run intro.
+20240624 042509.613 INFO             PET3     >>>ESMX_Driver-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET3     <<<ESMX_Driver-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET3   ESMX_Driver-TO-ATM: Run extro.
+20240624 042509.613 INFO             PET3   ESMX_Driver-TO-OCN: Run intro.
+20240624 042509.613 INFO             PET3     >>>ESMX_Driver-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET3     <<<ESMX_Driver-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.613 INFO             PET3   ESMX_Driver-TO-OCN: Run extro.
+20240624 042509.614 INFO             PET3   ATM-TO-OCN: Run intro.
+20240624 042509.614 INFO             PET3     >>>ATM-TO-OCN entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET3     <<<ATM-TO-OCN leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET3   ATM-TO-OCN: Run extro.
+20240624 042509.615 INFO             PET3   OCN-TO-ATM: Run intro.
+20240624 042509.615 INFO             PET3     >>>OCN-TO-ATM entered Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET3     <<<OCN-TO-ATM leaving Run (phase=RunPhase1)
+20240624 042509.615 INFO             PET3   OCN-TO-ATM: Run extro.
+20240624 042509.615 INFO             PET3   OCN: Run intro.
+20240624 042509.615 INFO             PET3     >>>OCN: entered Run (phase=RunPhase1) with current time: 2010  6  1  0 45  0   0
+20240624 042509.615 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.615 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.615 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.615 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.615 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.615 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.615 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.616 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.616 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.616 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 45  0   0
+20240624 042509.616 INFO             PET3     ---------------------> to: 2010  6  1  0 50  0   0
+20240624 042509.616 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.616 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.616 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.616 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.616 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 50  0   0
+20240624 042509.616 INFO             PET3     ---------------------> to: 2010  6  1  0 55  0   0
+20240624 042509.616 INFO             PET3     LUMO Advance(): --- VMK::log() start -------------------------------------
+20240624 042509.616 INFO             PET3     LUMO Advance(): vm located at: 0x665b50
+20240624 042509.616 INFO             PET3     LUMO Advance(): mpionly=1 threadsflag=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): ssiCount=1 localSsi=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): devCount=0 ssiLocalDevCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance(): petCount=2 ssiLocalPetCount=2
+20240624 042509.616 INFO             PET3     LUMO Advance(): localPet=1 mypthid=140592627844352 ssiLocalPet=1 currentSsiPe=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level affinity pinning for local PET:
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=65
+20240624 042509.616 INFO             PET3     LUMO Advance():  SSIPE=193
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_THREADS setting for local PET: 1
+20240624 042509.616 INFO             PET3     LUMO Advance(): Current system level OMP_NUM_PROCS setting for local PET: 2
+20240624 042509.616 INFO             PET3     LUMO Advance(): ESMF level logical PET->PE association (but consider system level affinity pinning!):
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=0 lpid=0 tid=0 pid=2 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=2 SSI=0 SSIPE=2
+20240624 042509.616 INFO             PET3     LUMO Advance(): PET=1 lpid=1 tid=0 pid=3 peCount=1 accCount=0
+20240624 042509.616 INFO             PET3     LUMO Advance():  PE=3 SSI=0 SSIPE=3
+20240624 042509.616 INFO             PET3     LUMO Advance(): --- VMK::log() end ---------------------------------------
+20240624 042509.616 INFO             PET3     thread_num=   0   currentSsiPe= 193   num_threads=   1   max_threads=   1   num_procs=   2
+20240624 042509.616 INFO             PET3     ------>Advancing LUMO from: 2010  6  1  0 55  0   0
+20240624 042509.616 INFO             PET3     ---------------------> to: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET3     <<<OCN: leaving Run (phase=RunPhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.616 INFO             PET3   OCN: Run extro.
+20240624 042509.616 INFO             PET3   ATM-TO-ESMX_Driver: Run intro.
+20240624 042509.616 INFO             PET3     >>>ATM-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET3     <<<ATM-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET3   ATM-TO-ESMX_Driver: Run extro.
+20240624 042509.617 INFO             PET3   OCN-TO-ESMX_Driver: Run intro.
+20240624 042509.617 INFO             PET3     >>>OCN-TO-ESMX_Driver entered Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET3     <<<OCN-TO-ESMX_Driver leaving Run (phase=RunPhase1)
+20240624 042509.617 INFO             PET3   OCN-TO-ESMX_Driver: Run extro.
+20240624 042509.617 INFO             PET3   <<<ESMX_Driver - leaving Run with current time: 2010  6  1  1  0  0   0
+20240624 042509.617 INFO             PET3 ESMX_Driver: Run extro.
+20240624 042509.620 INFO             PET3 ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET3   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.620 INFO             PET3   ESMX_Driver-TO-ATM: Finalize intro.
+20240624 042509.620 INFO             PET3   ESMX_Driver-TO-ATM: Finalize extro.
+20240624 042509.620 INFO             PET3   Calling Finalize phase 1 for connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.620 INFO             PET3   ESMX_Driver-TO-OCN: Finalize intro.
+20240624 042509.620 INFO             PET3   ESMX_Driver-TO-OCN: Finalize extro.
+20240624 042509.620 INFO             PET3   Calling Finalize phase 1 for connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.620 INFO             PET3   ATM-TO-ESMX_Driver: Finalize intro.
+20240624 042509.620 INFO             PET3   ATM-TO-ESMX_Driver: Finalize extro.
+20240624 042509.620 INFO             PET3   Calling Finalize phase 1 for connectorComp: ATM-TO-OCN
+20240624 042509.620 INFO             PET3   ATM-TO-OCN: Finalize intro.
+20240624 042509.621 INFO             PET3   ATM-TO-OCN: Finalize extro.
+20240624 042509.621 INFO             PET3   Calling Finalize phase 1 for connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.621 INFO             PET3   OCN-TO-ESMX_Driver: Finalize intro.
+20240624 042509.621 INFO             PET3   OCN-TO-ESMX_Driver: Finalize extro.
+20240624 042509.621 INFO             PET3   Calling Finalize phase 1 for connectorComp: OCN-TO-ATM
+20240624 042509.621 INFO             PET3   OCN-TO-ATM: Finalize intro.
+20240624 042509.621 INFO             PET3   OCN-TO-ATM: Finalize extro.
+20240624 042509.621 INFO             PET3   Calling Finalize phase 1 for modelComp: ATM
+20240624 042509.621 INFO             PET3   Calling Finalize phase 1 for modelComp: OCN
+20240624 042509.621 INFO             PET3   OCN: Finalize intro.
+20240624 042509.621 INFO             PET3     >>>OCN: entered Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.621 INFO             PET3     <<<OCN: leaving Finalize (phase=FinalizePhase1) with current time: 2010  6  1  1  0  0   0
+20240624 042509.621 INFO             PET3   OCN: Finalize extro.
+20240624 042509.621 INFO             PET3   Delete modelComp: ATM
+20240624 042509.621 INFO             PET3   Delete modelComp: OCN
+20240624 042509.622 INFO             PET3   Delete connectorComp: ESMX_Driver-TO-ATM
+20240624 042509.622 INFO             PET3   Delete connectorComp: ESMX_Driver-TO-OCN
+20240624 042509.622 INFO             PET3   Delete connectorComp: ATM-TO-ESMX_Driver
+20240624 042509.622 INFO             PET3   Delete connectorComp: OCN-TO-ESMX_Driver
+20240624 042509.622 INFO             PET3   Delete connectorComp: ATM-TO-OCN
+20240624 042509.622 INFO             PET3   Delete connectorComp: OCN-TO-ATM
+20240624 042509.622 INFO             PET3 ESMX_Driver: Finalize extro.
+20240624 042509.622 INFO             PET3 externalApp FINISHED
+20240624 042509.622 INFO             PET3  Finalizing ESMF
