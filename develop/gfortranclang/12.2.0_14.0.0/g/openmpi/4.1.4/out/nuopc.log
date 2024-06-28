@@ -1,0 +1,1453 @@
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AsyncIOBlockingProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f asyncIOApp *.o *.mod
+c     model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     io.F90
+make: c: No such file or directory
+make: [io.o] Error 1 (ignored)
+c     asyncIODriver.F90
+make: c: No such file or directory
+make: [asyncIODriver.o] Error 1 (ignored)
+c     asyncIOApp.F90
+make: c: No such file or directory
+make: [asyncIOApp.o] Error 1 (ignored)
+o asyncIOApp asyncIOApp.o asyncIODriver.o model.o io.o 
+make: o: No such file or directory
+make: [asyncIOApp] Error 1 (ignored)
++ -np 4 ./asyncIOApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AsyncIOBlockingProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AsyncIONonblockingProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f asyncIOApp *.o *.mod
+c     model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     io.F90
+make: c: No such file or directory
+make: [io.o] Error 1 (ignored)
+c     conn.F90
+make: c: No such file or directory
+make: [conn.o] Error 1 (ignored)
+c     asyncIODriver.F90
+make: c: No such file or directory
+make: [asyncIODriver.o] Error 1 (ignored)
+c     asyncIOApp.F90
+make: c: No such file or directory
+make: [asyncIOApp.o] Error 1 (ignored)
+o asyncIOApp asyncIOApp.o asyncIODriver.o model.o io.o conn.o 
+make: o: No such file or directory
+make: [asyncIOApp] Error 1 (ignored)
++ -np 4 ./asyncIOApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AsyncIONonblockingProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnConOptsProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnConOptsProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnConProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     conn.F90
+make: c: No such file or directory
+make: [conn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o conn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnConProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnCplListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnCplListProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnCplSetProto
+rm -f PET*.ESMF_LogFile err out core* *.nc *.stdout
+rm -f esmApp *.o *.mod
+g -c     atm.F90
+make: g: No such file or directory
+make: [atm.o] Error 1 (ignored)
+g -c     ocn.F90
+make: g: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+g -c     esm.F90
+make: g: No such file or directory
+make: [esm.o] Error 1 (ignored)
+g -c     esmApp.F90
+make: g: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnCplSetProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnFDSynoProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnFDSynoProto
+Thu Jun 27 19:06:47 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:47 MDT 2024
+STARTING: AtmOcnIceSimpleImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     ice.F90
+make: c: No such file or directory
+make: [ice.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o ice.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnIceSimpleImplicitProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnImplicitProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnLndProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     lnd.F90
+make: c: No such file or directory
+make: [lnd.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o lnd.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnLndProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnLogNoneProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnLogNoneProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedIngestFromConfigProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedIngestFromConfigProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedIngestFromInternalProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedIngestFromInternalProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedPetListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedPetListProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedPetListTimescalesProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedPetListTimescalesProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedPetListTimescalesSplitFastProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedPetListTimescalesSplitFastProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMedProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMedProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnMirrorFieldsProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnMirrorFieldsProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnPetListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnPetListProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnProto
+Thu Jun 27 19:06:48 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:48 MDT 2024
+STARTING: AtmOcnRtmTwoTimescalesProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     rtm.F90
+make: c: No such file or directory
+make: [rtm.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o rtm.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnRtmTwoTimescalesProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnScalarProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnScalarProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnSelectProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     atmA.F90
+make: c: No such file or directory
+make: [atmA.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     atmB.F90
+make: c: No such file or directory
+make: [atmB.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     ocnA.F90
+make: c: No such file or directory
+make: [ocnA.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     ocnB.F90
+make: c: No such file or directory
+make: [ocnB.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     atmA.F90
+make: c: No such file or directory
+make: [atmA.o] Error 1 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     atmB.F90
+make: c: No such file or directory
+make: [atmB.o] Error 1 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     ocnA.F90
+make: c: No such file or directory
+make: [ocnA.o] Error 1 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     ocnB.F90
+make: c: No such file or directory
+make: [ocnB.o] Error 1 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_A -DWITH_OCN_B     atmA.F90
+make: c: No such file or directory
+make: [atmA.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     atmB.F90
+make: c: No such file or directory
+make: [atmB.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     ocnA.F90
+make: c: No such file or directory
+make: [ocnA.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     ocnB.F90
+make: c: No such file or directory
+make: [ocnB.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnSelectProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnSimpleImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnSimpleImplicitProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnTransferGridProto
+rm -f PET*.ESMF_LogFile *.nc *.vtk *.stdout fort.*
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnTransferGridProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnTransferLocStreamProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnTransferLocStreamProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: AtmOcnTransferMeshProto
+rm -f PET*.ESMF_LogFile field*.nc *.vtk *.stdout fort.*
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: AtmOcnTransferMeshProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: CustomFieldDictionaryProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= util.F90
+make: c: No such file or directory
+make: [util.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driver.o model.o util.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: CustomFieldDictionaryProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: DriverInDriverDataDepProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverChildComp.F90
+make: c: No such file or directory
+make: [driverChildComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverParentComp.F90
+make: c: No such file or directory
+make: [driverParentComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driverParentComp.o driverChildComp.o atm.o ocn.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: DriverInDriverDataDepProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: DriverInDriverProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverChildComp.F90
+make: c: No such file or directory
+make: [driverChildComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverParentComp.F90
+make: c: No such file or directory
+make: [driverParentComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driverParentComp.o driverChildComp.o atm.o ocn.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: DriverInDriverProto
+Thu Jun 27 19:06:49 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:49 MDT 2024
+STARTING: DynPhyProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     dyn.F90
+make: c: No such file or directory
+make: [dyn.o] Error 1 (ignored)
+c     phy.F90
+make: c: No such file or directory
+make: [phy.o] Error 1 (ignored)
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o atm.o dyn.o phy.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: DynPhyProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: ExternalDriverAPIProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f externalApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     externalApp.F90
+make: c: No such file or directory
+make: [externalApp.o] Error 1 (ignored)
+o externalApp externalApp.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [externalApp] Error 1 (ignored)
++ -np 4 ./externalApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ExternalDriverAPIProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: ExternalDriverAPIWeakCplDAProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f externalApp *.o *.mod
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     nuopc_da.F90
+make: c: No such file or directory
+make: [nuopc_da.o] Error 1 (ignored)
+c     atmDA.F90
+make: c: No such file or directory
+make: [atmDA.o] Error 1 (ignored)
+c     ocnDA.F90
+make: c: No such file or directory
+make: [ocnDA.o] Error 1 (ignored)
+c     externalApp.F90
+make: c: No such file or directory
+make: [externalApp.o] Error 1 (ignored)
+o externalApp externalApp.o atmDA.o ocnDA.o nuopc_da.o esm.o atm.o ocn.o 
+make: o: No such file or directory
+make: [externalApp] Error 1 (ignored)
++ -np 4 ./externalApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ExternalDriverAPIWeakCplDAProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: GenericMediatorProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f app *.o *.mod
+c     mediator.F90
+make: c: No such file or directory
+make: [mediator.o] Error 1 (ignored)
+c     modelA.F90
+make: c: No such file or directory
+make: [modelA.o] Error 1 (ignored)
+c     modelB.F90
+make: c: No such file or directory
+make: [modelB.o] Error 1 (ignored)
+c     driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     app.F90
+make: c: No such file or directory
+make: [app.o] Error 1 (ignored)
+o app app.o driver.o mediator.o modelA.o modelB.o 
+make: o: No such file or directory
+make: [app] Error 1 (ignored)
++ -np 4 ./app
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: GenericMediatorProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: HierarchyProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     dyn.F90
+make: c: No such file or directory
+make: [dyn.o] Error 1 (ignored)
+c     phy.F90
+make: c: No such file or directory
+make: [phy.o] Error 1 (ignored)
+c     atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     ocn.F90
+make: c: No such file or directory
+make: [ocn.o] Error 1 (ignored)
+c     esm.F90
+make: c: No such file or directory
+make: [esm.o] Error 1 (ignored)
+c     esmApp.F90
+make: c: No such file or directory
+make: [esmApp.o] Error 1 (ignored)
+o esmApp esmApp.o esm.o atm.o dyn.o phy.o ocn.o 
+make: o: No such file or directory
+make: [esmApp] Error 1 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: HierarchyProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: NamespaceProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: No such file or directory
+make: [atm.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= med.F90
+make: c: No such file or directory
+make: [med.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driver.o atm.o med.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: NamespaceProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: NestingMultipleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: No such file or directory
+make: [advectDiffComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: No such file or directory
+make: [driverComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: NestingMultipleProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: NestingSingleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: No such file or directory
+make: [advectDiffComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: No such file or directory
+make: [driverComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: NestingSingleProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: NestingTelescopeMultipleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: No such file or directory
+make: [advectDiffComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: No such file or directory
+make: [driverComp.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: NestingTelescopeMultipleProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: SingleModelProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: SingleModelProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: SingleModelOpenMPProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: SingleModelOpenMPProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: SingleModelOpenMPUnawareProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: No such file or directory
+make: [model.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: No such file or directory
+make: [driver.o] Error 1 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: No such file or directory
+make: [mainApp.o] Error 1 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: No such file or directory
+make: [mainApp] Error 1 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: SingleModelOpenMPUnawareProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: ESMX_ExternalDriverAPIProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+cd TaWaS; make distclean
+rm -f PET*.ESMF_LogFile
+rm -f *.o *.a *.so *.mod *.mk tawas.cmake
+cmake -S. -Bbuild -DESMF_ESMXDIR= -DCMAKE_INSTALL_PREFIX=install
+CMake Error at CMakeLists.txt:7 (find_package):
+  No "FindESMF.cmake" found in CMAKE_MODULE_PATH.
+
+
+CMake Warning (dev) at CMakeLists.txt:7 (find_package):
+  FindESMF.cmake must either be part of this project itself, in this case
+  adjust CMAKE_MODULE_PATH so that it points to the correct location inside
+  its source tree.
+
+  Or it must be installed by a package which has already been found via
+  find_package().  In this case make sure that package has indeed been found
+  and adjust CMAKE_MODULE_PATH to contain the location where that package has
+  installed FindESMF.cmake.  This must be a location provided by that
+  package.  This error in general means that the buildsystem of this project
+  is relying on a Find-module without ensuring that it is actually available.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+make: *** [install/bin/externalApp] Error 1
++ -np 4 ./install/bin/externalApp
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ESMX_ExternalDriverAPIProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: ESMX_AtmOcnProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+cd TaWaS; make distclean
+rm -f PET*.ESMF_LogFile
+rm -f *.o *.a *.so *.mod *.mk tawas.cmake
+/ESMX_Builder -v
+make: /ESMX_Builder: No such file or directory
+make: *** [install/bin/esmx_app] Error 1
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+---------------------------------------------------------------------------
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunAlt.yaml
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ESMX_AtmOcnProto
+Thu Jun 27 19:06:50 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:50 MDT 2024
+STARTING: ESMX_SingleModelInFortranProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v
+make: /ESMX_Builder: No such file or directory
+make: *** [install/bin/esmx_app] Error 1
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+---------------------------------------------------------------------------
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v esmxBuildDL.yaml
+make: /ESMX_Builder: No such file or directory
+make: *** [DL] Error 1
++ -np 4 ./install/bin/esmx_app esmxRunDL.yaml
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ESMX_SingleModelInFortranProto
+Thu Jun 27 19:06:51 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:51 MDT 2024
+STARTING: ESMX_SingleModelInCProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v esmxBuildDL.yaml
+make: /ESMX_Builder: No such file or directory
+make: *** [DL] Error 1
++ -np 4 ./install/bin/esmx_app esmxRunDL.yaml
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ESMX_SingleModelInCProto
+Thu Jun 27 19:06:51 MDT 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Thu Jun 27 19:06:51 MDT 2024
+STARTING: ESMX_AtmOcnFortranAndCProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v
+make: /ESMX_Builder: No such file or directory
+make: *** [install/bin/esmx_app] Error 1
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: PET*.ESMF_LogFile: No such file or directory
+FINISHED: ESMX_AtmOcnFortranAndCProto
+Thu Jun 27 19:06:51 MDT 2024
+---------------------------------------------------------------------------
+
+Thu Jun 27 19:06:51 MDT 2024
+== TEST SUMMARY START ==
+FAIL: AsyncIOBlockingProto
+FAIL: AsyncIONonblockingProto
+FAIL: AtmOcnConOptsProto
+FAIL: AtmOcnConProto
+FAIL: AtmOcnCplListProto
+FAIL: AtmOcnCplSetProto
+FAIL: AtmOcnFDSynoProto
+FAIL: AtmOcnIceSimpleImplicitProto
+FAIL: AtmOcnImplicitProto
+FAIL: AtmOcnLndProto
+FAIL: AtmOcnLogNoneProto
+FAIL: AtmOcnMedIngestFromConfigProto
+FAIL: AtmOcnMedIngestFromInternalProto
+FAIL: AtmOcnMedPetListProto
+FAIL: AtmOcnMedPetListTimescalesProto
+FAIL: AtmOcnMedPetListTimescalesSplitFastProto
+FAIL: AtmOcnMedProto
+FAIL: AtmOcnMirrorFieldsProto
+FAIL: AtmOcnPetListProto
+FAIL: AtmOcnProto
+FAIL: AtmOcnRtmTwoTimescalesProto
+FAIL: AtmOcnScalarProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSimpleImplicitProto
+FAIL: AtmOcnTransferGridProto
+FAIL: AtmOcnTransferLocStreamProto
+FAIL: AtmOcnTransferMeshProto
+FAIL: CustomFieldDictionaryProto
+FAIL: DriverInDriverDataDepProto
+FAIL: DriverInDriverProto
+FAIL: DynPhyProto
+FAIL: ExternalDriverAPIProto
+FAIL: ExternalDriverAPIWeakCplDAProto
+FAIL: GenericMediatorProto
+FAIL: HierarchyProto
+FAIL: NamespaceProto
+FAIL: NestingMultipleProto
+FAIL: NestingSingleProto
+FAIL: NestingTelescopeMultipleProto
+FAIL: SingleModelProto
+FAIL: SingleModelOpenMPProto
+FAIL: SingleModelOpenMPUnawareProto
+FAIL: ESMX_ExternalDriverAPIProto
+FAIL: ESMX_AtmOcnProto
+FAIL: ESMX_AtmOcnProto-Alt
+FAIL: ESMX_SingleModelInFortranProto
+FAIL: ESMX_SingleModelInFortranProto-DL
+FAIL: ESMX_SingleModelInCProto-DL
+FAIL: ESMX_AtmOcnFortranAndCProto
+== TEST SUMMARY STOP ==
+Thu Jun 27 19:06:51 MDT 2024
+
+---------------------------------------------------------------------------
+grep: */PET*.ESMF_LogFile: No such file or directory
