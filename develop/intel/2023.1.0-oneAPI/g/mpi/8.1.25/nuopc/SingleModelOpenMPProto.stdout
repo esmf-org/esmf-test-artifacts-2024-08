@@ -1,0 +1,96 @@
+2024-06-29 03:40:21
+
+mainApp:63839 terminated with signal 11 at PC=44bec9 SP=7ffd27179210.  Backtrace:
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44bec9]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44cea0]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44c045]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(f_esmf_compcollectgarbage2_+0x4bc)[0x7f83b24e98bc]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(_ZN5ESMCI2VM8finalizeEP12ESMC_LogicalPi+0x5d2)[0x7f83b208e662]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(c_esmc_vmfinalize_+0x57)[0x7f83b2058fc7]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(+0x2a80bfb)[0x7f83b3110bfb]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_vmmod_mp_esmf_vmfinalize_+0x72)[0x7f83b31087c2]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_initmod_mp_esmf_finalize_+0x103a)[0x7f83b2c1f44a]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x41783e]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416d7d]
+/lib64/libc.so.6(__libc_start_main+0xef)[0x7f83abe3e24d]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416caa]
+
+mainApp:63841 terminated with signal 11 at PC=44bf00 SP=7ffd3fd322f0.  Backtrace:
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44bf00]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44cea0]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44c045]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(f_esmf_compcollectgarbage2_+0x4bc)[0x7fd5f62768bc]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(_ZN5ESMCI2VM8finalizeEP12ESMC_LogicalPi+0x5d2)[0x7fd5f5e1b662]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(c_esmc_vmfinalize_+0x57)[0x7fd5f5de5fc7]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(+0x2a80bfb)[0x7fd5f6e9dbfb]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_vmmod_mp_esmf_vmfinalize_+0x72)[0x7fd5f6e957c2]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_initmod_mp_esmf_finalize_+0x103a)[0x7fd5f69ac44a]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x41783e]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416d7d]
+/lib64/libc.so.6(__libc_start_main+0xef)[0x7fd5efc3e24d]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_develop/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416caa]
+srun: error: c5n1080: tasks 0,2: Exited with exit code 1
+srun: Terminating StepId=135046291.390
+slurmstepd: error: *** STEP 135046291.390 ON c5n1080 CANCELLED AT 2024-06-29T04:08:18 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00007F76ADBF2910  Unknown               Unknown  Unknown
+libc-2.31.so       00007F76AA305B57  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  00007F76ABF01ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACC9DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACCB0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACBB858C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76AB1A3D11  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76AB1A3EF5  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACE9D5F0  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACCDD0FC  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACCDB00C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76AB467C01  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACCDF380  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76ACE9E3D3  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76AB291200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F76AB29173F  PMPI_Barrier          Unknown  Unknown
+libdarshan.so.0.0  00007F76AE2095A7  darshan_core_shut     Unknown  Unknown
+libdarshan.so.0.0  00007F76AE20823E  MPI_Finalize          Unknown  Unknown
+libesmf.so         00007F76B02F80DC  finalize                  816  ESMCI_VMKernel.C
+libesmf.so         00007F76B03257DE  finalize                 3592  ESMCI_VM.C
+libesmf.so         00007F76B02EFFC7  c_esmc_vmfinalize        1241  ESMCI_VM_F.C
+libesmf.so         00007F76B13A7BFB  c_esmc_vmfinalize           0  ESMF_VM.F90
+libesmf.so         00007F76B139F7C2  esmf_vmfinalize          9474  ESMF_VM.F90
+libesmf.so         00007F76B0EB644A  esmf_finalize            1694  ESMF_Init.F90
+mainApp            000000000041783E  mainapp                   118  mainApp.F90
+mainApp            0000000000416D7D  Unknown               Unknown  Unknown
+libc-2.31.so       00007F76AA23E24D  __libc_start_main     Unknown  Unknown
+mainApp            0000000000416CAA  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00007FB76953F910  Unknown               Unknown  Unknown
+libc-2.31.so       00007FB765305B57  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  00007FB766F01ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767C9DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767CB0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767BB858C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB7661A3D11  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB7661A3EF5  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767E9D5F0  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767CDD0FC  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767CDB00C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB766467C01  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767CDF380  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB767E9E3D3  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB766291200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FB76629173F  PMPI_Barrier          Unknown  Unknown
+libdarshan.so.0.0  00007FB7692095A7  darshan_core_shut     Unknown  Unknown
+libdarshan.so.0.0  00007FB76920823E  MPI_Finalize          Unknown  Unknown
+libesmf.so         00007FB76B4360DC  finalize                  816  ESMCI_VMKernel.C
+libesmf.so         00007FB76B4637DE  finalize                 3592  ESMCI_VM.C
+libesmf.so         00007FB76B42DFC7  c_esmc_vmfinalize        1241  ESMCI_VM_F.C
+libesmf.so         00007FB76C4E5BFB  c_esmc_vmfinalize           0  ESMF_VM.F90
+libesmf.so         00007FB76C4DD7C2  esmf_vmfinalize          9474  ESMF_VM.F90
+libesmf.so         00007FB76BFF444A  esmf_finalize            1694  ESMF_Init.F90
+mainApp            000000000041783E  mainapp                   118  mainApp.F90
+mainApp            0000000000416D7D  Unknown               Unknown  Unknown
+libc-2.31.so       00007FB76523E24D  __libc_start_main     Unknown  Unknown
+mainApp            0000000000416CAA  Unknown               Unknown  Unknown
+srun: error: c5n1080: tasks 1,3: Killed
+srun: Force Terminated StepId=135046291.390
