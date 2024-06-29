@@ -1,0 +1,573 @@
+2024-06-29 01:45:04
+20240629 020335.440 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240629 020335.440 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240629 020335.440 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240629 020335.440 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240629 020335.440 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET0 Running with ESMF Version   : v8.7.0b07-20-g1e77226def
+20240629 020335.440 INFO             PET0 ESMF library build date/time: "Jun 29 2024" "01:42:50"
+20240629 020335.440 INFO             PET0 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/intel_2023.2.1_mpi_O_develop/esmf
+20240629 020335.440 INFO             PET0 ESMF_COMM                   : mpi
+20240629 020335.441 INFO             PET0 ESMF_MOAB                   : enabled
+20240629 020335.441 INFO             PET0 ESMF_LAPACK                 : enabled
+20240629 020335.441 INFO             PET0 ESMF_NETCDF                 : enabled
+20240629 020335.441 INFO             PET0 ESMF_PNETCDF                : disabled
+20240629 020335.441 INFO             PET0 ESMF_PIO                    : enabled
+20240629 020335.441 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240629 020335.441 INFO             PET0  Beginning Test, file ESMF_FieldIOUTest.F90, line 126
+20240629 020335.441 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20240629 020335.441 INFO             PET0  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 149
+20240629 020335.442 INFO             PET0  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 160
+20240629 020335.442 INFO             PET0  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 182
+20240629 020335.442 INFO             PET0  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 193
+20240629 020335.447 INFO             PET0  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 222
+20240629 020335.448 INFO             PET0  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 236
+20240629 020335.448 INFO             PET0  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 247
+20240629 020335.450 INFO             PET0  PASS  Write Fortran array in nohalo Field, ESMF_FieldIOUTest.F90, line 271
+20240629 020335.450 INFO             PET0  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 284
+20240629 020335.456 INFO             PET0  PASS  Write multiple Fields with same dimensions to a file, ESMF_FieldIOUTest.F90, line 295
+20240629 020335.456 INFO             PET0  PASS  Create grid for field metadata test, ESMF_FieldIOUTest.F90, line 312
+20240629 020335.456 INFO             PET0  PASS  Create field with global indices, ESMF_FieldIOUTest.F90, line 319
+20240629 020335.456 INFO             PET0  PASS  Get Farray_md from field, ESMF_FieldIOUTest.F90, line 327
+20240629 020335.458 INFO             PET0  PASS  Write Field to NetCDF file, ESMF_FieldIOUTest.F90, line 351
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - open file, ESMF_FieldIOUTest.F90, line 362
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - check dim 1, ESMF_FieldIOUTest.F90, line 372
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - check dim 1 len, ESMF_FieldIOUTest.F90, line 382
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - check dim 2, ESMF_FieldIOUTest.F90, line 392
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - check dim 2 len, ESMF_FieldIOUTest.F90, line 402
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - variable exists, ESMF_FieldIOUTest.F90, line 412
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF metadata - variable has expected dims, ESMF_FieldIOUTest.F90, line 423
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF data - check data for field, ESMF_FieldIOUTest.F90, line 448
+20240629 020335.459 INFO             PET0  PASS  Confirm NetCDF data - close file, ESMF_FieldIOUTest.F90, line 459
+20240629 020335.486 INFO             PET0  PASS  Write Farray_tw at different time t in a loop, ESMF_FieldIOUTest.F90, line 569
+20240629 020335.486 INFO             PET0  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 584
+20240629 020335.487 INFO             PET0  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 594
+20240629 020335.487 WARNING          PET0 ESMCI_PIO_Handler.C:1404 ESMCI::PIO_Handler::openOneTileF  Unable to open existing file: xyzzy_field.nc, (PIO/NetCDF error = No such file or directory)
+20240629 020335.487 ERROR            PET0 ESMCI_PIO_Handler.C:617 ESMCI::PIO_Handler::arrayReadOne Unable to read from file  - file not open
+20240629 020335.487 ERROR            PET0 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET0 ESMCI_IO.C:382 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET0 ESMCI_IO.C:282 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET0 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET0 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET0 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 INFO             PET0  PASS  Read data to object field_r with non-existant file, ESMF_FieldIOUTest.F90, line 604
+20240629 020335.488 INFO             PET0  PASS  Read data to object field_r, ESMF_FieldIOUTest.F90, line 618
+20240629 020335.488 INFO             PET0  PASS  Point data to Fortran pointer Farray_r, ESMF_FieldIOUTest.F90, line 631
+20240629 020335.488 INFO             PET0  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 654
+20240629 020335.488 INFO             PET0  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 690
+20240629 020335.489 INFO             PET0  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 700
+20240629 020335.489 INFO             PET0  PASS  Point data to Fortran pointer Farray_tr, ESMF_FieldIOUTest.F90, line 713
+20240629 020335.489 INFO             PET0  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 735
+20240629 020335.489 INFO             PET0  PASS  Create new Field_s for without Halo, ESMF_FieldIOUTest.F90, line 750
+20240629 020335.490 INFO             PET0  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 760
+20240629 020335.490 INFO             PET0  PASS  Point data to Fortran pointer Farray_sr, ESMF_FieldIOUTest.F90, line 773
+20240629 020335.490 INFO             PET0  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 795
+20240629 020335.490 INFO             PET0  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 811
+20240629 020335.502 INFO             PET0  PASS  Write Field, ESMF_FieldIOUTest.F90, line 873
+20240629 020335.502 INFO             PET0  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 880
+20240629 020335.502 INFO             PET0  PASS  Create a gloablly indexed grid, ESMF_FieldIOUTest.F90, line 894
+20240629 020335.502 INFO             PET0  PASS  Create a gloablly indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 905
+20240629 020335.502 INFO             PET0  PASS  Get Farray_gw from field, ESMF_FieldIOUTest.F90, line 918
+20240629 020335.505 INFO             PET0  PASS  Write globally indexed Field, ESMF_FieldIOUTest.F90, line 930
+20240629 020335.505 INFO             PET0  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 944
+20240629 020335.506 INFO             PET0  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 955
+20240629 020335.506 INFO             PET0  PASS  Get Farray_gr from field, ESMF_FieldIOUTest.F90, line 969
+20240629 020335.506 INFO             PET0  PASS  Compare read-in data with expected, ESMF_FieldIOUTest.F90, line 983
+20240629 020335.506 INFO             PET0  PASS  Create a gloablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
+20240629 020335.507 ERROR            PET0 ESMCI_PIO_Handler.C:667 ESMCI::PIO_Handler::arrayReadOne The NetCDF Library returned an error  -  variable temperature_g2 not found in file, (PIO/NetCDF error = NetCDF: Variable not found)
+20240629 020335.507 ERROR            PET0 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET0 ESMCI_IO.C:382 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET0 ESMCI_IO.C:282 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET0 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET0 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET0 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 INFO             PET0  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
+20240629 020335.507 INFO             PET0  PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
+20240629 020335.507 INFO             PET0  PASS  Creating a Grid with 2DEs/PET to use in Field Tests, ESMF_FieldIOUTest.F90, line 1036
+20240629 020335.507 INFO             PET0  PASS  Create a field from 2DE grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1047
+20240629 020335.507 INFO             PET0  PASS  Get and fill Farray_w from field DE 0, ESMF_FieldIOUTest.F90, line 1059
+20240629 020335.507 INFO             PET0  PASS  Get and fill Farray_w from field DE 1, ESMF_FieldIOUTest.F90, line 1071
+20240629 020335.510 INFO             PET0  PASS  Write Fortran 2DE array in Field, ESMF_FieldIOUTest.F90, line 1083
+20240629 020335.510 INFO             PET0  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1097
+20240629 020335.527 INFO             PET0  PASS  Read 2DE Field Array data, ESMF_FieldIOUTest.F90, line 1116
+20240629 020335.541 INFO             PET0  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 1139
+20240629 020335.541 INFO             PET0  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 1152
+20240629 020335.541 INFO             PET0  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 1163
+20240629 020335.541 INFO             PET0  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 1176
+20240629 020335.541 INFO             PET0  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, line 1194
+20240629 020335.541 INFO             PET0  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 1201
+20240629 020335.541 INFO             PET0  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1210
+20240629 020335.541 INFO             PET0  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1221
+20240629 020335.544 INFO             PET0  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1234
+20240629 020335.544 INFO             PET0  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, line 1254
+20240629 020335.544 INFO             PET0  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90, line 1264
+20240629 020335.544 INFO             PET0  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 1275
+20240629 020335.544 INFO             PET0  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1285
+20240629 020335.544 INFO             PET0  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1294
+20240629 020335.545 INFO             PET0  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1346
+20240629 020335.547 INFO             PET0  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1358
+20240629 020335.547 INFO             PET0  PASS  Creating a Grid with global indexing to use in Field Tests, ESMF_FieldIOUTest.F90, line 1378
+20240629 020335.547 INFO             PET0  PASS  Create a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1389
+20240629 020335.547 INFO             PET0  PASS  Get and fill a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1407
+20240629 020335.550 INFO             PET0  PASS  Write Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1418
+20240629 020335.550 INFO             PET0  PASS  Create a field with 1 ungridded dim for comparison test, ESMF_FieldIOUTest.F90, line 1432
+20240629 020335.551 INFO             PET0  PASS  Read Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1442
+20240629 020335.551 INFO             PET0  PASS  Access comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1456
+20240629 020335.551 INFO             PET0  PASS  Comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1479
+20240629 020335.551 INFO             PET0  PASS  Array Spec 3D Set, ESMF_FieldIOUTest.F90, line 1488
+20240629 020335.551 INFO             PET0  PASS  Create a field with ungridded dims for attribute package Test, ESMF_FieldIOUTest.F90, line 1498
+20240629 020335.551 INFO             PET0  PASS  Create ungridded dimensions attribute package on Field Test, ESMF_FieldIOUTest.F90, line 1507
+20240629 020335.551 INFO             PET0  PASS  Set ungridded dimension label values on Field Test, ESMF_FieldIOUTest.F90, line 1518
+20240629 020335.551 INFO             PET0  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1527
+20240629 020335.551 INFO             PET0  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1579
+20240629 020335.555 INFO             PET0  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1592
+20240629 020335.555 INFO             PET0  PASS  Create connectionList for deBlockList test, ESMF_FieldIOUTest.F90, line 1627
+20240629 020335.555 INFO             PET0  PASS  Create DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1638
+20240629 020335.555 INFO             PET0  PASS  Create Grid from DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1650
+20240629 020335.556 INFO             PET0  PASS  Create Field from Grid (from deBlockList)  test, ESMF_FieldIOUTest.F90, line 1660
+20240629 020335.573 INFO             PET0  PASS  Write Field (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1671
+20240629 020335.573 INFO             PET0  PASS  Create a Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1693
+20240629 020335.573 INFO             PET0  PASS  Get and fill farray from field_ug_w2DE, DE 0, ESMF_FieldIOUTest.F90, line 1711
+20240629 020335.573 INFO             PET0  PASS  Get and fill farray from field_ug_w2DE, DE 1, ESMF_FieldIOUTest.F90, line 1729
+20240629 020335.576 INFO             PET0  PASS  Write Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1741
+20240629 020335.576 INFO             PET0  PASS  Create a Field from 2DE grid with 1 ungridded dim for read, ESMF_FieldIOUTest.F90, line 1756
+20240629 020335.578 INFO             PET0  PASS  Read Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1766
+20240629 020335.578 INFO             PET0  PASS  Get farray from field_ug_r2DE, DE 0, ESMF_FieldIOUTest.F90, line 1779
+20240629 020335.578 INFO             PET0  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 0, ESMF_FieldIOUTest.F90, line 1792
+20240629 020335.578 INFO             PET0  PASS  Get farray from field_ug_r2DE, DE 1, ESMF_FieldIOUTest.F90, line 1801
+20240629 020335.578 INFO             PET0  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 1, ESMF_FieldIOUTest.F90, line 1814
+20240629 020335.578 INFO             PET0  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1826
+20240629 020335.578 INFO             PET0  PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1834
+20240629 020335.578 INFO             PET0  PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1884
+20240629 020335.578 INFO             PET0  Ending Test, file ESMF_FieldIOUTest.F90, line 1894
+20240629 020335.578 INFO             PET0  Finalizing ESMF
+20240629 020335.440 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240629 020335.440 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240629 020335.440 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240629 020335.440 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240629 020335.440 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET1 Running with ESMF Version   : v8.7.0b07-20-g1e77226def
+20240629 020335.440 INFO             PET1 ESMF library build date/time: "Jun 29 2024" "01:42:50"
+20240629 020335.440 INFO             PET1 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/intel_2023.2.1_mpi_O_develop/esmf
+20240629 020335.440 INFO             PET1 ESMF_COMM                   : mpi
+20240629 020335.441 INFO             PET1 ESMF_MOAB                   : enabled
+20240629 020335.441 INFO             PET1 ESMF_LAPACK                 : enabled
+20240629 020335.441 INFO             PET1 ESMF_NETCDF                 : enabled
+20240629 020335.441 INFO             PET1 ESMF_PNETCDF                : disabled
+20240629 020335.441 INFO             PET1 ESMF_PIO                    : enabled
+20240629 020335.441 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240629 020335.441 INFO             PET1  Beginning Test, file ESMF_FieldIOUTest.F90, line 126
+20240629 020335.441 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20240629 020335.441 INFO             PET1  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 149
+20240629 020335.442 INFO             PET1  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 160
+20240629 020335.442 INFO             PET1  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 182
+20240629 020335.442 INFO             PET1  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 193
+20240629 020335.447 INFO             PET1  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 222
+20240629 020335.448 INFO             PET1  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 236
+20240629 020335.448 INFO             PET1  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 247
+20240629 020335.450 INFO             PET1  PASS  Write Fortran array in nohalo Field, ESMF_FieldIOUTest.F90, line 271
+20240629 020335.450 INFO             PET1  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 284
+20240629 020335.456 INFO             PET1  PASS  Write multiple Fields with same dimensions to a file, ESMF_FieldIOUTest.F90, line 295
+20240629 020335.456 INFO             PET1  PASS  Create grid for field metadata test, ESMF_FieldIOUTest.F90, line 312
+20240629 020335.456 INFO             PET1  PASS  Create field with global indices, ESMF_FieldIOUTest.F90, line 319
+20240629 020335.456 INFO             PET1  PASS  Get Farray_md from field, ESMF_FieldIOUTest.F90, line 327
+20240629 020335.458 INFO             PET1  PASS  Write Field to NetCDF file, ESMF_FieldIOUTest.F90, line 351
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - open file, ESMF_FieldIOUTest.F90, line 362
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - check dim 1, ESMF_FieldIOUTest.F90, line 372
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - check dim 1 len, ESMF_FieldIOUTest.F90, line 382
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - check dim 2, ESMF_FieldIOUTest.F90, line 392
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - check dim 2 len, ESMF_FieldIOUTest.F90, line 402
+20240629 020335.462 INFO             PET1  PASS  Confirm NetCDF metadata - variable exists, ESMF_FieldIOUTest.F90, line 412
+20240629 020335.463 INFO             PET1  PASS  Confirm NetCDF metadata - variable has expected dims, ESMF_FieldIOUTest.F90, line 423
+20240629 020335.463 INFO             PET1  PASS  Confirm NetCDF data - check data for field, ESMF_FieldIOUTest.F90, line 448
+20240629 020335.463 INFO             PET1  PASS  Confirm NetCDF data - close file, ESMF_FieldIOUTest.F90, line 459
+20240629 020335.486 INFO             PET1  PASS  Write Farray_tw at different time t in a loop, ESMF_FieldIOUTest.F90, line 569
+20240629 020335.486 INFO             PET1  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 584
+20240629 020335.487 INFO             PET1  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 594
+20240629 020335.487 WARNING          PET1 ESMCI_PIO_Handler.C:1404 ESMCI::PIO_Handler::openOneTileF  Unable to open existing file: xyzzy_field.nc, (PIO/NetCDF error = No such file or directory)
+20240629 020335.487 ERROR            PET1 ESMCI_PIO_Handler.C:617 ESMCI::PIO_Handler::arrayReadOne Unable to read from file  - file not open
+20240629 020335.487 ERROR            PET1 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET1 ESMCI_IO.C:382 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET1 ESMCI_IO.C:282 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET1 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET1 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET1 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 INFO             PET1  PASS  Read data to object field_r with non-existant file, ESMF_FieldIOUTest.F90, line 604
+20240629 020335.488 INFO             PET1  PASS  Read data to object field_r, ESMF_FieldIOUTest.F90, line 618
+20240629 020335.488 INFO             PET1  PASS  Point data to Fortran pointer Farray_r, ESMF_FieldIOUTest.F90, line 631
+20240629 020335.488 INFO             PET1  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 654
+20240629 020335.488 INFO             PET1  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 690
+20240629 020335.489 INFO             PET1  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 700
+20240629 020335.489 INFO             PET1  PASS  Point data to Fortran pointer Farray_tr, ESMF_FieldIOUTest.F90, line 713
+20240629 020335.489 INFO             PET1  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 735
+20240629 020335.489 INFO             PET1  PASS  Create new Field_s for without Halo, ESMF_FieldIOUTest.F90, line 750
+20240629 020335.490 INFO             PET1  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 760
+20240629 020335.490 INFO             PET1  PASS  Point data to Fortran pointer Farray_sr, ESMF_FieldIOUTest.F90, line 773
+20240629 020335.490 INFO             PET1  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 795
+20240629 020335.490 INFO             PET1  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 811
+20240629 020335.502 INFO             PET1  PASS  Write Field, ESMF_FieldIOUTest.F90, line 873
+20240629 020335.502 INFO             PET1  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 880
+20240629 020335.502 INFO             PET1  PASS  Create a gloablly indexed grid, ESMF_FieldIOUTest.F90, line 894
+20240629 020335.502 INFO             PET1  PASS  Create a gloablly indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 905
+20240629 020335.502 INFO             PET1  PASS  Get Farray_gw from field, ESMF_FieldIOUTest.F90, line 918
+20240629 020335.505 INFO             PET1  PASS  Write globally indexed Field, ESMF_FieldIOUTest.F90, line 930
+20240629 020335.505 INFO             PET1  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 944
+20240629 020335.506 INFO             PET1  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 955
+20240629 020335.506 INFO             PET1  PASS  Get Farray_gr from field, ESMF_FieldIOUTest.F90, line 969
+20240629 020335.506 INFO             PET1  PASS  Compare read-in data with expected, ESMF_FieldIOUTest.F90, line 983
+20240629 020335.506 INFO             PET1  PASS  Create a gloablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
+20240629 020335.507 ERROR            PET1 ESMCI_PIO_Handler.C:667 ESMCI::PIO_Handler::arrayReadOne The NetCDF Library returned an error  -  variable temperature_g2 not found in file, (PIO/NetCDF error = NetCDF: Variable not found)
+20240629 020335.507 ERROR            PET1 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET1 ESMCI_IO.C:382 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET1 ESMCI_IO.C:282 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET1 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET1 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET1 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 INFO             PET1  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
+20240629 020335.507 INFO             PET1  PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
+20240629 020335.507 INFO             PET1  PASS  Creating a Grid with 2DEs/PET to use in Field Tests, ESMF_FieldIOUTest.F90, line 1036
+20240629 020335.507 INFO             PET1  PASS  Create a field from 2DE grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1047
+20240629 020335.507 INFO             PET1  PASS  Get and fill Farray_w from field DE 0, ESMF_FieldIOUTest.F90, line 1059
+20240629 020335.507 INFO             PET1  PASS  Get and fill Farray_w from field DE 1, ESMF_FieldIOUTest.F90, line 1071
+20240629 020335.510 INFO             PET1  PASS  Write Fortran 2DE array in Field, ESMF_FieldIOUTest.F90, line 1083
+20240629 020335.510 INFO             PET1  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1097
+20240629 020335.527 INFO             PET1  PASS  Read 2DE Field Array data, ESMF_FieldIOUTest.F90, line 1116
+20240629 020335.541 INFO             PET1  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 1139
+20240629 020335.541 INFO             PET1  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 1152
+20240629 020335.541 INFO             PET1  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 1163
+20240629 020335.541 INFO             PET1  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 1176
+20240629 020335.541 INFO             PET1  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, line 1194
+20240629 020335.541 INFO             PET1  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 1201
+20240629 020335.541 INFO             PET1  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1210
+20240629 020335.541 INFO             PET1  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1221
+20240629 020335.544 INFO             PET1  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1234
+20240629 020335.544 INFO             PET1  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, line 1254
+20240629 020335.544 INFO             PET1  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90, line 1264
+20240629 020335.544 INFO             PET1  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 1275
+20240629 020335.544 INFO             PET1  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1285
+20240629 020335.544 INFO             PET1  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1294
+20240629 020335.545 INFO             PET1  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1346
+20240629 020335.547 INFO             PET1  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1358
+20240629 020335.547 INFO             PET1  PASS  Creating a Grid with global indexing to use in Field Tests, ESMF_FieldIOUTest.F90, line 1378
+20240629 020335.547 INFO             PET1  PASS  Create a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1389
+20240629 020335.547 INFO             PET1  PASS  Get and fill a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1407
+20240629 020335.549 INFO             PET1  PASS  Write Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1418
+20240629 020335.550 INFO             PET1  PASS  Create a field with 1 ungridded dim for comparison test, ESMF_FieldIOUTest.F90, line 1432
+20240629 020335.551 INFO             PET1  PASS  Read Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1442
+20240629 020335.551 INFO             PET1  PASS  Access comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1456
+20240629 020335.551 INFO             PET1  PASS  Comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1479
+20240629 020335.551 INFO             PET1  PASS  Array Spec 3D Set, ESMF_FieldIOUTest.F90, line 1488
+20240629 020335.551 INFO             PET1  PASS  Create a field with ungridded dims for attribute package Test, ESMF_FieldIOUTest.F90, line 1498
+20240629 020335.551 INFO             PET1  PASS  Create ungridded dimensions attribute package on Field Test, ESMF_FieldIOUTest.F90, line 1507
+20240629 020335.551 INFO             PET1  PASS  Set ungridded dimension label values on Field Test, ESMF_FieldIOUTest.F90, line 1518
+20240629 020335.551 INFO             PET1  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1527
+20240629 020335.551 INFO             PET1  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1579
+20240629 020335.555 INFO             PET1  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1592
+20240629 020335.555 INFO             PET1  PASS  Create connectionList for deBlockList test, ESMF_FieldIOUTest.F90, line 1627
+20240629 020335.555 INFO             PET1  PASS  Create DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1638
+20240629 020335.555 INFO             PET1  PASS  Create Grid from DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1650
+20240629 020335.555 INFO             PET1  PASS  Create Field from Grid (from deBlockList)  test, ESMF_FieldIOUTest.F90, line 1660
+20240629 020335.573 INFO             PET1  PASS  Write Field (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1671
+20240629 020335.573 INFO             PET1  PASS  Create a Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1693
+20240629 020335.573 INFO             PET1  PASS  Get and fill farray from field_ug_w2DE, DE 0, ESMF_FieldIOUTest.F90, line 1711
+20240629 020335.573 INFO             PET1  PASS  Get and fill farray from field_ug_w2DE, DE 1, ESMF_FieldIOUTest.F90, line 1729
+20240629 020335.576 INFO             PET1  PASS  Write Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1741
+20240629 020335.576 INFO             PET1  PASS  Create a Field from 2DE grid with 1 ungridded dim for read, ESMF_FieldIOUTest.F90, line 1756
+20240629 020335.578 INFO             PET1  PASS  Read Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1766
+20240629 020335.578 INFO             PET1  PASS  Get farray from field_ug_r2DE, DE 0, ESMF_FieldIOUTest.F90, line 1779
+20240629 020335.578 INFO             PET1  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 0, ESMF_FieldIOUTest.F90, line 1792
+20240629 020335.578 INFO             PET1  PASS  Get farray from field_ug_r2DE, DE 1, ESMF_FieldIOUTest.F90, line 1801
+20240629 020335.578 INFO             PET1  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 1, ESMF_FieldIOUTest.F90, line 1814
+20240629 020335.578 INFO             PET1  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1826
+20240629 020335.578 INFO             PET1  PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1834
+20240629 020335.578 INFO             PET1  PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1884
+20240629 020335.578 INFO             PET1  Ending Test, file ESMF_FieldIOUTest.F90, line 1894
+20240629 020335.578 INFO             PET1  Finalizing ESMF
+20240629 020335.440 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240629 020335.440 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240629 020335.440 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240629 020335.440 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240629 020335.440 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET2 Running with ESMF Version   : v8.7.0b07-20-g1e77226def
+20240629 020335.440 INFO             PET2 ESMF library build date/time: "Jun 29 2024" "01:42:50"
+20240629 020335.440 INFO             PET2 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/intel_2023.2.1_mpi_O_develop/esmf
+20240629 020335.440 INFO             PET2 ESMF_COMM                   : mpi
+20240629 020335.441 INFO             PET2 ESMF_MOAB                   : enabled
+20240629 020335.441 INFO             PET2 ESMF_LAPACK                 : enabled
+20240629 020335.441 INFO             PET2 ESMF_NETCDF                 : enabled
+20240629 020335.441 INFO             PET2 ESMF_PNETCDF                : disabled
+20240629 020335.441 INFO             PET2 ESMF_PIO                    : enabled
+20240629 020335.441 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240629 020335.441 INFO             PET2  Beginning Test, file ESMF_FieldIOUTest.F90, line 126
+20240629 020335.441 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20240629 020335.441 INFO             PET2  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 149
+20240629 020335.442 INFO             PET2  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 160
+20240629 020335.442 INFO             PET2  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 182
+20240629 020335.442 INFO             PET2  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 193
+20240629 020335.447 INFO             PET2  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 222
+20240629 020335.448 INFO             PET2  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 236
+20240629 020335.448 INFO             PET2  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 247
+20240629 020335.450 INFO             PET2  PASS  Write Fortran array in nohalo Field, ESMF_FieldIOUTest.F90, line 271
+20240629 020335.450 INFO             PET2  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 284
+20240629 020335.456 INFO             PET2  PASS  Write multiple Fields with same dimensions to a file, ESMF_FieldIOUTest.F90, line 295
+20240629 020335.456 INFO             PET2  PASS  Create grid for field metadata test, ESMF_FieldIOUTest.F90, line 312
+20240629 020335.456 INFO             PET2  PASS  Create field with global indices, ESMF_FieldIOUTest.F90, line 319
+20240629 020335.456 INFO             PET2  PASS  Get Farray_md from field, ESMF_FieldIOUTest.F90, line 327
+20240629 020335.458 INFO             PET2  PASS  Write Field to NetCDF file, ESMF_FieldIOUTest.F90, line 351
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - open file, ESMF_FieldIOUTest.F90, line 362
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - check dim 1, ESMF_FieldIOUTest.F90, line 372
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - check dim 1 len, ESMF_FieldIOUTest.F90, line 382
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - check dim 2, ESMF_FieldIOUTest.F90, line 392
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - check dim 2 len, ESMF_FieldIOUTest.F90, line 402
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - variable exists, ESMF_FieldIOUTest.F90, line 412
+20240629 020335.462 INFO             PET2  PASS  Confirm NetCDF metadata - variable has expected dims, ESMF_FieldIOUTest.F90, line 423
+20240629 020335.463 INFO             PET2  PASS  Confirm NetCDF data - check data for field, ESMF_FieldIOUTest.F90, line 448
+20240629 020335.463 INFO             PET2  PASS  Confirm NetCDF data - close file, ESMF_FieldIOUTest.F90, line 459
+20240629 020335.486 INFO             PET2  PASS  Write Farray_tw at different time t in a loop, ESMF_FieldIOUTest.F90, line 569
+20240629 020335.486 INFO             PET2  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 584
+20240629 020335.487 INFO             PET2  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 594
+20240629 020335.487 WARNING          PET2 ESMCI_PIO_Handler.C:1404 ESMCI::PIO_Handler::openOneTileF  Unable to open existing file: xyzzy_field.nc, (PIO/NetCDF error = No such file or directory)
+20240629 020335.487 ERROR            PET2 ESMCI_PIO_Handler.C:617 ESMCI::PIO_Handler::arrayReadOne Unable to read from file  - file not open
+20240629 020335.487 ERROR            PET2 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET2 ESMCI_IO.C:382 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET2 ESMCI_IO.C:282 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET2 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET2 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET2 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 INFO             PET2  PASS  Read data to object field_r with non-existant file, ESMF_FieldIOUTest.F90, line 604
+20240629 020335.488 INFO             PET2  PASS  Read data to object field_r, ESMF_FieldIOUTest.F90, line 618
+20240629 020335.488 INFO             PET2  PASS  Point data to Fortran pointer Farray_r, ESMF_FieldIOUTest.F90, line 631
+20240629 020335.488 INFO             PET2  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 654
+20240629 020335.488 INFO             PET2  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 690
+20240629 020335.489 INFO             PET2  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 700
+20240629 020335.489 INFO             PET2  PASS  Point data to Fortran pointer Farray_tr, ESMF_FieldIOUTest.F90, line 713
+20240629 020335.489 INFO             PET2  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 735
+20240629 020335.489 INFO             PET2  PASS  Create new Field_s for without Halo, ESMF_FieldIOUTest.F90, line 750
+20240629 020335.490 INFO             PET2  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 760
+20240629 020335.490 INFO             PET2  PASS  Point data to Fortran pointer Farray_sr, ESMF_FieldIOUTest.F90, line 773
+20240629 020335.490 INFO             PET2  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 795
+20240629 020335.490 INFO             PET2  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 811
+20240629 020335.502 INFO             PET2  PASS  Write Field, ESMF_FieldIOUTest.F90, line 873
+20240629 020335.502 INFO             PET2  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 880
+20240629 020335.502 INFO             PET2  PASS  Create a gloablly indexed grid, ESMF_FieldIOUTest.F90, line 894
+20240629 020335.502 INFO             PET2  PASS  Create a gloablly indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 905
+20240629 020335.502 INFO             PET2  PASS  Get Farray_gw from field, ESMF_FieldIOUTest.F90, line 918
+20240629 020335.505 INFO             PET2  PASS  Write globally indexed Field, ESMF_FieldIOUTest.F90, line 930
+20240629 020335.505 INFO             PET2  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 944
+20240629 020335.506 INFO             PET2  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 955
+20240629 020335.506 INFO             PET2  PASS  Get Farray_gr from field, ESMF_FieldIOUTest.F90, line 969
+20240629 020335.506 INFO             PET2  PASS  Compare read-in data with expected, ESMF_FieldIOUTest.F90, line 983
+20240629 020335.506 INFO             PET2  PASS  Create a gloablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
+20240629 020335.507 ERROR            PET2 ESMCI_PIO_Handler.C:667 ESMCI::PIO_Handler::arrayReadOne The NetCDF Library returned an error  -  variable temperature_g2 not found in file, (PIO/NetCDF error = NetCDF: Variable not found)
+20240629 020335.507 ERROR            PET2 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET2 ESMCI_IO.C:382 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET2 ESMCI_IO.C:282 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET2 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET2 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET2 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 INFO             PET2  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
+20240629 020335.507 INFO             PET2  PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
+20240629 020335.507 INFO             PET2  PASS  Creating a Grid with 2DEs/PET to use in Field Tests, ESMF_FieldIOUTest.F90, line 1036
+20240629 020335.507 INFO             PET2  PASS  Create a field from 2DE grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1047
+20240629 020335.507 INFO             PET2  PASS  Get and fill Farray_w from field DE 0, ESMF_FieldIOUTest.F90, line 1059
+20240629 020335.507 INFO             PET2  PASS  Get and fill Farray_w from field DE 1, ESMF_FieldIOUTest.F90, line 1071
+20240629 020335.510 INFO             PET2  PASS  Write Fortran 2DE array in Field, ESMF_FieldIOUTest.F90, line 1083
+20240629 020335.510 INFO             PET2  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1097
+20240629 020335.527 INFO             PET2  PASS  Read 2DE Field Array data, ESMF_FieldIOUTest.F90, line 1116
+20240629 020335.541 INFO             PET2  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 1139
+20240629 020335.541 INFO             PET2  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 1152
+20240629 020335.541 INFO             PET2  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 1163
+20240629 020335.541 INFO             PET2  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 1176
+20240629 020335.541 INFO             PET2  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, line 1194
+20240629 020335.541 INFO             PET2  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 1201
+20240629 020335.541 INFO             PET2  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1210
+20240629 020335.541 INFO             PET2  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1221
+20240629 020335.544 INFO             PET2  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1234
+20240629 020335.544 INFO             PET2  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, line 1254
+20240629 020335.544 INFO             PET2  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90, line 1264
+20240629 020335.544 INFO             PET2  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 1275
+20240629 020335.544 INFO             PET2  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1285
+20240629 020335.544 INFO             PET2  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1294
+20240629 020335.545 INFO             PET2  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1346
+20240629 020335.547 INFO             PET2  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1358
+20240629 020335.547 INFO             PET2  PASS  Creating a Grid with global indexing to use in Field Tests, ESMF_FieldIOUTest.F90, line 1378
+20240629 020335.547 INFO             PET2  PASS  Create a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1389
+20240629 020335.547 INFO             PET2  PASS  Get and fill a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1407
+20240629 020335.549 INFO             PET2  PASS  Write Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1418
+20240629 020335.550 INFO             PET2  PASS  Create a field with 1 ungridded dim for comparison test, ESMF_FieldIOUTest.F90, line 1432
+20240629 020335.551 INFO             PET2  PASS  Read Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1442
+20240629 020335.551 INFO             PET2  PASS  Access comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1456
+20240629 020335.551 INFO             PET2  PASS  Comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1479
+20240629 020335.551 INFO             PET2  PASS  Array Spec 3D Set, ESMF_FieldIOUTest.F90, line 1488
+20240629 020335.551 INFO             PET2  PASS  Create a field with ungridded dims for attribute package Test, ESMF_FieldIOUTest.F90, line 1498
+20240629 020335.551 INFO             PET2  PASS  Create ungridded dimensions attribute package on Field Test, ESMF_FieldIOUTest.F90, line 1507
+20240629 020335.551 INFO             PET2  PASS  Set ungridded dimension label values on Field Test, ESMF_FieldIOUTest.F90, line 1518
+20240629 020335.551 INFO             PET2  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1527
+20240629 020335.551 INFO             PET2  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1579
+20240629 020335.555 INFO             PET2  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1592
+20240629 020335.555 INFO             PET2  PASS  Create connectionList for deBlockList test, ESMF_FieldIOUTest.F90, line 1627
+20240629 020335.555 INFO             PET2  PASS  Create DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1638
+20240629 020335.555 INFO             PET2  PASS  Create Grid from DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1650
+20240629 020335.555 INFO             PET2  PASS  Create Field from Grid (from deBlockList)  test, ESMF_FieldIOUTest.F90, line 1660
+20240629 020335.573 INFO             PET2  PASS  Write Field (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1671
+20240629 020335.573 INFO             PET2  PASS  Create a Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1693
+20240629 020335.573 INFO             PET2  PASS  Get and fill farray from field_ug_w2DE, DE 0, ESMF_FieldIOUTest.F90, line 1711
+20240629 020335.573 INFO             PET2  PASS  Get and fill farray from field_ug_w2DE, DE 1, ESMF_FieldIOUTest.F90, line 1729
+20240629 020335.576 INFO             PET2  PASS  Write Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1741
+20240629 020335.576 INFO             PET2  PASS  Create a Field from 2DE grid with 1 ungridded dim for read, ESMF_FieldIOUTest.F90, line 1756
+20240629 020335.578 INFO             PET2  PASS  Read Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1766
+20240629 020335.578 INFO             PET2  PASS  Get farray from field_ug_r2DE, DE 0, ESMF_FieldIOUTest.F90, line 1779
+20240629 020335.578 INFO             PET2  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 0, ESMF_FieldIOUTest.F90, line 1792
+20240629 020335.578 INFO             PET2  PASS  Get farray from field_ug_r2DE, DE 1, ESMF_FieldIOUTest.F90, line 1801
+20240629 020335.578 INFO             PET2  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 1, ESMF_FieldIOUTest.F90, line 1814
+20240629 020335.578 INFO             PET2  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1826
+20240629 020335.578 INFO             PET2  PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1834
+20240629 020335.578 INFO             PET2  PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1884
+20240629 020335.578 INFO             PET2  Ending Test, file ESMF_FieldIOUTest.F90, line 1894
+20240629 020335.578 INFO             PET2  Finalizing ESMF
+20240629 020335.440 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240629 020335.440 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240629 020335.440 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240629 020335.440 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240629 020335.440 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240629 020335.440 INFO             PET3 Running with ESMF Version   : v8.7.0b07-20-g1e77226def
+20240629 020335.440 INFO             PET3 ESMF library build date/time: "Jun 29 2024" "01:42:50"
+20240629 020335.440 INFO             PET3 ESMF library build location : /glade/derecho/scratch/sacks/esmf-testing/intel_2023.2.1_mpi_O_develop/esmf
+20240629 020335.440 INFO             PET3 ESMF_COMM                   : mpi
+20240629 020335.440 INFO             PET3 ESMF_MOAB                   : enabled
+20240629 020335.440 INFO             PET3 ESMF_LAPACK                 : enabled
+20240629 020335.440 INFO             PET3 ESMF_NETCDF                 : enabled
+20240629 020335.440 INFO             PET3 ESMF_PNETCDF                : disabled
+20240629 020335.440 INFO             PET3 ESMF_PIO                    : enabled
+20240629 020335.440 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240629 020335.441 INFO             PET3  Beginning Test, file ESMF_FieldIOUTest.F90, line 126
+20240629 020335.441 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20240629 020335.441 INFO             PET3  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 149
+20240629 020335.442 INFO             PET3  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 160
+20240629 020335.442 INFO             PET3  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 182
+20240629 020335.442 INFO             PET3  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 193
+20240629 020335.447 INFO             PET3  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 222
+20240629 020335.448 INFO             PET3  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 236
+20240629 020335.448 INFO             PET3  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 247
+20240629 020335.450 INFO             PET3  PASS  Write Fortran array in nohalo Field, ESMF_FieldIOUTest.F90, line 271
+20240629 020335.450 INFO             PET3  PASS  Create a field from grid and fortran dummy array without halo, ESMF_FieldIOUTest.F90, line 284
+20240629 020335.456 INFO             PET3  PASS  Write multiple Fields with same dimensions to a file, ESMF_FieldIOUTest.F90, line 295
+20240629 020335.456 INFO             PET3  PASS  Create grid for field metadata test, ESMF_FieldIOUTest.F90, line 312
+20240629 020335.456 INFO             PET3  PASS  Create field with global indices, ESMF_FieldIOUTest.F90, line 319
+20240629 020335.456 INFO             PET3  PASS  Get Farray_md from field, ESMF_FieldIOUTest.F90, line 327
+20240629 020335.458 INFO             PET3  PASS  Write Field to NetCDF file, ESMF_FieldIOUTest.F90, line 351
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - open file, ESMF_FieldIOUTest.F90, line 362
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - check dim 1, ESMF_FieldIOUTest.F90, line 372
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - check dim 1 len, ESMF_FieldIOUTest.F90, line 382
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - check dim 2, ESMF_FieldIOUTest.F90, line 392
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - check dim 2 len, ESMF_FieldIOUTest.F90, line 402
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - variable exists, ESMF_FieldIOUTest.F90, line 412
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF metadata - variable has expected dims, ESMF_FieldIOUTest.F90, line 423
+20240629 020335.462 INFO             PET3  PASS  Confirm NetCDF data - check data for field, ESMF_FieldIOUTest.F90, line 448
+20240629 020335.463 INFO             PET3  PASS  Confirm NetCDF data - close file, ESMF_FieldIOUTest.F90, line 459
+20240629 020335.486 INFO             PET3  PASS  Write Farray_tw at different time t in a loop, ESMF_FieldIOUTest.F90, line 569
+20240629 020335.486 INFO             PET3  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 584
+20240629 020335.487 INFO             PET3  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 594
+20240629 020335.487 WARNING          PET3 ESMCI_PIO_Handler.C:1404 ESMCI::PIO_Handler::openOneTileF  Unable to open existing file: xyzzy_field.nc, (PIO/NetCDF error = No such file or directory)
+20240629 020335.487 ERROR            PET3 ESMCI_PIO_Handler.C:617 ESMCI::PIO_Handler::arrayReadOne Unable to read from file  - file not open
+20240629 020335.487 ERROR            PET3 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET3 ESMCI_IO.C:382 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET3 ESMCI_IO.C:282 ESMCI::IO::read() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET3 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET3 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 ERROR            PET3 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.487 INFO             PET3  PASS  Read data to object field_r with non-existant file, ESMF_FieldIOUTest.F90, line 604
+20240629 020335.488 INFO             PET3  PASS  Read data to object field_r, ESMF_FieldIOUTest.F90, line 618
+20240629 020335.488 INFO             PET3  PASS  Point data to Fortran pointer Farray_r, ESMF_FieldIOUTest.F90, line 631
+20240629 020335.488 INFO             PET3  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 654
+20240629 020335.488 INFO             PET3  PASS  Create new Field_r, ESMF_FieldIOUTest.F90, line 690
+20240629 020335.489 INFO             PET3  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 700
+20240629 020335.489 INFO             PET3  PASS  Point data to Fortran pointer Farray_tr, ESMF_FieldIOUTest.F90, line 713
+20240629 020335.489 INFO             PET3  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 735
+20240629 020335.489 INFO             PET3  PASS  Create new Field_s for without Halo, ESMF_FieldIOUTest.F90, line 750
+20240629 020335.490 INFO             PET3  PASS  Read data time=t to object field_r per slice, ESMF_FieldIOUTest.F90, line 760
+20240629 020335.490 INFO             PET3  PASS  Point data to Fortran pointer Farray_sr, ESMF_FieldIOUTest.F90, line 773
+20240629 020335.490 INFO             PET3  PASS  Compare readin data to the existing data, ESMF_FieldIOUTest.F90, line 795
+20240629 020335.490 INFO             PET3  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 811
+20240629 020335.502 INFO             PET3  PASS  Write Field, ESMF_FieldIOUTest.F90, line 873
+20240629 020335.502 INFO             PET3  PASS  Destroy Grid, ESMF_FieldIOUTest.F90, line 880
+20240629 020335.502 INFO             PET3  PASS  Create a gloablly indexed grid, ESMF_FieldIOUTest.F90, line 894
+20240629 020335.502 INFO             PET3  PASS  Create a gloablly indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 905
+20240629 020335.502 INFO             PET3  PASS  Get Farray_gw from field, ESMF_FieldIOUTest.F90, line 918
+20240629 020335.505 INFO             PET3  PASS  Write globally indexed Field, ESMF_FieldIOUTest.F90, line 930
+20240629 020335.505 INFO             PET3  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 944
+20240629 020335.506 INFO             PET3  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 955
+20240629 020335.506 INFO             PET3  PASS  Get Farray_gr from field, ESMF_FieldIOUTest.F90, line 969
+20240629 020335.506 INFO             PET3  PASS  Compare read-in data with expected, ESMF_FieldIOUTest.F90, line 983
+20240629 020335.506 INFO             PET3  PASS  Create a gloablly indexed field with different name, ESMF_FieldIOUTest.F90, line 998
+20240629 020335.507 ERROR            PET3 ESMCI_PIO_Handler.C:667 ESMCI::PIO_Handler::arrayReadOne The NetCDF Library returned an error  -  variable temperature_g2 not found in file, (PIO/NetCDF error = NetCDF: Variable not found)
+20240629 020335.507 ERROR            PET3 ESMCI_IO_Handler.C:405 ESMCI::IO_Handler::arrayRead() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET3 ESMCI_IO.C:382 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET3 ESMCI_IO.C:282 ESMCI::IO::read() The NetCDF Library returned an error  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET3 ESMCI_IO_F.C:210 c_esmc_ioread() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET3 ESMF_IO.F90:397 ESMF_IOAddArray() Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 ERROR            PET3 ESMF_FieldPr.F90:336 ESMF_FieldRead Unable to read from file  - Internal subroutine call returned Error
+20240629 020335.507 INFO             PET3  PASS  Read globally indexed Field data, ESMF_FieldIOUTest.F90, line 1009
+20240629 020335.507 INFO             PET3  PASS  Destroy globally indexed Grid, ESMF_FieldIOUTest.F90, line 1021
+20240629 020335.507 INFO             PET3  PASS  Creating a Grid with 2DEs/PET to use in Field Tests, ESMF_FieldIOUTest.F90, line 1036
+20240629 020335.507 INFO             PET3  PASS  Create a field from 2DE grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1047
+20240629 020335.507 INFO             PET3  PASS  Get and fill Farray_w from field DE 0, ESMF_FieldIOUTest.F90, line 1059
+20240629 020335.507 INFO             PET3  PASS  Get and fill Farray_w from field DE 1, ESMF_FieldIOUTest.F90, line 1071
+20240629 020335.510 INFO             PET3  PASS  Write Fortran 2DE array in Field, ESMF_FieldIOUTest.F90, line 1083
+20240629 020335.510 INFO             PET3  PASS  Create a globally indexed field from grid and fortran dummy array, ESMF_FieldIOUTest.F90, line 1097
+20240629 020335.527 INFO             PET3  PASS  Read 2DE Field Array data, ESMF_FieldIOUTest.F90, line 1116
+20240629 020335.541 INFO             PET3  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 1139
+20240629 020335.541 INFO             PET3  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 1152
+20240629 020335.541 INFO             PET3  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 1163
+20240629 020335.541 INFO             PET3  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 1176
+20240629 020335.541 INFO             PET3  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, line 1194
+20240629 020335.541 INFO             PET3  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 1201
+20240629 020335.541 INFO             PET3  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1210
+20240629 020335.541 INFO             PET3  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1221
+20240629 020335.544 INFO             PET3  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1234
+20240629 020335.544 INFO             PET3  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, line 1254
+20240629 020335.544 INFO             PET3  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90, line 1264
+20240629 020335.544 INFO             PET3  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 1275
+20240629 020335.544 INFO             PET3  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1285
+20240629 020335.544 INFO             PET3  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1294
+20240629 020335.545 INFO             PET3  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1346
+20240629 020335.547 INFO             PET3  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1358
+20240629 020335.547 INFO             PET3  PASS  Creating a Grid with global indexing to use in Field Tests, ESMF_FieldIOUTest.F90, line 1378
+20240629 020335.547 INFO             PET3  PASS  Create a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1389
+20240629 020335.547 INFO             PET3  PASS  Get and fill a field with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1407
+20240629 020335.549 INFO             PET3  PASS  Write Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1418
+20240629 020335.550 INFO             PET3  PASS  Create a field with 1 ungridded dim for comparison test, ESMF_FieldIOUTest.F90, line 1432
+20240629 020335.551 INFO             PET3  PASS  Read Fortran array in Field with 1 ungridded dimension, ESMF_FieldIOUTest.F90, line 1442
+20240629 020335.551 INFO             PET3  PASS  Access comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1456
+20240629 020335.551 INFO             PET3  PASS  Comparison field data with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1479
+20240629 020335.551 INFO             PET3  PASS  Array Spec 3D Set, ESMF_FieldIOUTest.F90, line 1488
+20240629 020335.551 INFO             PET3  PASS  Create a field with ungridded dims for attribute package Test, ESMF_FieldIOUTest.F90, line 1498
+20240629 020335.551 INFO             PET3  PASS  Create ungridded dimensions attribute package on Field Test, ESMF_FieldIOUTest.F90, line 1507
+20240629 020335.551 INFO             PET3  PASS  Set ungridded dimension label values on Field Test, ESMF_FieldIOUTest.F90, line 1518
+20240629 020335.551 INFO             PET3  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90, line 1527
+20240629 020335.551 INFO             PET3  PASS  Set attribute package values for Field variable Test, ESMF_FieldIOUTest.F90, line 1579
+20240629 020335.555 INFO             PET3  PASS  Write Fortran array in Field with attributes, ESMF_FieldIOUTest.F90, line 1592
+20240629 020335.555 INFO             PET3  PASS  Create connectionList for deBlockList test, ESMF_FieldIOUTest.F90, line 1627
+20240629 020335.555 INFO             PET3  PASS  Create DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1638
+20240629 020335.555 INFO             PET3  PASS  Create Grid from DistGrid (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1650
+20240629 020335.555 INFO             PET3  PASS  Create Field from Grid (from deBlockList)  test, ESMF_FieldIOUTest.F90, line 1660
+20240629 020335.573 INFO             PET3  PASS  Write Field (from deBlockList) test, ESMF_FieldIOUTest.F90, line 1671
+20240629 020335.573 INFO             PET3  PASS  Create a Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1693
+20240629 020335.573 INFO             PET3  PASS  Get and fill farray from field_ug_w2DE, DE 0, ESMF_FieldIOUTest.F90, line 1711
+20240629 020335.573 INFO             PET3  PASS  Get and fill farray from field_ug_w2DE, DE 1, ESMF_FieldIOUTest.F90, line 1729
+20240629 020335.576 INFO             PET3  PASS  Write Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1741
+20240629 020335.576 INFO             PET3  PASS  Create a Field from 2DE grid with 1 ungridded dim for read, ESMF_FieldIOUTest.F90, line 1756
+20240629 020335.578 INFO             PET3  PASS  Read Field from 2DE grid with 1 ungridded dim, ESMF_FieldIOUTest.F90, line 1766
+20240629 020335.578 INFO             PET3  PASS  Get farray from field_ug_r2DE, DE 0, ESMF_FieldIOUTest.F90, line 1779
+20240629 020335.578 INFO             PET3  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 0, ESMF_FieldIOUTest.F90, line 1792
+20240629 020335.578 INFO             PET3  PASS  Get farray from field_ug_r2DE, DE 1, ESMF_FieldIOUTest.F90, line 1801
+20240629 020335.578 INFO             PET3  PASS  Comparison of read-in Field from 2DE grid with 1 ungridded dim vs original, DE 1, ESMF_FieldIOUTest.F90, line 1814
+20240629 020335.578 INFO             PET3  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1826
+20240629 020335.578 INFO             PET3  PASS  Destroying a Field, ESMF_FieldIOUTest.F90, line 1834
+20240629 020335.578 INFO             PET3  PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line 1884
+20240629 020335.578 INFO             PET3  Ending Test, file ESMF_FieldIOUTest.F90, line 1894
+20240629 020335.578 INFO             PET3  Finalizing ESMF
