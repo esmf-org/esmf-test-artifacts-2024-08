@@ -1,0 +1,90 @@
+ 
+Installing ESMF:
+ 
+mkdir -p /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/include/NUOPC.h /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/include/ESMC.h /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/include/ESMC_*.h /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/build_config/Linux.pgi.default/ESMC_Conf.h /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -fr /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/addon/ESMX /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+mkdir -p /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Linux.pgi.64.mpiuni.default
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/mod/modg/Linux.pgi.64.mpiuni.default/*.mod /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Linux.pgi.64.mpiuni.default
+mkdir -p /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default
+cp -f /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/lib/libg/Linux.pgi.64.mpiuni.default/libesmf*.* /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default
+make ESMF_PRELOADDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default build_preload_script
+make[1]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+chmod 755 /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default/preload.sh
+make[1]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+ranlib /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default/libesmf*.a
+make install_apps
+make[1]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+mkdir -p /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default
+make build_apps ESMF_APPSDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default ESMF_LDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default ESMF_LIBDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default ESMF_MODDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Linux.pgi.64.mpiuni.default
+make[2]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+cd /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps; make ACTION=tree_build_apps tree
+make[3]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfo
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfo'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfo'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfo'
+pgf90    -lpthread -Wl,--no-as-needed -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_PrintInfo /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_PrintInfo/ESMF_PrintInfo.o -lesmf  -pgc++libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfo'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfoC
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfoC'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfoC'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfoC'
+pgcc    -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_PrintInfoC /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_PrintInfoC/ESMF_PrintInfoC.o -lesmf  -pgf90libs -ldl  -pgc++libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_PrintInfoC'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_RegridWeightGen
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_RegridWeightGen'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_RegridWeightGen'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_RegridWeightGen'
+pgf90    -lpthread -Wl,--no-as-needed -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_RegridWeightGen /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_RegridWeightGen/ESMF_RegridWeightGen.o -lesmf  -pgc++libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_RegridWeightGen'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_WebServController
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_WebServController'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_WebServController'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_WebServController'
+pgc++    -lpthread -Wl,--no-as-needed -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_WebServController /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_WebServController/ESMF_WebServController.o -lesmf  -pgf90libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_WebServController'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Scrip2Unstruct
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Scrip2Unstruct'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Scrip2Unstruct'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Scrip2Unstruct'
+pgc++    -lpthread -Wl,--no-as-needed -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_Scrip2Unstruct /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_Scrip2Unstruct/ESMF_Scrip2Unstruct.o -lesmf  -pgf90libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Scrip2Unstruct'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Regrid
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Regrid'
+make chkdir_apps
+make[5]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Regrid'
+make[5]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Regrid'
+pgf90    -lpthread -Wl,--no-as-needed -L/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -L/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -Wl,-rpath,/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/libso -o /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default/ESMF_Regrid /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/obj/objg/Linux.pgi.64.mpiuni.default/src/apps/ESMF_Regrid/ESMF_Regrid.o -lesmf  -pgc++libs -ldl
+/usr/bin/ld: warning: /gpfsm/dulocal/sles12/pgi/linux86-64-llvm/20.4/lib/pgi.ld contains output sections; did you forget -T?
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMF_Regrid'
+tree_build_apps in: /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMX_Builder
+make[4]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMX_Builder'
+make[4]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps/ESMX_Builder'
+make[3]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/src/apps'
+ESMF apps built successfully.
+make[2]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+make[1]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+mkdir -p /discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/doc
+make install_info_mk
+make[1]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+make info_mk ESMF_APPSDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/bin/bing/Linux.pgi.64.mpiuni.default ESMF_LDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default ESMF_LIBDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Linux.pgi.64.mpiuni.default ESMF_ESMXDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include/ESMX ESMF_MODDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Linux.pgi.64.mpiuni.default ESMF_INCDIR=/discover/nobackup/projects/sbu/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+make[2]: Entering directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+make[2]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+make[1]: Leaving directory '/gpfsm/dnb06/projects/p98/mpotts/esmf-test/pgi_20.4_mpiuni_g_develop/esmf'
+ 
+ESMF installation complete.
+ 
