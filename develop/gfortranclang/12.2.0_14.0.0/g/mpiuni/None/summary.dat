@@ -1,7 +1,7 @@
-ESMF hash: v8.7.0b07-20-g1e77226
-Collection timestamp: 2024-06-30 00:45:37
-Build timestamp: 2024-06-29 22:21:34
-Clone timestamp: 2024-06-29 19:01:05
+ESMF hash: v8.7.0b08
+Collection timestamp: 2024-07-04 15:13:50
+Build timestamp: 2024-07-04 13:40:04
+Clone timestamp: 2024-07-03 19:01:52
 Test dir: /Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop
 Machine: green
 
@@ -12,8 +12,8 @@ unit tests:		PASS 12442 FAIL 0
 system tests:		PASS 8 FAIL 0
 example tests:		PASS 44 FAIL 0
 nuopc tests:		NONE
-esmpy install:		PASS
-esmpy tests:		PASS 118 FAIL 0
+esmpy install:		FAIL
+esmpy tests:		NONE
 
 
 module-build.log
@@ -25,7 +25,7 @@ info.log
 ================================
 --------------------------------------------------------------
 ESMF_VERSION_STRING:      8.7.0 beta snapshot
-ESMF_VERSION_STRING_GIT: v8.7.0b07-20-g1e77226def
+ESMF_VERSION_STRING_GIT: v8.7.0b08
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -185,7 +185,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: gfortran
 ESMF_F90COMPILEOPTS: -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fimplicit-none -fcheck=all,no-pointer -fPIC  -pthread -frecursive -ffree-line-length-none -fno-backtrace
 ESMF_F90COMPILEPATHS: -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/mod/modg/Darwin.gfortranclang.64.mpiuni.default -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/include -I/opt/homebrew/Cellar/netcdf/4.9.2_1/include -I/opt/homebrew/Cellar/netcdf-fortran/4.6.1/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b07-20-g1e77226def' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b08' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -ffree-form
 ESMF_F90COMPILEFIXCPP: -cpp -ffixed-form
@@ -202,7 +202,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: clang++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -Wall -Wextra -Wno-unused -fPIC -x c++ -mmacosx-version-min=10.7 -stdlib=libc++ -pthread
 ESMF_CXXCOMPILEPATHS:  -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/include  -I/opt/homebrew/Cellar/netcdf/4.9.2_1/include -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b07-20-g1e77226def' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b08' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -pthread
@@ -215,7 +215,7 @@ C compiler flags:
 ESMF_CCOMPILER: clang
 ESMF_CCOMPILEOPTS: -std=c99 -g -fPIC -pthread
 ESMF_CCOMPILEPATHS:  -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b07-20-g1e77226def' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b08' -DESMF_MPIUNI -I/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_LOWERCASE_SINGLEUNDERSCORE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpiuni -DESMF_DIR=/Users/sacks/projects/scratch/esmf-testing/gfortranclang_12.2.0_14.0.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 C linker flags:
 ESMF_CLINKOPTS:   -pthread
@@ -240,6 +240,6 @@ ESMF_F90ESMFPRELOADLINKLIBS=-lesmf -lesmftrace_preload  -lm -lc++ -lgfortran -ln
 
 
 --------------------------------------------------------------
-Compiling on Sat Jun 29 22:04:11 MDT 2024 on cgdm-green
+Compiling on Wed Jul 3 20:32:26 CDT 2024 on cgdm-green
 Machine characteristics: Darwin cgdm-green 23.5.0 Darwin Kernel Version 23.5.0: Wed May 1 20:12:58 PDT 2024; root:xnu-10063.121.3~5/RELEASE_ARM64_T6000 arm64
 ==============================================================
