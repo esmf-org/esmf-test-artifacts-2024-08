@@ -1,4 +1,4 @@
-2024-07-11 03:49:44
+2024-07-12 04:09:05
   Beginning Test, file ESMF_LocalArrayUTest.F90, line 59
   NUMBER_OF_PROCESSORS           1
   PASS  Testing LocalArray IsCreated for uncreated object, ESMF_LocalArrayUTest.
@@ -60,11 +60,11 @@
  Test.F90, line 321
   PASS  Local Array Destroy Test, ESMF_LocalArrayUTest.F90, line 328
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 1, typekind = 3, base_addr = 0x7f490c7e7cc0
+            rank = 1, typekind = 3, base_addr = 0x7f47fd7e7cc0
             dim[0] = 10  
   Integer, *4, Dim 1, Data values:
-(-5) =  209616064
-(-4) =  32585
+(-5) =  -42042176
+(-4) =  32583
 (-3) =  1348421199
 (-2) =  1162039122
 (-1) =  1380930387
@@ -86,7 +86,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
  90, line 382
  array 1b create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 1, typekind = 3, base_addr = 0x7f490c7dd600
+            rank = 1, typekind = 3, base_addr = 0x7f47fd7dd600
             dim[0] = 516  
   Integer, *4, Dim 1, Data values:
 ( 5) =  55
@@ -132,7 +132,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
  t.F90, line 455
  array 1c create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 1, typekind = 3, base_addr = 0x7f490c7c7040
+            rank = 1, typekind = 3, base_addr = 0x7f47fd7c7040
             dim[0] = 835  
   Integer, *4, Dim 1, Data values:
 ( 1) =  1
@@ -169,7 +169,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
  st.F90, line 515
  array 1d create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 1, typekind = 3, base_addr = 0x7f490c7d4100
+            rank = 1, typekind = 3, base_addr = 0x7f47fd7d4100
             dim[0] = 1022  
   Integer, *4, Dim 1, Data values:
 ( 1) =  1
@@ -204,7 +204,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  000000000041F607  esmf_localarrayte         561  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  partial print of realptr data =    303.100006103516     
    304.100006103516        305.100006103516        306.100006103516     
@@ -216,7 +216,7 @@ ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  ine 569
  array 2a create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 2, typekind = 6, base_addr = 0x7f490f9432c0
+            rank = 2, typekind = 6, base_addr = 0x7f48008932c0
             dim[0] = 51  dim[1] = 31  
   Real, *8, Dim 2, Data values:
 ( 3, 7) =  303.1
@@ -246,7 +246,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  00000000004204D5  esmf_localarrayte         581  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  realptr data changed after nocopy set, now =    306.000000000000     
    308.000000000000        310.000000000000        312.000000000000     
@@ -260,7 +260,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  00000000004211B7  esmf_localarrayte         588  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  partial print of realptr2 data =    306.000000000000     
    308.000000000000        310.000000000000        312.000000000000     
@@ -280,7 +280,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  0000000000422C03  esmf_localarrayte         636  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  partial print of realptr2 data =    1.10000002384186     
    2.09999990463257        3.09999990463257        16.1000003814697     
@@ -289,7 +289,7 @@ ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
   PASS  Compare Local Array 2D Real Data Test, ESMF_LocalArrayUTest.F90, line 65
  2
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 2, typekind = 6, base_addr = 0x7f490c7ca400
+            rank = 2, typekind = 6, base_addr = 0x7f47fd7ca400
             dim[0] = 15  dim[1] = 13  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  1.1
@@ -319,7 +319,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
  Test, ESMF_LocalArrayUTest.F90, line 681
  array 2c create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 2, typekind = 6, base_addr = 0x7f490eaff0c0
+            rank = 2, typekind = 6, base_addr = 0x7f47ffaff0c0
             dim[0] = 4015  dim[1] = 13  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  1.1
@@ -349,7 +349,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  000000000042494C  esmf_localarrayte         692  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  realptr data changed after datacopyflag set, now =    2.00000000000000     
    4.00000000000000        6.00000000000000        4017.00000000000     
@@ -361,7 +361,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  0000000000425188  esmf_localarrayte         696  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  realptr2 data =    1.10000002384186        2.09999990463257     
    3.09999990463257        4016.10009765625        4017.10009765625     
@@ -378,7 +378,7 @@ forrtl: warning (406): fort: (1): In call to I/O Write routine, an array tempora
 Image              PC                Routine            Line        Source             
 ESMF_LocalArrayUT  0000000000425DD9  esmf_localarrayte         713  ESMF_LocalArrayUTest.F90
 ESMF_LocalArrayUT  0000000000415C3D  Unknown               Unknown  Unknown
-libc-2.31.so       00007F491463E24D  __libc_start_main     Unknown  Unknown
+libc-2.31.so       00007F480563E24D  __libc_start_main     Unknown  Unknown
 ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  realptr2 data =    1.10000002384186        2.09999990463257     
    3.09999990463257        4016.10009765625        4017.10009765625     
@@ -408,7 +408,7 @@ ESMF_LocalArrayUT  0000000000415B6A  Unknown               Unknown  Unknown
  rrayUTest.F90, line 852
  array 4b create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 3, typekind = 6, base_addr = 0x7f490eb654c0
+            rank = 3, typekind = 6, base_addr = 0x7f47ffb654c0
             dim[0] = 33  dim[1] = 8  dim[2] = 160  
   Real, *8, Dim 3, Data values:
 ( 1, 1, 1) =  0
@@ -441,7 +441,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
   array Test, ESMF_LocalArrayUTest.F90, line 903
  array 4d create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 3, typekind = 6, base_addr = 0x7f490f9ad500
+            rank = 3, typekind = 6, base_addr = 0x7f48008fd500
             dim[0] = 10  dim[1] = 3  dim[2] = 40  
   Real, *8, Dim 3, Data values:
 ( 1, 1, 1) =  41.1
@@ -470,7 +470,7 @@ LocalArrayPrint: Array at address 0x5ccdb0:
   array Test, ESMF_LocalArrayUTest.F90, line 926
  array 4e create returned
 LocalArrayPrint: Array at address 0x5ccdb0:
-            rank = 3, typekind = 6, base_addr = 0x7f490f9ad540
+            rank = 3, typekind = 6, base_addr = 0x7f48008fd540
             dim[0] = 11  dim[1] = 3  dim[2] = 40  
   Real, *8, Dim 3, Data values:
 ( 1, 1, 1) =  49.1
@@ -518,4 +518,4 @@ LocalArrayPrint: Array at address 0x5ccdb0:
  array 1f create returned
  array 1f destroy returned
   Ending Test, file ESMF_LocalArrayUTest.F90, line 1060
-  PET           0  Test Elapsed Time    5.79300000000000       msec.
+  PET           0  Test Elapsed Time    5.69700000000000       msec.
