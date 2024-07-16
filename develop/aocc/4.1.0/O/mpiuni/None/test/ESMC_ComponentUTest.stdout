@@ -1,0 +1,133 @@
+2024-07-15 18:25:15
+Beginning Test, file ESMC_ComponentUTest.c, line 190
+Beginning Test, file ESMC_ComponentUTest.c, line 190NUMBER_OF_PROCESSORS 1
+PASS Create ESMC_Calendar object, ESMC_ComponentUTest.c, line 201
+PASS Set Start Time, ESMC_ComponentUTest.c, line 213
+PASS Set Stop Time, ESMC_ComponentUTest.c, line 222
+PASS Set a TimeInterval, ESMC_ComponentUTest.c, line 230
+PASS Create ESMC_Clock object, ESMC_ComponentUTest.c, line 239
+PASS Create ESMC_State object, ESMC_ComponentUTest.c, line 247
+PASS Create ESMC_State object, ESMC_ComponentUTest.c, line 255
+PASS Create ESMC_GridComp object, ESMC_ComponentUTest.c, line 266
+PASS Print ESMC_GridComp object, ESMC_ComponentUTest.c, line 274
+PASS ESMC_GridCompInitialize() before callingESMC_GridCompSetServices(), ESMC_ComponentUTest.c, line 283
+PASS ESMC_GridCompSetServices() using myRegistrationInC(), ESMC_ComponentUTest.c, line 291
+ Gridded Component:
+  Component name = gridded component in C
+I am in myRegistrationInC()
+ Gridded Component:
+  Component name = gridded component in C
+I am in myInitInC()
+ ESMF_StatePrint: (pet 0):
+  State name: my import state
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    = my import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}PASS ESMC_GridCompInitialize() w/ myRegistrationInC() methods, ESMC_ComponentUTest.c, line 299
+Clock ----------------------------------
+name = TEST_CLOCK
+timeStep = 
+TimeInterval ---------------------------
+P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
+
+startTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+currTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+prevTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
+alarmCount = 0
+alarmList = 
+end Clock ------------------------------
+
+setting GridComp internal state to data: 0x557901478d60
+I am in myRunInC()
+ ESMF_StatePrint: (pet 0):
+  State name: my import state
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    = my import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}PASS ESMC_GridCompRun() w/ myRegistrationInC() methods, ESMC_ComponentUTest.c, line 307
+Clock ----------------------------------
+name = TEST_CLOCK
+timeStep = 
+TimeInterval ---------------------------
+P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
+
+startTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+currTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+prevTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
+alarmCount = 0
+alarmList = 
+end Clock ------------------------------
+
+getting GridComp internal state to data: 0x557901478d60
+I am in myFinalizeInC()
+ ESMF_StatePrint: (pet 0):
+  State name: my import state
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    = my import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}PASS ESMC_GridCompFinalize() w/ myRegistrationInC() methods, ESMC_ComponentUTest.c, line 315
+PASS Destroy ESMC_GridComp object, ESMC_ComponentUTest.c, line 323
+/home/gerhard/ESMF-Nightly-Testing/aocc_4.1.0_mpiuni_O_develop/esmf/src/Infrastructure/stubs/mpiuni/mpirun: line 46: 29670 Segmentation fault      (core dumped) $progname $*
