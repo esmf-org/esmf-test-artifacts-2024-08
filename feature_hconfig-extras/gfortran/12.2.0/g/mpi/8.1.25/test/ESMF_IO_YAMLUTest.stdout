@@ -1,4 +1,4 @@
-2024-07-25 03:43:49
+2024-07-26 04:03:23
   Beginning Test, file ESMF_IO_YAMLUTest.F90, line 54
   NUMBER_OF_PROCESSORS           4
   INFO  ESMF was built with YAML support via the external yaml-cpp library
@@ -206,9 +206,11 @@ field_dictionary:
            3   - key2: value2
  
   PASS  ESMF_IO_YAMLContentGet(): verify retrieved YAML content, ESMF_IO_YAMLUTest.F90, line 322
-  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 112
   PASS  ESMF_IO_YAMLContentInit(): generate incompatible FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
+  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 112
   PASS  ESMF_IO_YAMLContentGet(): get content line count, ESMF_IO_YAMLUTest.F90, line 126
+  PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML object, ESMF_IO_YAMLUTest.F90, line 340
+  Ending Test, file ESMF_IO_YAMLUTest.F90, line 343
   PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 112
   PASS  ESMF_IO_YAMLContentGet(): get content line count, ESMF_IO_YAMLUTest.F90, line 126
   PASS  ESMF_IO_YAMLContentGet(): get content, ESMF_IO_YAMLUTest.F90, line 137
@@ -223,8 +225,6 @@ field_dictionary:
            9     - standard_name: air_pressure
           10       canonical_units: Pa
           11       description: Air pressure
-  PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML object, ESMF_IO_YAMLUTest.F90, line 340
-  Ending Test, file ESMF_IO_YAMLUTest.F90, line 343
           12     - standard_name: air_temperature
           13       canonical_units: K
           14       description: Bulk temperature of the air, not the surface (skin) temperature
@@ -285,7 +285,6 @@ field_dictionary:
   PASS  ESMF_IO_YAMLContentGet(): get native content, ESMF_IO_YAMLUTest.F90, line 253
   PASS  ESMF_IO_YAMLContentGet(): verify content size (1), ESMF_IO_YAMLUTest.F90, line 269
   PASS  ESMF_IO_YAMLContentGet(): verify content size (2), ESMF_IO_YAMLUTest.F90, line 281
-  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 218
    Ingested content:
    -----------------
  unit_test_content:
@@ -298,19 +297,20 @@ field_dictionary:
            2   - key1: value1
            3   - key2: value2
  
+  PASS  ESMF_IO_YAMLContentInit(): generate native content from YAML, ESMF_IO_YAMLUTest.F90, line 218
   PASS  ESMF_IO_YAMLContentGet(): verify retrieved YAML content, ESMF_IO_YAMLUTest.F90, line 322
   PASS  ESMF_IO_YAMLContentGet(): get native content size (length), ESMF_IO_YAMLUTest.F90, line 232
   PASS  ESMF_IO_YAMLContentGet(): get native content line count, ESMF_IO_YAMLUTest.F90, line 242
   PASS  ESMF_IO_YAMLContentGet(): get native content, ESMF_IO_YAMLUTest.F90, line 253
   PASS  ESMF_IO_YAMLContentGet(): verify content size (1), ESMF_IO_YAMLUTest.F90, line 269
   PASS  ESMF_IO_YAMLContentGet(): verify content size (2), ESMF_IO_YAMLUTest.F90, line 281
+  PASS  ESMF_IO_YAMLContentInit(): generate incompatible FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
    Ingested content:
    -----------------
  unit_test_content:
   - key1: value1
   - key2: value2
 
-  PASS  ESMF_IO_YAMLContentInit(): generate incompatible FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
    Generated content:
    -----------------
            1 unit_test_content:
@@ -319,11 +319,11 @@ field_dictionary:
  
   PASS  ESMF_IO_YAMLContentGet(): verify retrieved YAML content, ESMF_IO_YAMLUTest.F90, line 322
   PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML object, ESMF_IO_YAMLUTest.F90, line 340
-  PASS  ESMF_IO_YAMLContentInit(): generate incompatible FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
   Ending Test, file ESMF_IO_YAMLUTest.F90, line 343
+  PASS  ESMF_IO_YAMLContentInit(): generate incompatible FreeFormat content from YAML, ESMF_IO_YAMLUTest.F90, line 331
   PASS  ESMF_IO_YAMLDestroy(): destroy ESMF IO_YAML object, ESMF_IO_YAMLUTest.F90, line 340
   Ending Test, file ESMF_IO_YAMLUTest.F90, line 343
-  PET           3  Test Elapsed Time    18.214000000000002       msec.
-  PET           0  Test Elapsed Time    15.888000000000000       msec.
-  PET           2  Test Elapsed Time    18.242999999999999       msec.
-  PET           1  Test Elapsed Time    18.557000000000002       msec.
+  PET           1  Test Elapsed Time    27.911000000000001       msec.
+  PET           3  Test Elapsed Time    27.840000000000003       msec.
+  PET           2  Test Elapsed Time    27.864999999999998       msec.
+  PET           0  Test Elapsed Time    16.198000000000000       msec.
