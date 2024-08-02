@@ -1,0 +1,111 @@
+2024-08-02 04:00:44
+
+mainApp:38047 terminated with signal 11 at PC=44bf60 SP=7fffad342bf0.  Backtrace:
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44bf60]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44cf00]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x44c0a5]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(f_esmf_compcollectgarbage2_+0x4bc)[0x7f15a22dfa7c]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(_ZN5ESMCI2VM8finalizeEP12ESMC_LogicalPi+0x5d2)[0x7f15a1e840c2]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(c_esmc_vmfinalize_+0x57)[0x7f15a1e4dcb7]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(+0x2a90ebb)[0x7f15a2f0aebb]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_vmmod_mp_esmf_vmfinalize_+0x72)[0x7f15a2f02a82]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.intel.64.mpi.default/libesmf.so(esmf_initmod_mp_esmf_finalize_+0x103a)[0x7f15a2a193ba]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x417853]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416d7d]
+/lib64/libc.so.6(__libc_start_main+0xef)[0x7f159bc3e24d]
+/tmp/intel_2023.1.0-oneAPI_mpi_g_nrl_work-esmx/nuopc-app-prototypes/SingleModelOpenMPProto/./mainApp[0x416caa]
+srun: error: c5n0975: task 3: Exited with exit code 1
+srun: Terminating StepId=135098035.391
+slurmstepd: error: *** STEP 135098035.391 ON c5n0975 CANCELLED AT 2024-08-02T04:30:01 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00007F09106B9910  Unknown               Unknown  Unknown
+libc-2.31.so       00007F090C505B57  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  00007F090E101ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EE9DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EEB0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EDB858C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090D3A3D11  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090D3A3EF5  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090F09D5F0  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EEDD0FC  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EEDB00C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090D667C01  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090EEDF380  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090F09E3D3  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090D491200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F090D49173F  PMPI_Barrier          Unknown  Unknown
+libdarshan.so.0.0  00007F09104095A7  darshan_core_shut     Unknown  Unknown
+libdarshan.so.0.0  00007F091040823E  MPI_Finalize          Unknown  Unknown
+libesmf.so         00007F09125BADDC  finalize                  839  ESMCI_VMKernel.C
+libesmf.so         00007F09125E923E  finalize                 3592  ESMCI_VM.C
+libesmf.so         00007F09125B2CB7  c_esmc_vmfinalize        1241  ESMCI_VM_F.C
+libesmf.so         00007F091366FEBB  c_esmc_vmfinalize           0  ESMF_VM.F90
+libesmf.so         00007F0913667A82  esmf_vmfinalize          9475  ESMF_VM.F90
+libesmf.so         00007F091317E3BA  esmf_finalize            1721  ESMF_Init.F90
+mainApp            0000000000417853  mainapp                   118  mainApp.F90
+mainApp            0000000000416D7D  Unknown               Unknown  Unknown
+libc-2.31.so       00007F090C43E24D  __libc_start_main     Unknown  Unknown
+mainApp            0000000000416CAA  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00007FF3C3697910  Unknown               Unknown  Unknown
+libc-2.31.so       00007FF3BF505B57  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1101ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1E9DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1EB0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1DB858C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C03A3D11  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C03A3EF5  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C209D5F0  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1EDD0FC  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1EDB00C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C0667C01  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C1EDF380  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C209E3D3  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C0491200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007FF3C049173F  PMPI_Barrier          Unknown  Unknown
+libdarshan.so.0.0  00007FF3C34095A7  darshan_core_shut     Unknown  Unknown
+libdarshan.so.0.0  00007FF3C340823E  MPI_Finalize          Unknown  Unknown
+libesmf.so         00007FF3C5598DDC  finalize                  839  ESMCI_VMKernel.C
+libesmf.so         00007FF3C55C723E  finalize                 3592  ESMCI_VM.C
+libesmf.so         00007FF3C5590CB7  c_esmc_vmfinalize        1241  ESMCI_VM_F.C
+libesmf.so         00007FF3C664DEBB  c_esmc_vmfinalize           0  ESMF_VM.F90
+libesmf.so         00007FF3C6645A82  esmf_vmfinalize          9475  ESMF_VM.F90
+libesmf.so         00007FF3C615C3BA  esmf_finalize            1721  ESMF_Init.F90
+mainApp            0000000000417853  mainapp                   118  mainApp.F90
+mainApp            0000000000416D7D  Unknown               Unknown  Unknown
+libc-2.31.so       00007FF3BF43E24D  __libc_start_main     Unknown  Unknown
+mainApp            0000000000416CAA  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00007F458EF60910  Unknown               Unknown  Unknown
+libc-2.31.so       00007F458AD05B57  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  00007F458C901ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D69DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D6B0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D5B858C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458BBA3D11  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458BBA3EF5  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D89D5F0  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D6DD0FC  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D6DB00C  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458BE67C01  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D6DF380  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458D89E3D3  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458BC91200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  00007F458BC9173F  PMPI_Barrier          Unknown  Unknown
+libdarshan.so.0.0  00007F458EC095A7  darshan_core_shut     Unknown  Unknown
+libdarshan.so.0.0  00007F458EC0823E  MPI_Finalize          Unknown  Unknown
+libesmf.so         00007F4590E61DDC  finalize                  839  ESMCI_VMKernel.C
+libesmf.so         00007F4590E9023E  finalize                 3592  ESMCI_VM.C
+libesmf.so         00007F4590E59CB7  c_esmc_vmfinalize        1241  ESMCI_VM_F.C
+libesmf.so         00007F4591F16EBB  c_esmc_vmfinalize           0  ESMF_VM.F90
+libesmf.so         00007F4591F0EA82  esmf_vmfinalize          9475  ESMF_VM.F90
+libesmf.so         00007F4591A253BA  esmf_finalize            1721  ESMF_Init.F90
+mainApp            0000000000417853  mainapp                   118  mainApp.F90
+mainApp            0000000000416D7D  Unknown               Unknown  Unknown
+libc-2.31.so       00007F458AC3E24D  __libc_start_main     Unknown  Unknown
+mainApp            0000000000416CAA  Unknown               Unknown  Unknown
+srun: error: c5n0975: tasks 0-2: Killed
+srun: Force Terminated StepId=135098035.391
