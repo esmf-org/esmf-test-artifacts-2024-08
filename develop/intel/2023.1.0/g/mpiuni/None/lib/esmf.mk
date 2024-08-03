@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.7.0 beta snapshot
-ESMF_VERSION_STRING_GIT=v8.7.0b10-23-ge8332f8778
+ESMF_VERSION_STRING_GIT=v8.7.0b10-45-g7b36ed9d21
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -34,7 +34,7 @@ ESMF_F90LINKER=ftn
 
 ESMF_F90COMPILEOPTS=-g -traceback -check arg_temp_created,bounds,format,output_conversion,stack -fPIC -assume realloc_lhs   -qopenmp
 ESMF_F90COMPILEPATHS=-I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/mod/modg/Unicos.intel.64.mpiuni.default -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/include -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-23-ge8332f8778' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-45-g7b36ed9d21' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
@@ -53,7 +53,7 @@ ESMF_CXXLINKER=CC
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -g -traceback -Wcheck -fPIC -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS= -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/include  -I/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/include -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-23-ge8332f8778' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-45-g7b36ed9d21' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC
 
 ESMF_CXXLINKOPTS=  -pthread -Wl,--no-as-needed  -qopenmp
 ESMF_CXXLINKPATHS=-L/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/lib/libg/Unicos.intel.64.mpiuni.default -L/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/lib -L/opt/intel/oneapi/compiler/2023.1.0/linux/bin/intel64/../../compiler/lib/intel64_lin/
@@ -68,7 +68,7 @@ ESMF_CLINKER=cc
 
 ESMF_CCOMPILEOPTS=-std=c99 -g -fPIC  -qopenmp
 ESMF_CCOMPILEPATHS=-I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/include   -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/build_config/Unicos.intel.default
-ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-23-ge8332f8778' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
+ESMF_CCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.7.0b10-45-g7b36ed9d21' -DESMF_MPIUNI -I/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/src/Infrastructure/stubs/mpiuni -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTPERFORMANCE -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/tmp/intel_2023.1.0_mpiuni_g_develop/esmf -D__SDIR__='' -DESMF_CSTD=99
 
 ESMF_CLINKOPTS=   -qopenmp
 ESMF_CLINKPATHS=-L/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/lib/libg/Unicos.intel.64.mpiuni.default -L/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/lib -L/opt/intel/oneapi/compiler/2023.1.0/linux/bin/intel64/../../compiler/lib/intel64_lin/ -L/tmp/intel_2023.1.0_mpiuni_g_develop/esmf/lib/libg/Unicos.intel.64.mpiuni.default -L/opt/cray/pe/netcdf/4.9.0.3/intel/19.0/lib 

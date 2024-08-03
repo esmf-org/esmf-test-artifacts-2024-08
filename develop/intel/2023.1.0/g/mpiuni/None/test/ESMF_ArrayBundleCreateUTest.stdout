@@ -1,4 +1,4 @@
-2024-07-31 03:59:30
+2024-08-03 03:59:32
   Beginning Test, file ESMF_ArrayBundleCreateUTest.F90, line 81
   NUMBER_OF_PROCESSORS           1
   PASS  Testing ArrayBundle IsCreated for uncreated object, ESMF_ArrayBundleCrea
@@ -22,25 +22,26 @@
 ArrayBundle: MyEmptyArrayBundle
 arrayCount = 0
 --- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 168
+  PASS  ArrayBundlePrint #1 Test, ESMF_ArrayBundleCreateUTest.F90, line 161
+  PASS  ArrayBundleLog #1 Test, ESMF_ArrayBundleCreateUTest.F90, line 168
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 175
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayBundleCreateUTe
- st.F90, line 184
+ st.F90, line 191
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayBundleCreateUTe
- st.F90, line 192
-  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 200
+ st.F90, line 199
+  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 207
   PASS  ArrayBundle equality before assignment Test, ESMF_ArrayBundleCreateUTest
- .F90, line 208
+ .F90, line 215
   PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
- 0, line 218
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 225
+ 0, line 225
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 232
   PASS  ArrayBundle equality after destroy Test, ESMF_ArrayBundleCreateUTest.F90
- , line 233
+ , line 240
   PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
- .F90, line 241
+ .F90, line 248
   PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 248
-  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
+ t.F90, line 255
+  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 263
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 2
@@ -49,29 +50,30 @@ Container::print() multipmap:item=1 key=MyArray2 value=0x5ced50
 Container::print()      list:item=0 key=MyArray value=0x5cd860
 Container::print()      list:item=1 key=MyArray2 value=0x5ced50
 --- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
+  PASS  ArrayBundlePrint #2 Test, ESMF_ArrayBundleCreateUTest.F90, line 270
+  PASS  ArrayBundleLog #2 Test, ESMF_ArrayBundleCreateUTest.F90, line 277
   PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
- e 271
+ e 285
  arrayCount=           2
   PASS  ArrayBundleGet with arrayNameList Test, ESMF_ArrayBundleCreateUTest.F90,
-  line 281
+  line 295
  arrayNameList(           1 )=MyArray
  arrayNameList(           2 )=MyArray2
   PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
- , line 292
+ , line 306
   PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
- ateUTest.F90, line 300
+ ateUTest.F90, line 314
   PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 308
+ t.F90, line 322
   PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 317
+ t.F90, line 331
   PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
- CreateUTest.F90, line 325
-  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
+ CreateUTest.F90, line 339
+  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 344
   PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 342
+ 90, line 356
   PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
- e 351
+ e 365
 --- ESMCI::Array::print start ---
  Base name    = MyArray3
  Status: Base = Ready,  object = Ready
@@ -83,8 +85,8 @@ DistGrid dimCount = 2
 deCount = 4
 localDeCount = 4
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x5d0210:
-            rank = 2, typekind = 6, base_addr = 0x7fac247bab00
+LocalArrayPrint: Array at address 0x5d0250:
+            rank = 2, typekind = 6, base_addr = 0x7f5881dbab00
             dim[0] = 8  dim[1] = 12  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -111,8 +113,8 @@ LocalArrayPrint: Array at address 0x5d0210:
 dim 1: [0]: [1 [1 [1, 8] 8] 8]
 dim 2: [1]: [1 [1 [1, 12] 12] 12]
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x5d0540:
-            rank = 2, typekind = 6, base_addr = 0x7fac247ba800
+LocalArrayPrint: Array at address 0x5d0580:
+            rank = 2, typekind = 6, base_addr = 0x7f5881dba800
             dim[0] = 7  dim[1] = 12  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -139,8 +141,8 @@ LocalArrayPrint: Array at address 0x5d0540:
 dim 1: [0]: [1 [1 [1, 7] 7] 7]
 dim 2: [1]: [1 [1 [1, 12] 12] 12]
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x5d0870:
-            rank = 2, typekind = 6, base_addr = 0x7fac247ba500
+LocalArrayPrint: Array at address 0x5d08b0:
+            rank = 2, typekind = 6, base_addr = 0x7f5881dba500
             dim[0] = 8  dim[1] = 11  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -167,8 +169,8 @@ LocalArrayPrint: Array at address 0x5d0870:
 dim 1: [0]: [1 [1 [1, 8] 8] 8]
 dim 2: [1]: [1 [1 [1, 11] 11] 11]
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x5d0ba0:
-            rank = 2, typekind = 6, base_addr = 0x7fac247bf880
+LocalArrayPrint: Array at address 0x5d0be0:
+            rank = 2, typekind = 6, base_addr = 0x7f5881dbf880
             dim[0] = 7  dim[1] = 11  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -196,27 +198,27 @@ dim 1: [0]: [1 [1 [1, 7] 7] 7]
 dim 2: [1]: [1 [1 [1, 11] 11] 11]
 --- ESMCI::Array::print end ---
   PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
- leCreateUTest.F90, line 361
+ leCreateUTest.F90, line 375
   PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
- yBundleCreateUTest.F90, line 368
+ yBundleCreateUTest.F90, line 382
   PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 376
+ t, ESMF_ArrayBundleCreateUTest.F90, line 390
   PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 394
+ 90, line 408
   PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 402
+ dleCreateUTest.F90, line 416
   PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
- rayBundleCreateUTest.F90, line 410
+ rayBundleCreateUTest.F90, line 424
   PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
- ayBundleCreateUTest.F90, line 417
+ ayBundleCreateUTest.F90, line 431
   PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
- ndleCreateUTest.F90, line 424
+ ndleCreateUTest.F90, line 438
   PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 432
+ dleCreateUTest.F90, line 446
   PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 440
+ line 454
   PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 448
+ line 462
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 9
@@ -239,11 +241,12 @@ Container::print()      list:item=6 key=MyArray4 value=0x5d2550
 Container::print()      list:item=7 key=MyArray6 value=0x5d3b50
 Container::print()      list:item=8 key=MyArray5 value=0x5d5190
 --- ESMCI::ArrayBundle::print end ---
+  PASS  ArrayBundleLog #3 Test, ESMF_ArrayBundleCreateUTest.F90, line 474
   PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
- Test.F90, line 460
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
+ Test.F90, line 482
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 488
   PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
- .F90, line 477
+ .F90, line 499
  name of arrayList(           1 ) is: 
  MyArray6                                                                       
                                                                                 
@@ -260,12 +263,12 @@ Container::print()      list:item=8 key=MyArray5 value=0x5d5190
                                                                                 
                     
   PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 493
-  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
- 2
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+ eUTest.F90, line 515
+  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 52
+ 4
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 530
   PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 519
+ eUTest.F90, line 541
  name of arrayList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -312,9 +315,9 @@ Container::print()      list:item=8 key=MyArray5 value=0x5d5190
                                                                                 
                     
   PASS  Verify Container Get arrayList for arrayname default order (abc) Test, E
- SMF_ArrayBundleCreateUTest.F90, line 545
+ SMF_ArrayBundleCreateUTest.F90, line 567
   PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
- reateUTest.F90, line 552
+ reateUTest.F90, line 574
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -361,9 +364,9 @@ Container::print()      list:item=8 key=MyArray5 value=0x5d5190
                                                                                 
                     
   PASS  Verify Container Get arrayNameList for arrayname default order (abc) Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 573
+ t, ESMF_ArrayBundleCreateUTest.F90, line 595
   PASS  ArrayBundleGet arrayList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBundleC
- reateUTest.F90, line 581
+ reateUTest.F90, line 603
  name of arrayList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -410,9 +413,9 @@ Container::print()      list:item=8 key=MyArray5 value=0x5d5190
                                                                                 
                     
   PASS  Verify Container Get arrayList for arrayname ESMF_ITEMORDER_ADDORDER Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 607
+ t, ESMF_ArrayBundleCreateUTest.F90, line 629
   PASS  ArrayBundleGet arrayNameList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 615
+ dleCreateUTest.F90, line 637
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -459,13 +462,13 @@ Container::print()      list:item=8 key=MyArray5 value=0x5d5190
                                                                                 
                     
   PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
-  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
+  Test, ESMF_ArrayBundleCreateUTest.F90, line 658
  computed serialization buffer length =       27952  bytes
   PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
- 0, line 664
-  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
-  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
- 0
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
-  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
-  PET           0  Test Elapsed Time    5.28199999999999       msec.
+ 0, line 686
+  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 696
+  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 71
+ 2
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 724
+  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 748
+  PET           0  Test Elapsed Time    5.89300000000000       msec.
