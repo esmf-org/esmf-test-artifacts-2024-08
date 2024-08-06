@@ -1,0 +1,657 @@
+2024-08-06 07:35:17
+20240806 075730.814 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.814 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 075730.814 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 075730.814 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 075730.814 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 075730.814 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.814 INFO             PET0 Running with ESMF Version   : v8.7.0b11
+20240806 075730.814 INFO             PET0 ESMF library build date/time: "Aug  6 2024" "07:31:31"
+20240806 075730.814 INFO             PET0 ESMF library build location : /scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/gfortran_13.2.0_openmpi_g_develop/esmf
+20240806 075730.814 INFO             PET0 ESMF_COMM                   : openmpi
+20240806 075730.815 INFO             PET0 ESMF_MOAB                   : enabled
+20240806 075730.815 INFO             PET0 ESMF_LAPACK                 : enabled
+20240806 075730.815 INFO             PET0 ESMF_NETCDF                 : disabled
+20240806 075730.815 INFO             PET0 ESMF_PNETCDF                : disabled
+20240806 075730.815 INFO             PET0 ESMF_PIO                    : disabled
+20240806 075730.815 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240806 075730.815 INFO             PET0  Beginning Test, file ESMF_GridCompCreateUTest.F90, line 83
+20240806 075730.815 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20240806 075730.815 INFO             PET0  PASS  Testing GridComp IsCreated w/o keyword for uncreated object, ESMF_GridCompCreateUTest.F90, line 91
+20240806 075730.815 INFO             PET0  PASS  Testing GridComp IsCreated for uncreated object, ESMF_GridCompCreateUTest.F90, line 98
+20240806 075730.815 INFO             PET0  PASS  Testing GridComp IsCreated value for uncreated object, ESMF_GridCompCreateUTest.F90, line 104
+20240806 075730.818 INFO             PET0  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 112
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated w/o keyword for created object, ESMF_GridCompCreateUTest.F90, line 119
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated for created object, ESMF_GridCompCreateUTest.F90, line 126
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated value for created object, ESMF_GridCompCreateUTest.F90, line 132
+20240806 075730.818 INFO             PET0  PASS  GridComp equality before assignment Test, ESMF_GridCompCreateUTest.F90, line 139
+20240806 075730.818 INFO             PET0  PASS  GridComp assignment and equality Test, ESMF_GridCompCreateUTest.F90, line 148
+20240806 075730.818 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 155
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated w/o keyword for destroyed object, ESMF_GridCompCreateUTest.F90, line 162
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated for destroyed object, ESMF_GridCompCreateUTest.F90, line 169
+20240806 075730.818 INFO             PET0  PASS  Testing GridComp IsCreated value for destroyed object, ESMF_GridCompCreateUTest.F90, line 175
+20240806 075730.818 INFO             PET0  PASS  GridComp equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 183
+20240806 075730.818 INFO             PET0  PASS  GridComp non-equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 191
+20240806 075730.818 ERROR            PET0 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 075730.818 INFO             PET0  PASS  Double GridCompDestroy through alias Test, ESMF_GridCompCreateUTest.F90, line 198
+20240806 075730.819 INFO             PET0  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 206
+20240806 075730.819 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 213
+20240806 075730.820 ERROR            PET0 ESMF_GridComp.F90:1145 ESMF_GridCompGet Object being used after deletion  - Bad Object
+20240806 075730.820 INFO             PET0  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 226
+20240806 075730.820 INFO             PET0  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 236
+20240806 075730.820 INFO             PET0  PASS  Query gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 250
+20240806 075730.820 INFO             PET0  PASS  Verify gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 259
+20240806 075730.820 ERROR            PET0 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.820 ERROR            PET0 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET0  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 270
+20240806 075730.820 INFO             PET0  PASS  Setting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 286
+20240806 075730.820 INFO             PET0  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 297
+20240806 075730.820 INFO             PET0  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 306
+20240806 075730.820 INFO             PET0  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 317
+20240806 075730.820 INFO             PET0  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 326
+20240806 075730.820 INFO             PET0  PASS  Re-setting a list of Grids Test, ESMF_GridCompCreateUTest.F90, line 342
+20240806 075730.820 INFO             PET0  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 353
+20240806 075730.820 INFO             PET0  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 362
+20240806 075730.820 INFO             PET0  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 373
+20240806 075730.820 INFO             PET0  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 382
+20240806 075730.820 INFO             PET0  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 391
+20240806 075730.820 INFO             PET0  PASS  Getting a gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 402
+20240806 075730.820 INFO             PET0  PASS  Verify gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 411
+20240806 075730.820 INFO             PET0  PASS  Verify gridList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 420
+20240806 075730.820 INFO             PET0  PASS  Verify gridList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 429
+20240806 075730.820 INFO             PET0  PASS  Query meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 451
+20240806 075730.820 INFO             PET0  PASS  Verify meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 460
+20240806 075730.820 ERROR            PET0 ESMF_Comp.F90:1444 ESMF_CompGet Invalid object  - requested Mesh object is not present.
+20240806 075730.820 ERROR            PET0 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET0  PASS  Getting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 471
+20240806 075730.944 INFO             PET0  PASS  Setting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 487
+20240806 075730.944 INFO             PET0  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 498
+20240806 075730.944 INFO             PET0  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 507
+20240806 075730.944 INFO             PET0  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 518
+20240806 075730.944 INFO             PET0  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 527
+20240806 075730.969 INFO             PET0  PASS  Re-setting a list of Meshes Test, ESMF_GridCompCreateUTest.F90, line 543
+20240806 075730.969 INFO             PET0  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 554
+20240806 075730.969 INFO             PET0  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 563
+20240806 075730.969 INFO             PET0  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 574
+20240806 075730.969 INFO             PET0  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 583
+20240806 075730.969 INFO             PET0  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 592
+20240806 075730.969 INFO             PET0  PASS  Getting a meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 603
+20240806 075730.969 INFO             PET0  PASS  Verify meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 612
+20240806 075730.969 INFO             PET0  PASS  Verify meshList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 621
+20240806 075730.969 INFO             PET0  PASS  Verify meshList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 630
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 652
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 660
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configFileIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 671
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 679
+20240806 075730.971 INFO             PET0  PASS  Setting a ConfigFile Test, ESMF_GridCompCreateUTest.F90, line 690
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 701
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 709
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 720
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 728
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 739
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 751
+20240806 075730.971 INFO             PET0  fred =            1
+20240806 075730.971 INFO             PET0  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 763
+20240806 075730.971 INFO             PET0  PASS  HConfig handling Test - hconfigIsPresent, ESMF_GridCompCreateUTest.F90, line 774
+20240806 075730.971 INFO             PET0  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_GridCompCreateUTest.F90, line 782
+20240806 075730.971 INFO             PET0  PASS  HConfig handling Test - get hconfig, ESMF_GridCompCreateUTest.F90, line 793
+20240806 075730.972 INFO             PET0  PASS  HConfig handling Test - access map through hconfig, ESMF_GridCompCreateUTest.F90, line 805
+20240806 075730.972 INFO             PET0  fred =            1
+20240806 075730.972 INFO             PET0  PASS  HConfig handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 817
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with Config Test, ESMF_GridCompCreateUTest.F90, line 828
+20240806 075730.972 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 836
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with HConfig Test, ESMF_GridCompCreateUTest.F90, line 847
+20240806 075730.972 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 855
+20240806 075730.972 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET0 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 867
+20240806 075730.972 ERROR            PET0 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET0 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 879
+20240806 075730.972 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET0 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 891
+20240806 075730.972 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET0 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 903
+20240806 075730.973 INFO             PET0  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 914
+20240806 075730.973 INFO             PET0  PASS  Setting HConfig Test, ESMF_GridCompCreateUTest.F90, line 925
+20240806 075730.973 INFO             PET0  PASS  Setting Config Test, ESMF_GridCompCreateUTest.F90, line 936
+20240806 075730.973 ERROR            PET0 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.973 ERROR            PET0 ESMF_GridComp.F90:2323 ESMF_GridCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 075730.973 INFO             PET0  PASS  Setting HConfig and Config Test, ESMF_GridCompCreateUTest.F90, line 947
+20240806 075730.973 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 955
+20240806 075730.973 INFO             PET0  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 963
+20240806 075730.974 INFO             PET0  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 974
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 985
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 993
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 1004
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 1012
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 1023
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 1034
+20240806 075730.974 INFO             PET0  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 1045
+20240806 075730.974 INFO             PET0  PASS  Validating a Component Test, ESMF_GridCompCreateUTest.F90, line 1056
+20240806 075730.974 INFO             PET0  PASS  Waiting for a Component Test, ESMF_GridCompCreateUTest.F90, line 1066
+20240806 075730.974 INFO             PET0  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 1077
+20240806 075730.974 INFO             PET0  PASS  Verifying the correct Component name was returned Test, ESMF_GridCompCreateUTest.F90, line 1086
+20240806 075730.974 ERROR            PET0 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.974 ERROR            PET0 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.974 INFO             PET0  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 1097
+20240806 075730.974 INFO             PET0  PASS  Set Internal State Test, ESMF_GridCompCreateUTest.F90, line 1109
+20240806 075730.974 INFO             PET0  PASS  Get Internal State Test, ESMF_GridCompCreateUTest.F90, line 1119
+20240806 075730.974 INFO             PET0  PASS  Verify Internal State Test, ESMF_GridCompCreateUTest.F90, line 1128
+20240806 075730.974 INFO             PET0  PASS  Set Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1144
+20240806 075730.974 INFO             PET0  PASS  Get Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1154
+20240806 075730.974 INFO             PET0  PASS  Verify Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1163
+20240806 075730.974 INFO             PET0  PASS  Set Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1178
+20240806 075730.974 INFO             PET0  PASS  Get Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1188
+20240806 075730.974 INFO             PET0  PASS  Verify Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1197
+20240806 075730.974 INFO             PET0  PASS  Set Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1212
+20240806 075730.974 INFO             PET0  PASS  Get Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1222
+20240806 075730.974 INFO             PET0  PASS  Verify Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1231
+20240806 075730.974 INFO             PET0  PASS  Set Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1250
+20240806 075730.974 INFO             PET0  PASS  Get Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1264
+20240806 075730.974 INFO             PET0  PASS  Verify Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1273
+20240806 075730.974 INFO             PET0  PASS  Accessing information about the set internal states Test, ESMF_GridCompCreateUTest.F90, line 1295
+20240806 075730.974 INFO             PET0  PASS  Printing a Component Test, ESMF_GridCompCreateUTest.F90, line 1311
+20240806 075730.974 ERROR            PET0 ESMF_GridComp.F90:690 ESMF_GridCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 075730.974 INFO             PET0  PASS  Destroying a Gridded Component - with timeout, ESMF_GridCompCreateUTest.F90, line 1322
+20240806 075730.975 INFO             PET0  PASS  Destroying a Component Test, ESMF_GridCompCreateUTest.F90, line 1333
+20240806 075730.975 INFO             PET0  PASS  Creating a Component with petList Test, ESMF_GridCompCreateUTest.F90, line 1343
+20240806 075730.975 INFO             PET0  PASS  Destroying a Component created with petList Test, ESMF_GridCompCreateUTest.F90, line 1354
+20240806 075730.975 INFO             PET0  PASS  Creating a Component with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1366
+20240806 075730.975 INFO             PET0  PASS  Destroying a Component created with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1377
+20240806 075730.975 INFO             PET0  Ending Test, file ESMF_GridCompCreateUTest.F90, line 1381
+20240806 075730.975 INFO             PET0  Finalizing ESMF
+20240806 075730.792 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.792 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 075730.792 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 075730.792 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 075730.792 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 075730.792 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.792 INFO             PET1 Running with ESMF Version   : v8.7.0b11
+20240806 075730.793 INFO             PET1 ESMF library build date/time: "Aug  6 2024" "07:31:31"
+20240806 075730.793 INFO             PET1 ESMF library build location : /scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/gfortran_13.2.0_openmpi_g_develop/esmf
+20240806 075730.793 INFO             PET1 ESMF_COMM                   : openmpi
+20240806 075730.793 INFO             PET1 ESMF_MOAB                   : enabled
+20240806 075730.793 INFO             PET1 ESMF_LAPACK                 : enabled
+20240806 075730.793 INFO             PET1 ESMF_NETCDF                 : disabled
+20240806 075730.793 INFO             PET1 ESMF_PNETCDF                : disabled
+20240806 075730.793 INFO             PET1 ESMF_PIO                    : disabled
+20240806 075730.793 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240806 075730.815 INFO             PET1  Beginning Test, file ESMF_GridCompCreateUTest.F90, line 83
+20240806 075730.815 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20240806 075730.815 INFO             PET1  PASS  Testing GridComp IsCreated w/o keyword for uncreated object, ESMF_GridCompCreateUTest.F90, line 91
+20240806 075730.815 INFO             PET1  PASS  Testing GridComp IsCreated for uncreated object, ESMF_GridCompCreateUTest.F90, line 98
+20240806 075730.815 INFO             PET1  PASS  Testing GridComp IsCreated value for uncreated object, ESMF_GridCompCreateUTest.F90, line 104
+20240806 075730.818 INFO             PET1  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 112
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated w/o keyword for created object, ESMF_GridCompCreateUTest.F90, line 119
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated for created object, ESMF_GridCompCreateUTest.F90, line 126
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated value for created object, ESMF_GridCompCreateUTest.F90, line 132
+20240806 075730.818 INFO             PET1  PASS  GridComp equality before assignment Test, ESMF_GridCompCreateUTest.F90, line 139
+20240806 075730.818 INFO             PET1  PASS  GridComp assignment and equality Test, ESMF_GridCompCreateUTest.F90, line 148
+20240806 075730.818 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 155
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated w/o keyword for destroyed object, ESMF_GridCompCreateUTest.F90, line 162
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated for destroyed object, ESMF_GridCompCreateUTest.F90, line 169
+20240806 075730.818 INFO             PET1  PASS  Testing GridComp IsCreated value for destroyed object, ESMF_GridCompCreateUTest.F90, line 175
+20240806 075730.818 INFO             PET1  PASS  GridComp equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 183
+20240806 075730.818 INFO             PET1  PASS  GridComp non-equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 191
+20240806 075730.818 ERROR            PET1 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 075730.818 INFO             PET1  PASS  Double GridCompDestroy through alias Test, ESMF_GridCompCreateUTest.F90, line 198
+20240806 075730.819 INFO             PET1  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 206
+20240806 075730.820 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 213
+20240806 075730.820 ERROR            PET1 ESMF_GridComp.F90:1145 ESMF_GridCompGet Object being used after deletion  - Bad Object
+20240806 075730.820 INFO             PET1  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 226
+20240806 075730.820 INFO             PET1  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 236
+20240806 075730.820 INFO             PET1  PASS  Query gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 250
+20240806 075730.820 INFO             PET1  PASS  Verify gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 259
+20240806 075730.820 ERROR            PET1 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.820 ERROR            PET1 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET1  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 270
+20240806 075730.820 INFO             PET1  PASS  Setting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 286
+20240806 075730.820 INFO             PET1  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 297
+20240806 075730.820 INFO             PET1  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 306
+20240806 075730.820 INFO             PET1  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 317
+20240806 075730.820 INFO             PET1  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 326
+20240806 075730.820 INFO             PET1  PASS  Re-setting a list of Grids Test, ESMF_GridCompCreateUTest.F90, line 342
+20240806 075730.820 INFO             PET1  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 353
+20240806 075730.820 INFO             PET1  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 362
+20240806 075730.820 INFO             PET1  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 373
+20240806 075730.820 INFO             PET1  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 382
+20240806 075730.820 INFO             PET1  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 391
+20240806 075730.820 INFO             PET1  PASS  Getting a gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 402
+20240806 075730.820 INFO             PET1  PASS  Verify gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 411
+20240806 075730.820 INFO             PET1  PASS  Verify gridList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 420
+20240806 075730.820 INFO             PET1  PASS  Verify gridList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 429
+20240806 075730.820 INFO             PET1  PASS  Query meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 451
+20240806 075730.820 INFO             PET1  PASS  Verify meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 460
+20240806 075730.820 ERROR            PET1 ESMF_Comp.F90:1444 ESMF_CompGet Invalid object  - requested Mesh object is not present.
+20240806 075730.820 ERROR            PET1 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET1  PASS  Getting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 471
+20240806 075730.944 INFO             PET1  PASS  Setting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 487
+20240806 075730.944 INFO             PET1  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 498
+20240806 075730.944 INFO             PET1  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 507
+20240806 075730.944 INFO             PET1  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 518
+20240806 075730.944 INFO             PET1  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 527
+20240806 075730.969 INFO             PET1  PASS  Re-setting a list of Meshes Test, ESMF_GridCompCreateUTest.F90, line 543
+20240806 075730.969 INFO             PET1  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 554
+20240806 075730.969 INFO             PET1  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 563
+20240806 075730.969 INFO             PET1  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 574
+20240806 075730.969 INFO             PET1  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 583
+20240806 075730.969 INFO             PET1  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 592
+20240806 075730.969 INFO             PET1  PASS  Getting a meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 603
+20240806 075730.969 INFO             PET1  PASS  Verify meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 612
+20240806 075730.969 INFO             PET1  PASS  Verify meshList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 621
+20240806 075730.969 INFO             PET1  PASS  Verify meshList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 630
+20240806 075730.970 INFO             PET1  PASS  Config handling Test - configIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 652
+20240806 075730.970 INFO             PET1  PASS  Config handling Test - configIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 660
+20240806 075730.970 INFO             PET1  PASS  Config handling Test - configFileIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 671
+20240806 075730.970 INFO             PET1  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 679
+20240806 075730.971 INFO             PET1  PASS  Setting a ConfigFile Test, ESMF_GridCompCreateUTest.F90, line 690
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 701
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 709
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 720
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 728
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 739
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 751
+20240806 075730.971 INFO             PET1  fred =            1
+20240806 075730.971 INFO             PET1  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 763
+20240806 075730.971 INFO             PET1  PASS  HConfig handling Test - hconfigIsPresent, ESMF_GridCompCreateUTest.F90, line 774
+20240806 075730.971 INFO             PET1  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_GridCompCreateUTest.F90, line 782
+20240806 075730.972 INFO             PET1  PASS  HConfig handling Test - get hconfig, ESMF_GridCompCreateUTest.F90, line 793
+20240806 075730.972 INFO             PET1  PASS  HConfig handling Test - access map through hconfig, ESMF_GridCompCreateUTest.F90, line 805
+20240806 075730.972 INFO             PET1  fred =            1
+20240806 075730.972 INFO             PET1  PASS  HConfig handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 817
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with Config Test, ESMF_GridCompCreateUTest.F90, line 828
+20240806 075730.972 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 836
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with HConfig Test, ESMF_GridCompCreateUTest.F90, line 847
+20240806 075730.972 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 855
+20240806 075730.972 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET1 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 867
+20240806 075730.972 ERROR            PET1 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET1 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 879
+20240806 075730.972 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET1 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 891
+20240806 075730.972 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET1 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 903
+20240806 075730.973 INFO             PET1  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 914
+20240806 075730.973 INFO             PET1  PASS  Setting HConfig Test, ESMF_GridCompCreateUTest.F90, line 925
+20240806 075730.973 INFO             PET1  PASS  Setting Config Test, ESMF_GridCompCreateUTest.F90, line 936
+20240806 075730.973 ERROR            PET1 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.973 ERROR            PET1 ESMF_GridComp.F90:2323 ESMF_GridCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 075730.973 INFO             PET1  PASS  Setting HConfig and Config Test, ESMF_GridCompCreateUTest.F90, line 947
+20240806 075730.973 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 955
+20240806 075730.973 INFO             PET1  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 963
+20240806 075730.974 INFO             PET1  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 974
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 985
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 993
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 1004
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 1012
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 1023
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 1034
+20240806 075730.974 INFO             PET1  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 1045
+20240806 075730.974 INFO             PET1  PASS  Validating a Component Test, ESMF_GridCompCreateUTest.F90, line 1056
+20240806 075730.974 INFO             PET1  PASS  Waiting for a Component Test, ESMF_GridCompCreateUTest.F90, line 1066
+20240806 075730.974 INFO             PET1  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 1077
+20240806 075730.974 INFO             PET1  PASS  Verifying the correct Component name was returned Test, ESMF_GridCompCreateUTest.F90, line 1086
+20240806 075730.974 ERROR            PET1 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.974 ERROR            PET1 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.974 INFO             PET1  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 1097
+20240806 075730.974 INFO             PET1  PASS  Set Internal State Test, ESMF_GridCompCreateUTest.F90, line 1109
+20240806 075730.974 INFO             PET1  PASS  Get Internal State Test, ESMF_GridCompCreateUTest.F90, line 1119
+20240806 075730.974 INFO             PET1  PASS  Verify Internal State Test, ESMF_GridCompCreateUTest.F90, line 1128
+20240806 075730.974 INFO             PET1  PASS  Set Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1144
+20240806 075730.974 INFO             PET1  PASS  Get Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1154
+20240806 075730.974 INFO             PET1  PASS  Verify Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1163
+20240806 075730.974 INFO             PET1  PASS  Set Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1178
+20240806 075730.974 INFO             PET1  PASS  Get Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1188
+20240806 075730.974 INFO             PET1  PASS  Verify Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1197
+20240806 075730.974 INFO             PET1  PASS  Set Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1212
+20240806 075730.974 INFO             PET1  PASS  Get Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1222
+20240806 075730.974 INFO             PET1  PASS  Verify Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1231
+20240806 075730.974 INFO             PET1  PASS  Set Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1250
+20240806 075730.974 INFO             PET1  PASS  Get Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1264
+20240806 075730.974 INFO             PET1  PASS  Verify Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1273
+20240806 075730.974 INFO             PET1  PASS  Accessing information about the set internal states Test, ESMF_GridCompCreateUTest.F90, line 1295
+20240806 075730.974 INFO             PET1  PASS  Printing a Component Test, ESMF_GridCompCreateUTest.F90, line 1311
+20240806 075730.974 ERROR            PET1 ESMF_GridComp.F90:690 ESMF_GridCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 075730.974 INFO             PET1  PASS  Destroying a Gridded Component - with timeout, ESMF_GridCompCreateUTest.F90, line 1322
+20240806 075730.975 INFO             PET1  PASS  Destroying a Component Test, ESMF_GridCompCreateUTest.F90, line 1333
+20240806 075730.975 INFO             PET1  PASS  Creating a Component with petList Test, ESMF_GridCompCreateUTest.F90, line 1343
+20240806 075730.975 INFO             PET1  PASS  Destroying a Component created with petList Test, ESMF_GridCompCreateUTest.F90, line 1354
+20240806 075730.975 INFO             PET1  PASS  Creating a Component with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1366
+20240806 075730.975 INFO             PET1  PASS  Destroying a Component created with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1377
+20240806 075730.975 INFO             PET1  Ending Test, file ESMF_GridCompCreateUTest.F90, line 1381
+20240806 075730.975 INFO             PET1  Finalizing ESMF
+20240806 075730.792 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.793 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 075730.793 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 075730.793 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 075730.793 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 075730.793 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.793 INFO             PET2 Running with ESMF Version   : v8.7.0b11
+20240806 075730.793 INFO             PET2 ESMF library build date/time: "Aug  6 2024" "07:31:31"
+20240806 075730.793 INFO             PET2 ESMF library build location : /scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/gfortran_13.2.0_openmpi_g_develop/esmf
+20240806 075730.793 INFO             PET2 ESMF_COMM                   : openmpi
+20240806 075730.793 INFO             PET2 ESMF_MOAB                   : enabled
+20240806 075730.793 INFO             PET2 ESMF_LAPACK                 : enabled
+20240806 075730.793 INFO             PET2 ESMF_NETCDF                 : disabled
+20240806 075730.793 INFO             PET2 ESMF_PNETCDF                : disabled
+20240806 075730.793 INFO             PET2 ESMF_PIO                    : disabled
+20240806 075730.793 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240806 075730.815 INFO             PET2  Beginning Test, file ESMF_GridCompCreateUTest.F90, line 83
+20240806 075730.815 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20240806 075730.815 INFO             PET2  PASS  Testing GridComp IsCreated w/o keyword for uncreated object, ESMF_GridCompCreateUTest.F90, line 91
+20240806 075730.815 INFO             PET2  PASS  Testing GridComp IsCreated for uncreated object, ESMF_GridCompCreateUTest.F90, line 98
+20240806 075730.815 INFO             PET2  PASS  Testing GridComp IsCreated value for uncreated object, ESMF_GridCompCreateUTest.F90, line 104
+20240806 075730.818 INFO             PET2  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 112
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated w/o keyword for created object, ESMF_GridCompCreateUTest.F90, line 119
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated for created object, ESMF_GridCompCreateUTest.F90, line 126
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated value for created object, ESMF_GridCompCreateUTest.F90, line 132
+20240806 075730.818 INFO             PET2  PASS  GridComp equality before assignment Test, ESMF_GridCompCreateUTest.F90, line 139
+20240806 075730.818 INFO             PET2  PASS  GridComp assignment and equality Test, ESMF_GridCompCreateUTest.F90, line 148
+20240806 075730.818 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 155
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated w/o keyword for destroyed object, ESMF_GridCompCreateUTest.F90, line 162
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated for destroyed object, ESMF_GridCompCreateUTest.F90, line 169
+20240806 075730.818 INFO             PET2  PASS  Testing GridComp IsCreated value for destroyed object, ESMF_GridCompCreateUTest.F90, line 175
+20240806 075730.818 INFO             PET2  PASS  GridComp equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 183
+20240806 075730.818 INFO             PET2  PASS  GridComp non-equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 191
+20240806 075730.818 ERROR            PET2 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 075730.818 INFO             PET2  PASS  Double GridCompDestroy through alias Test, ESMF_GridCompCreateUTest.F90, line 198
+20240806 075730.819 INFO             PET2  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 206
+20240806 075730.819 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 213
+20240806 075730.820 ERROR            PET2 ESMF_GridComp.F90:1145 ESMF_GridCompGet Object being used after deletion  - Bad Object
+20240806 075730.820 INFO             PET2  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 226
+20240806 075730.820 INFO             PET2  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 236
+20240806 075730.820 INFO             PET2  PASS  Query gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 250
+20240806 075730.820 INFO             PET2  PASS  Verify gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 259
+20240806 075730.820 ERROR            PET2 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.820 ERROR            PET2 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET2  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 270
+20240806 075730.820 INFO             PET2  PASS  Setting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 286
+20240806 075730.820 INFO             PET2  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 297
+20240806 075730.820 INFO             PET2  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 306
+20240806 075730.820 INFO             PET2  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 317
+20240806 075730.820 INFO             PET2  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 326
+20240806 075730.820 INFO             PET2  PASS  Re-setting a list of Grids Test, ESMF_GridCompCreateUTest.F90, line 342
+20240806 075730.820 INFO             PET2  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 353
+20240806 075730.820 INFO             PET2  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 362
+20240806 075730.820 INFO             PET2  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 373
+20240806 075730.820 INFO             PET2  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 382
+20240806 075730.820 INFO             PET2  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 391
+20240806 075730.820 INFO             PET2  PASS  Getting a gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 402
+20240806 075730.820 INFO             PET2  PASS  Verify gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 411
+20240806 075730.820 INFO             PET2  PASS  Verify gridList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 420
+20240806 075730.820 INFO             PET2  PASS  Verify gridList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 429
+20240806 075730.820 INFO             PET2  PASS  Query meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 451
+20240806 075730.820 INFO             PET2  PASS  Verify meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 460
+20240806 075730.820 ERROR            PET2 ESMF_Comp.F90:1444 ESMF_CompGet Invalid object  - requested Mesh object is not present.
+20240806 075730.820 ERROR            PET2 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET2  PASS  Getting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 471
+20240806 075730.944 INFO             PET2  PASS  Setting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 487
+20240806 075730.944 INFO             PET2  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 498
+20240806 075730.944 INFO             PET2  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 507
+20240806 075730.944 INFO             PET2  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 518
+20240806 075730.944 INFO             PET2  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 527
+20240806 075730.969 INFO             PET2  PASS  Re-setting a list of Meshes Test, ESMF_GridCompCreateUTest.F90, line 543
+20240806 075730.969 INFO             PET2  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 554
+20240806 075730.969 INFO             PET2  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 563
+20240806 075730.969 INFO             PET2  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 574
+20240806 075730.969 INFO             PET2  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 583
+20240806 075730.969 INFO             PET2  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 592
+20240806 075730.969 INFO             PET2  PASS  Getting a meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 603
+20240806 075730.969 INFO             PET2  PASS  Verify meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 612
+20240806 075730.969 INFO             PET2  PASS  Verify meshList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 621
+20240806 075730.969 INFO             PET2  PASS  Verify meshList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 630
+20240806 075730.970 INFO             PET2  PASS  Config handling Test - configIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 652
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 660
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configFileIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 671
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 679
+20240806 075730.971 INFO             PET2  PASS  Setting a ConfigFile Test, ESMF_GridCompCreateUTest.F90, line 690
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 701
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 709
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 720
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 728
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 739
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 751
+20240806 075730.971 INFO             PET2  fred =            1
+20240806 075730.971 INFO             PET2  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 763
+20240806 075730.971 INFO             PET2  PASS  HConfig handling Test - hconfigIsPresent, ESMF_GridCompCreateUTest.F90, line 774
+20240806 075730.971 INFO             PET2  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_GridCompCreateUTest.F90, line 782
+20240806 075730.971 INFO             PET2  PASS  HConfig handling Test - get hconfig, ESMF_GridCompCreateUTest.F90, line 793
+20240806 075730.972 INFO             PET2  PASS  HConfig handling Test - access map through hconfig, ESMF_GridCompCreateUTest.F90, line 805
+20240806 075730.972 INFO             PET2  fred =            1
+20240806 075730.972 INFO             PET2  PASS  HConfig handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 817
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with Config Test, ESMF_GridCompCreateUTest.F90, line 828
+20240806 075730.972 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 836
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with HConfig Test, ESMF_GridCompCreateUTest.F90, line 847
+20240806 075730.972 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 855
+20240806 075730.972 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET2 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 867
+20240806 075730.972 ERROR            PET2 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET2 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 879
+20240806 075730.972 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET2 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 891
+20240806 075730.972 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET2 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 903
+20240806 075730.973 INFO             PET2  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 914
+20240806 075730.973 INFO             PET2  PASS  Setting HConfig Test, ESMF_GridCompCreateUTest.F90, line 925
+20240806 075730.973 INFO             PET2  PASS  Setting Config Test, ESMF_GridCompCreateUTest.F90, line 936
+20240806 075730.973 ERROR            PET2 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.973 ERROR            PET2 ESMF_GridComp.F90:2323 ESMF_GridCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 075730.973 INFO             PET2  PASS  Setting HConfig and Config Test, ESMF_GridCompCreateUTest.F90, line 947
+20240806 075730.973 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 955
+20240806 075730.973 INFO             PET2  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 963
+20240806 075730.974 INFO             PET2  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 974
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 985
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 993
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 1004
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 1012
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 1023
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 1034
+20240806 075730.974 INFO             PET2  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 1045
+20240806 075730.974 INFO             PET2  PASS  Validating a Component Test, ESMF_GridCompCreateUTest.F90, line 1056
+20240806 075730.974 INFO             PET2  PASS  Waiting for a Component Test, ESMF_GridCompCreateUTest.F90, line 1066
+20240806 075730.974 INFO             PET2  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 1077
+20240806 075730.974 INFO             PET2  PASS  Verifying the correct Component name was returned Test, ESMF_GridCompCreateUTest.F90, line 1086
+20240806 075730.974 ERROR            PET2 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.974 ERROR            PET2 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.974 INFO             PET2  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 1097
+20240806 075730.974 INFO             PET2  PASS  Set Internal State Test, ESMF_GridCompCreateUTest.F90, line 1109
+20240806 075730.974 INFO             PET2  PASS  Get Internal State Test, ESMF_GridCompCreateUTest.F90, line 1119
+20240806 075730.974 INFO             PET2  PASS  Verify Internal State Test, ESMF_GridCompCreateUTest.F90, line 1128
+20240806 075730.974 INFO             PET2  PASS  Set Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1144
+20240806 075730.974 INFO             PET2  PASS  Get Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1154
+20240806 075730.974 INFO             PET2  PASS  Verify Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1163
+20240806 075730.974 INFO             PET2  PASS  Set Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1178
+20240806 075730.974 INFO             PET2  PASS  Get Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1188
+20240806 075730.974 INFO             PET2  PASS  Verify Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1197
+20240806 075730.974 INFO             PET2  PASS  Set Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1212
+20240806 075730.974 INFO             PET2  PASS  Get Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1222
+20240806 075730.974 INFO             PET2  PASS  Verify Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1231
+20240806 075730.974 INFO             PET2  PASS  Set Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1250
+20240806 075730.974 INFO             PET2  PASS  Get Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1264
+20240806 075730.974 INFO             PET2  PASS  Verify Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1273
+20240806 075730.974 INFO             PET2  PASS  Accessing information about the set internal states Test, ESMF_GridCompCreateUTest.F90, line 1295
+20240806 075730.974 INFO             PET2  PASS  Printing a Component Test, ESMF_GridCompCreateUTest.F90, line 1311
+20240806 075730.974 ERROR            PET2 ESMF_GridComp.F90:690 ESMF_GridCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 075730.974 INFO             PET2  PASS  Destroying a Gridded Component - with timeout, ESMF_GridCompCreateUTest.F90, line 1322
+20240806 075730.975 INFO             PET2  PASS  Destroying a Component Test, ESMF_GridCompCreateUTest.F90, line 1333
+20240806 075730.975 INFO             PET2  PASS  Creating a Component with petList Test, ESMF_GridCompCreateUTest.F90, line 1343
+20240806 075730.975 INFO             PET2  PASS  Destroying a Component created with petList Test, ESMF_GridCompCreateUTest.F90, line 1354
+20240806 075730.975 INFO             PET2  PASS  Creating a Component with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1366
+20240806 075730.975 INFO             PET2  PASS  Destroying a Component created with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1377
+20240806 075730.975 INFO             PET2  Ending Test, file ESMF_GridCompCreateUTest.F90, line 1381
+20240806 075730.975 INFO             PET2  Finalizing ESMF
+20240806 075730.792 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.793 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 075730.793 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 075730.793 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 075730.793 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 075730.793 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 075730.793 INFO             PET3 Running with ESMF Version   : v8.7.0b11
+20240806 075730.793 INFO             PET3 ESMF library build date/time: "Aug  6 2024" "07:31:31"
+20240806 075730.793 INFO             PET3 ESMF library build location : /scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/gfortran_13.2.0_openmpi_g_develop/esmf
+20240806 075730.793 INFO             PET3 ESMF_COMM                   : openmpi
+20240806 075730.793 INFO             PET3 ESMF_MOAB                   : enabled
+20240806 075730.793 INFO             PET3 ESMF_LAPACK                 : enabled
+20240806 075730.793 INFO             PET3 ESMF_NETCDF                 : disabled
+20240806 075730.793 INFO             PET3 ESMF_PNETCDF                : disabled
+20240806 075730.793 INFO             PET3 ESMF_PIO                    : disabled
+20240806 075730.793 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240806 075730.815 INFO             PET3  Beginning Test, file ESMF_GridCompCreateUTest.F90, line 83
+20240806 075730.815 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20240806 075730.815 INFO             PET3  PASS  Testing GridComp IsCreated w/o keyword for uncreated object, ESMF_GridCompCreateUTest.F90, line 91
+20240806 075730.815 INFO             PET3  PASS  Testing GridComp IsCreated for uncreated object, ESMF_GridCompCreateUTest.F90, line 98
+20240806 075730.815 INFO             PET3  PASS  Testing GridComp IsCreated value for uncreated object, ESMF_GridCompCreateUTest.F90, line 104
+20240806 075730.818 INFO             PET3  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 112
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated w/o keyword for created object, ESMF_GridCompCreateUTest.F90, line 119
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated for created object, ESMF_GridCompCreateUTest.F90, line 126
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated value for created object, ESMF_GridCompCreateUTest.F90, line 132
+20240806 075730.818 INFO             PET3  PASS  GridComp equality before assignment Test, ESMF_GridCompCreateUTest.F90, line 139
+20240806 075730.818 INFO             PET3  PASS  GridComp assignment and equality Test, ESMF_GridCompCreateUTest.F90, line 148
+20240806 075730.818 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 155
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated w/o keyword for destroyed object, ESMF_GridCompCreateUTest.F90, line 162
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated for destroyed object, ESMF_GridCompCreateUTest.F90, line 169
+20240806 075730.818 INFO             PET3  PASS  Testing GridComp IsCreated value for destroyed object, ESMF_GridCompCreateUTest.F90, line 175
+20240806 075730.818 INFO             PET3  PASS  GridComp equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 183
+20240806 075730.818 INFO             PET3  PASS  GridComp non-equality after destroy Test, ESMF_GridCompCreateUTest.F90, line 191
+20240806 075730.818 ERROR            PET3 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 075730.818 INFO             PET3  PASS  Double GridCompDestroy through alias Test, ESMF_GridCompCreateUTest.F90, line 198
+20240806 075730.819 INFO             PET3  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 206
+20240806 075730.820 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 213
+20240806 075730.820 ERROR            PET3 ESMF_GridComp.F90:1145 ESMF_GridCompGet Object being used after deletion  - Bad Object
+20240806 075730.820 INFO             PET3  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 226
+20240806 075730.820 INFO             PET3  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 236
+20240806 075730.820 INFO             PET3  PASS  Query gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 250
+20240806 075730.820 INFO             PET3  PASS  Verify gridIsPresent for Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 259
+20240806 075730.820 ERROR            PET3 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.820 ERROR            PET3 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET3  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 270
+20240806 075730.820 INFO             PET3  PASS  Setting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 286
+20240806 075730.820 INFO             PET3  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 297
+20240806 075730.820 INFO             PET3  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 306
+20240806 075730.820 INFO             PET3  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 317
+20240806 075730.820 INFO             PET3  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 326
+20240806 075730.820 INFO             PET3  PASS  Re-setting a list of Grids Test, ESMF_GridCompCreateUTest.F90, line 342
+20240806 075730.820 INFO             PET3  PASS  Query gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 353
+20240806 075730.820 INFO             PET3  PASS  Verify gridIsPresent for Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 362
+20240806 075730.820 INFO             PET3  PASS  Getting a Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 373
+20240806 075730.820 INFO             PET3  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 382
+20240806 075730.820 INFO             PET3  PASS  Verify Grid that was set Test, ESMF_GridCompCreateUTest.F90, line 391
+20240806 075730.820 INFO             PET3  PASS  Getting a gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 402
+20240806 075730.820 INFO             PET3  PASS  Verify gridList that was set Test, ESMF_GridCompCreateUTest.F90, line 411
+20240806 075730.820 INFO             PET3  PASS  Verify gridList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 420
+20240806 075730.820 INFO             PET3  PASS  Verify gridList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 429
+20240806 075730.820 INFO             PET3  PASS  Query meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 451
+20240806 075730.820 INFO             PET3  PASS  Verify meshIsPresent for Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 460
+20240806 075730.820 ERROR            PET3 ESMF_Comp.F90:1444 ESMF_CompGet Invalid object  - requested Mesh object is not present.
+20240806 075730.820 ERROR            PET3 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.820 INFO             PET3  PASS  Getting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 471
+20240806 075730.944 INFO             PET3  PASS  Setting a Mesh that was not set Test, ESMF_GridCompCreateUTest.F90, line 487
+20240806 075730.944 INFO             PET3  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 498
+20240806 075730.944 INFO             PET3  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 507
+20240806 075730.944 INFO             PET3  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 518
+20240806 075730.944 INFO             PET3  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 527
+20240806 075730.969 INFO             PET3  PASS  Re-setting a list of Meshes Test, ESMF_GridCompCreateUTest.F90, line 543
+20240806 075730.969 INFO             PET3  PASS  Query meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 554
+20240806 075730.969 INFO             PET3  PASS  Verify meshIsPresent for Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 563
+20240806 075730.969 INFO             PET3  PASS  Getting a Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 574
+20240806 075730.969 INFO             PET3  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 583
+20240806 075730.969 INFO             PET3  PASS  Verify Mesh that was set Test, ESMF_GridCompCreateUTest.F90, line 592
+20240806 075730.969 INFO             PET3  PASS  Getting a meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 603
+20240806 075730.969 INFO             PET3  PASS  Verify meshList that was set Test, ESMF_GridCompCreateUTest.F90, line 612
+20240806 075730.969 INFO             PET3  PASS  Verify meshList(1) that was set Test, ESMF_GridCompCreateUTest.F90, line 621
+20240806 075730.969 INFO             PET3  PASS  Verify meshList(2) that was set Test, ESMF_GridCompCreateUTest.F90, line 630
+20240806 075730.970 INFO             PET3  PASS  Config handling Test - configIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 652
+20240806 075730.970 INFO             PET3  PASS  Config handling Test - configIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 660
+20240806 075730.970 INFO             PET3  PASS  Config handling Test - configFileIsPresent before setting, ESMF_GridCompCreateUTest.F90, line 671
+20240806 075730.970 INFO             PET3  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_GridCompCreateUTest.F90, line 679
+20240806 075730.971 INFO             PET3  PASS  Setting a ConfigFile Test, ESMF_GridCompCreateUTest.F90, line 690
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 701
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 709
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 720
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 728
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 739
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 751
+20240806 075730.971 INFO             PET3  fred =            1
+20240806 075730.971 INFO             PET3  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 763
+20240806 075730.971 INFO             PET3  PASS  HConfig handling Test - hconfigIsPresent, ESMF_GridCompCreateUTest.F90, line 774
+20240806 075730.971 INFO             PET3  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_GridCompCreateUTest.F90, line 782
+20240806 075730.971 INFO             PET3  PASS  HConfig handling Test - get hconfig, ESMF_GridCompCreateUTest.F90, line 793
+20240806 075730.971 INFO             PET3  PASS  HConfig handling Test - access map through hconfig, ESMF_GridCompCreateUTest.F90, line 805
+20240806 075730.971 INFO             PET3  fred =            1
+20240806 075730.971 INFO             PET3  PASS  HConfig handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 817
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with Config Test, ESMF_GridCompCreateUTest.F90, line 828
+20240806 075730.972 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 836
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with HConfig Test, ESMF_GridCompCreateUTest.F90, line 847
+20240806 075730.972 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 855
+20240806 075730.972 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET3 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 867
+20240806 075730.972 ERROR            PET3 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET3 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 879
+20240806 075730.972 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET3 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 891
+20240806 075730.972 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.972 ERROR            PET3 ESMF_GridComp.F90:585 ESMF_GridCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 075730.972 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_GridCompCreateUTest.F90, line 903
+20240806 075730.973 INFO             PET3  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 914
+20240806 075730.973 INFO             PET3  PASS  Setting HConfig Test, ESMF_GridCompCreateUTest.F90, line 925
+20240806 075730.973 INFO             PET3  PASS  Setting Config Test, ESMF_GridCompCreateUTest.F90, line 936
+20240806 075730.973 ERROR            PET3 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 075730.973 ERROR            PET3 ESMF_GridComp.F90:2323 ESMF_GridCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 075730.973 INFO             PET3  PASS  Setting HConfig and Config Test, ESMF_GridCompCreateUTest.F90, line 947
+20240806 075730.973 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 955
+20240806 075730.973 INFO             PET3  PASS  GridCompDestroy Test, ESMF_GridCompCreateUTest.F90, line 963
+20240806 075730.974 INFO             PET3  PASS  Creating a Component Test, ESMF_GridCompCreateUTest.F90, line 974
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - configFileIsPresent, ESMF_GridCompCreateUTest.F90, line 985
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - configFileIsPresent value, ESMF_GridCompCreateUTest.F90, line 993
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - configIsPresent, ESMF_GridCompCreateUTest.F90, line 1004
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - configIsPresent value, ESMF_GridCompCreateUTest.F90, line 1012
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - get config, ESMF_GridCompCreateUTest.F90, line 1023
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - access attribute through config, ESMF_GridCompCreateUTest.F90, line 1034
+20240806 075730.974 INFO             PET3  PASS  Config handling Test - validate attribute value, ESMF_GridCompCreateUTest.F90, line 1045
+20240806 075730.974 INFO             PET3  PASS  Validating a Component Test, ESMF_GridCompCreateUTest.F90, line 1056
+20240806 075730.974 INFO             PET3  PASS  Waiting for a Component Test, ESMF_GridCompCreateUTest.F90, line 1066
+20240806 075730.974 INFO             PET3  PASS  Getting a Component name Test, ESMF_GridCompCreateUTest.F90, line 1077
+20240806 075730.974 INFO             PET3  PASS  Verifying the correct Component name was returned Test, ESMF_GridCompCreateUTest.F90, line 1086
+20240806 075730.974 ERROR            PET3 ESMF_Comp.F90:1428 ESMF_CompGet Invalid object  - requested Grid object is not present.
+20240806 075730.974 ERROR            PET3 ESMF_GridComp.F90:1159 ESMF_GridCompGet Invalid object  - Internal subroutine call returned Error
+20240806 075730.974 INFO             PET3  PASS  Getting a Grid that was not set Test, ESMF_GridCompCreateUTest.F90, line 1097
+20240806 075730.974 INFO             PET3  PASS  Set Internal State Test, ESMF_GridCompCreateUTest.F90, line 1109
+20240806 075730.974 INFO             PET3  PASS  Get Internal State Test, ESMF_GridCompCreateUTest.F90, line 1119
+20240806 075730.974 INFO             PET3  PASS  Verify Internal State Test, ESMF_GridCompCreateUTest.F90, line 1128
+20240806 075730.974 INFO             PET3  PASS  Set Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1144
+20240806 075730.974 INFO             PET3  PASS  Get Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1154
+20240806 075730.974 INFO             PET3  PASS  Verify Internal State 2nd time Test, ESMF_GridCompCreateUTest.F90, line 1163
+20240806 075730.974 INFO             PET3  PASS  Set Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1178
+20240806 075730.974 INFO             PET3  PASS  Get Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1188
+20240806 075730.974 INFO             PET3  PASS  Verify Internal State 3rd time Test, ESMF_GridCompCreateUTest.F90, line 1197
+20240806 075730.974 INFO             PET3  PASS  Set Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1212
+20240806 075730.974 INFO             PET3  PASS  Get Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1222
+20240806 075730.974 INFO             PET3  PASS  Verify Internal State (4th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1231
+20240806 075730.974 INFO             PET3  PASS  Set Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1250
+20240806 075730.974 INFO             PET3  PASS  Get Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1264
+20240806 075730.974 INFO             PET3  PASS  Verify Internal State (5th time) through UserComp API Test, ESMF_GridCompCreateUTest.F90, line 1273
+20240806 075730.974 INFO             PET3  PASS  Accessing information about the set internal states Test, ESMF_GridCompCreateUTest.F90, line 1295
+20240806 075730.974 INFO             PET3  PASS  Printing a Component Test, ESMF_GridCompCreateUTest.F90, line 1311
+20240806 075730.974 ERROR            PET3 ESMF_GridComp.F90:690 ESMF_GridCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 075730.974 INFO             PET3  PASS  Destroying a Gridded Component - with timeout, ESMF_GridCompCreateUTest.F90, line 1322
+20240806 075730.974 INFO             PET3  PASS  Destroying a Component Test, ESMF_GridCompCreateUTest.F90, line 1333
+20240806 075730.975 INFO             PET3  PASS  Creating a Component with petList Test, ESMF_GridCompCreateUTest.F90, line 1343
+20240806 075730.975 INFO             PET3  PASS  Destroying a Component created with petList Test, ESMF_GridCompCreateUTest.F90, line 1354
+20240806 075730.975 INFO             PET3  PASS  Creating a Component with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1366
+20240806 075730.975 INFO             PET3  PASS  Destroying a Component created with empty petList Test, ESMF_GridCompCreateUTest.F90, line 1377
+20240806 075730.975 INFO             PET3  Ending Test, file ESMF_GridCompCreateUTest.F90, line 1381
+20240806 075730.975 INFO             PET3  Finalizing ESMF
