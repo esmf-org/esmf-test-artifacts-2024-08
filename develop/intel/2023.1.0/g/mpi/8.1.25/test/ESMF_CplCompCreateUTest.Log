@@ -1,0 +1,481 @@
+2024-08-06 03:55:59
+20240806 041155.412 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 041155.412 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 041155.412 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 041155.412 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 041155.412 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET0 Running with ESMF Version   : v8.7.0b11
+20240806 041155.412 INFO             PET0 ESMF library build date/time: "Aug  6 2024" "03:55:09"
+20240806 041155.412 INFO             PET0 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240806 041155.412 INFO             PET0 ESMF_COMM                   : mpi
+20240806 041155.412 INFO             PET0 ESMF_MOAB                   : enabled
+20240806 041155.412 INFO             PET0 ESMF_LAPACK                 : enabled
+20240806 041155.412 INFO             PET0 ESMF_NETCDF                 : enabled
+20240806 041155.412 INFO             PET0 ESMF_PNETCDF                : disabled
+20240806 041155.412 INFO             PET0 ESMF_PIO                    : enabled
+20240806 041155.412 INFO             PET0 ESMF_YAMLCPP                : enabled
+20240806 041155.412 INFO             PET0  Beginning Test, file ESMF_CplCompCreateUTest.F90, line 83
+20240806 041155.412 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20240806 041155.412 INFO             PET0  PASS  Testing CplComp IsCreated w/o keyword for uncreated object, ESMF_CplCompCreateUTest.F90, line 91
+20240806 041155.412 INFO             PET0  PASS  Testing CplComp IsCreated for uncreated object, ESMF_CplCompCreateUTest.F90, line 98
+20240806 041155.412 INFO             PET0  PASS  Testing CplComp IsCreated value for uncreated object, ESMF_CplCompCreateUTest.F90, line 104
+20240806 041155.415 INFO             PET0  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 112
+20240806 041155.415 INFO             PET0  PASS  Testing CplComp IsCreated w/o keyword for created object, ESMF_CplCompCreateUTest.F90, line 119
+20240806 041155.415 INFO             PET0  PASS  Testing CplComp IsCreated for created object, ESMF_CplCompCreateUTest.F90, line 126
+20240806 041155.415 INFO             PET0  PASS  Testing CplComp IsCreated value for created object, ESMF_CplCompCreateUTest.F90, line 132
+20240806 041155.415 INFO             PET0  PASS  CplComp equality before assignment Test, ESMF_CplCompCreateUTest.F90, line 139
+20240806 041155.415 INFO             PET0  PASS  CplComp assignment and equality Test, ESMF_CplCompCreateUTest.F90, line 148
+20240806 041155.416 INFO             PET0  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 155
+20240806 041155.416 INFO             PET0  PASS  Testing CplComp IsCreated w/o keyword for destroyed object, ESMF_CplCompCreateUTest.F90, line 162
+20240806 041155.416 INFO             PET0  PASS  Testing CplComp IsCreated for destroyed object, ESMF_CplCompCreateUTest.F90, line 169
+20240806 041155.416 INFO             PET0  PASS  Testing CplComp IsCreated value for destroyed object, ESMF_CplCompCreateUTest.F90, line 175
+20240806 041155.416 INFO             PET0  PASS  CplComp equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 183
+20240806 041155.416 INFO             PET0  PASS  CplComp non-equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 191
+20240806 041155.416 ERROR            PET0 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 041155.416 INFO             PET0  PASS  Double CplCompDestroy through alias Test, ESMF_CplCompCreateUTest.F90, line 198
+20240806 041155.416 INFO             PET0  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 206
+20240806 041155.416 INFO             PET0  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 213
+20240806 041155.416 ERROR            PET0 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used after deletion  - Bad Object
+20240806 041155.416 INFO             PET0  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 224
+20240806 041155.416 INFO             PET0  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 231
+20240806 041155.416 ERROR            PET0 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET0  PASS  Creating a Coupler Component with a negative number in petList, ESMF_CplCompCreateUTest.F90, line 241
+20240806 041155.416 ERROR            PET0 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET0  PASS  Creating a Coupler Component with out of range petList, ESMF_CplCompCreateUTest.F90, line 251
+20240806 041155.416 ERROR            PET0 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used before creation  - Bad Object
+20240806 041155.416 INFO             PET0  PASS  Query run status of a non- created Coupler Component, ESMF_CplCompCreateUTest.F90, line 262
+20240806 041155.416 INFO             PET0  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 271
+20240806 041155.416 INFO             PET0  PASS  Query clockIsPresent bit for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 279
+20240806 041155.416 INFO             PET0  PASS  Verify clockIsPresent for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 286
+20240806 041155.416 INFO             PET0  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 294
+20240806 041155.416 INFO             PET0  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 301
+20240806 041155.416 INFO             PET0  PASS  Validating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 312
+20240806 041155.416 INFO             PET0  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 321
+20240806 041155.416 INFO             PET0  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 330
+20240806 041155.416 INFO             PET0  PASS  Setting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 340
+20240806 041155.416 INFO             PET0  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 349
+20240806 041155.416 INFO             PET0  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 358
+20240806 041155.416 INFO             PET0  PASS  Set Internal State Test, ESMF_CplCompCreateUTest.F90, line 370
+20240806 041155.416 INFO             PET0  PASS  Get Internal State Test, ESMF_CplCompCreateUTest.F90, line 382
+20240806 041155.416 INFO             PET0  PASS  Verify Internal State Test, ESMF_CplCompCreateUTest.F90, line 392
+20240806 041155.416 INFO             PET0  PASS  Accessing information about the set internal states Test, ESMF_CplCompCreateUTest.F90, line 407
+20240806 041155.416 INFO             PET0  PASS  Printing a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 423
+20240806 041155.416 INFO             PET0  PASS  Wait for a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 434
+20240806 041155.416 INFO             PET0  PASS  Config handling Test - configIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 445
+20240806 041155.416 INFO             PET0  PASS  Config handling Test - configIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 453
+20240806 041155.416 INFO             PET0  PASS  Config handling Test - configFileIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 464
+20240806 041155.416 INFO             PET0  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 472
+20240806 041155.417 INFO             PET0  PASS  Setting a ConfigFile Test, ESMF_CplCompCreateUTest.F90, line 483
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - configFileIsPresent, ESMF_CplCompCreateUTest.F90, line 494
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - configFileIsPresent value, ESMF_CplCompCreateUTest.F90, line 502
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - configIsPresent, ESMF_CplCompCreateUTest.F90, line 513
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - configIsPresent value, ESMF_CplCompCreateUTest.F90, line 521
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - get config, ESMF_CplCompCreateUTest.F90, line 532
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - access attribute through config, ESMF_CplCompCreateUTest.F90, line 544
+20240806 041155.417 INFO             PET0  fred =            1
+20240806 041155.417 INFO             PET0  PASS  Config handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 556
+20240806 041155.417 INFO             PET0  PASS  HConfig handling Test - hconfigIsPresent, ESMF_CplCompCreateUTest.F90, line 567
+20240806 041155.417 INFO             PET0  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_CplCompCreateUTest.F90, line 575
+20240806 041155.417 INFO             PET0  PASS  HConfig handling Test - get hconfig, ESMF_CplCompCreateUTest.F90, line 586
+20240806 041155.417 INFO             PET0  PASS  HConfig handling Test - access map through hconfig, ESMF_CplCompCreateUTest.F90, line 598
+20240806 041155.417 INFO             PET0  fred =            1
+20240806 041155.417 INFO             PET0  PASS  HConfig handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 610
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with Config Test, ESMF_CplCompCreateUTest.F90, line 621
+20240806 041155.418 INFO             PET0  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 629
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with HConfig Test, ESMF_CplCompCreateUTest.F90, line 640
+20240806 041155.418 INFO             PET0  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 648
+20240806 041155.418 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 660
+20240806 041155.418 ERROR            PET0 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 672
+20240806 041155.418 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 684
+20240806 041155.418 ERROR            PET0 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET0 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET0  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 696
+20240806 041155.419 INFO             PET0  PASS  Creating a Component Test, ESMF_CplCompCreateUTest.F90, line 707
+20240806 041155.419 INFO             PET0  PASS  Setting HConfig Test, ESMF_CplCompCreateUTest.F90, line 718
+20240806 041155.419 INFO             PET0  PASS  Setting Config Test, ESMF_CplCompCreateUTest.F90, line 729
+20240806 041155.419 ERROR            PET0 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.419 ERROR            PET0 ESMF_CplComp.F90:1974 ESMF_CplCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 041155.419 INFO             PET0  PASS  Setting HConfig and Config Test, ESMF_CplCompCreateUTest.F90, line 740
+20240806 041155.419 INFO             PET0  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 748
+20240806 041155.419 ERROR            PET0 ESMF_CplComp.F90:579 ESMF_CplCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 041155.419 INFO             PET0  PASS  Destroying a Coupler Component - with timeout, ESMF_CplCompCreateUTest.F90, line 759
+20240806 041155.419 INFO             PET0  PASS  Destroying a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 770
+20240806 041155.419 INFO             PET0  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 780
+20240806 041155.419 INFO             PET0  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 791
+20240806 041155.420 INFO             PET0  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 803
+20240806 041155.420 INFO             PET0  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 814
+20240806 041155.420 INFO             PET0  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 823
+20240806 041155.420 INFO             PET0  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 834
+20240806 041155.420 INFO             PET0  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 846
+20240806 041155.420 INFO             PET0  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 857
+20240806 041155.420 INFO             PET0  Ending Test, file ESMF_CplCompCreateUTest.F90, line 861
+20240806 041155.420 INFO             PET0  Finalizing ESMF
+20240806 041155.412 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 041155.412 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 041155.412 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 041155.412 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 041155.412 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET1 Running with ESMF Version   : v8.7.0b11
+20240806 041155.412 INFO             PET1 ESMF library build date/time: "Aug  6 2024" "03:55:09"
+20240806 041155.412 INFO             PET1 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240806 041155.412 INFO             PET1 ESMF_COMM                   : mpi
+20240806 041155.412 INFO             PET1 ESMF_MOAB                   : enabled
+20240806 041155.412 INFO             PET1 ESMF_LAPACK                 : enabled
+20240806 041155.412 INFO             PET1 ESMF_NETCDF                 : enabled
+20240806 041155.412 INFO             PET1 ESMF_PNETCDF                : disabled
+20240806 041155.412 INFO             PET1 ESMF_PIO                    : enabled
+20240806 041155.412 INFO             PET1 ESMF_YAMLCPP                : enabled
+20240806 041155.412 INFO             PET1  Beginning Test, file ESMF_CplCompCreateUTest.F90, line 83
+20240806 041155.412 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20240806 041155.412 INFO             PET1  PASS  Testing CplComp IsCreated w/o keyword for uncreated object, ESMF_CplCompCreateUTest.F90, line 91
+20240806 041155.412 INFO             PET1  PASS  Testing CplComp IsCreated for uncreated object, ESMF_CplCompCreateUTest.F90, line 98
+20240806 041155.412 INFO             PET1  PASS  Testing CplComp IsCreated value for uncreated object, ESMF_CplCompCreateUTest.F90, line 104
+20240806 041155.415 INFO             PET1  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 112
+20240806 041155.415 INFO             PET1  PASS  Testing CplComp IsCreated w/o keyword for created object, ESMF_CplCompCreateUTest.F90, line 119
+20240806 041155.415 INFO             PET1  PASS  Testing CplComp IsCreated for created object, ESMF_CplCompCreateUTest.F90, line 126
+20240806 041155.415 INFO             PET1  PASS  Testing CplComp IsCreated value for created object, ESMF_CplCompCreateUTest.F90, line 132
+20240806 041155.415 INFO             PET1  PASS  CplComp equality before assignment Test, ESMF_CplCompCreateUTest.F90, line 139
+20240806 041155.415 INFO             PET1  PASS  CplComp assignment and equality Test, ESMF_CplCompCreateUTest.F90, line 148
+20240806 041155.416 INFO             PET1  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 155
+20240806 041155.416 INFO             PET1  PASS  Testing CplComp IsCreated w/o keyword for destroyed object, ESMF_CplCompCreateUTest.F90, line 162
+20240806 041155.416 INFO             PET1  PASS  Testing CplComp IsCreated for destroyed object, ESMF_CplCompCreateUTest.F90, line 169
+20240806 041155.416 INFO             PET1  PASS  Testing CplComp IsCreated value for destroyed object, ESMF_CplCompCreateUTest.F90, line 175
+20240806 041155.416 INFO             PET1  PASS  CplComp equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 183
+20240806 041155.416 INFO             PET1  PASS  CplComp non-equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 191
+20240806 041155.416 ERROR            PET1 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 041155.416 INFO             PET1  PASS  Double CplCompDestroy through alias Test, ESMF_CplCompCreateUTest.F90, line 198
+20240806 041155.416 INFO             PET1  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 206
+20240806 041155.416 INFO             PET1  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 213
+20240806 041155.416 ERROR            PET1 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used after deletion  - Bad Object
+20240806 041155.416 INFO             PET1  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 224
+20240806 041155.416 INFO             PET1  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 231
+20240806 041155.416 ERROR            PET1 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET1  PASS  Creating a Coupler Component with a negative number in petList, ESMF_CplCompCreateUTest.F90, line 241
+20240806 041155.416 ERROR            PET1 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET1  PASS  Creating a Coupler Component with out of range petList, ESMF_CplCompCreateUTest.F90, line 251
+20240806 041155.416 ERROR            PET1 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used before creation  - Bad Object
+20240806 041155.416 INFO             PET1  PASS  Query run status of a non- created Coupler Component, ESMF_CplCompCreateUTest.F90, line 262
+20240806 041155.416 INFO             PET1  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 271
+20240806 041155.416 INFO             PET1  PASS  Query clockIsPresent bit for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 279
+20240806 041155.416 INFO             PET1  PASS  Verify clockIsPresent for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 286
+20240806 041155.416 INFO             PET1  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 294
+20240806 041155.416 INFO             PET1  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 301
+20240806 041155.416 INFO             PET1  PASS  Validating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 312
+20240806 041155.416 INFO             PET1  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 321
+20240806 041155.416 INFO             PET1  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 330
+20240806 041155.416 INFO             PET1  PASS  Setting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 340
+20240806 041155.416 INFO             PET1  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 349
+20240806 041155.416 INFO             PET1  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 358
+20240806 041155.416 INFO             PET1  PASS  Set Internal State Test, ESMF_CplCompCreateUTest.F90, line 370
+20240806 041155.416 INFO             PET1  PASS  Get Internal State Test, ESMF_CplCompCreateUTest.F90, line 382
+20240806 041155.416 INFO             PET1  PASS  Verify Internal State Test, ESMF_CplCompCreateUTest.F90, line 392
+20240806 041155.416 INFO             PET1  PASS  Accessing information about the set internal states Test, ESMF_CplCompCreateUTest.F90, line 407
+20240806 041155.416 INFO             PET1  PASS  Printing a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 423
+20240806 041155.416 INFO             PET1  PASS  Wait for a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 434
+20240806 041155.416 INFO             PET1  PASS  Config handling Test - configIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 445
+20240806 041155.416 INFO             PET1  PASS  Config handling Test - configIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 453
+20240806 041155.416 INFO             PET1  PASS  Config handling Test - configFileIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 464
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 472
+20240806 041155.417 INFO             PET1  PASS  Setting a ConfigFile Test, ESMF_CplCompCreateUTest.F90, line 483
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - configFileIsPresent, ESMF_CplCompCreateUTest.F90, line 494
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - configFileIsPresent value, ESMF_CplCompCreateUTest.F90, line 502
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - configIsPresent, ESMF_CplCompCreateUTest.F90, line 513
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - configIsPresent value, ESMF_CplCompCreateUTest.F90, line 521
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - get config, ESMF_CplCompCreateUTest.F90, line 532
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - access attribute through config, ESMF_CplCompCreateUTest.F90, line 544
+20240806 041155.417 INFO             PET1  fred =            1
+20240806 041155.417 INFO             PET1  PASS  Config handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 556
+20240806 041155.417 INFO             PET1  PASS  HConfig handling Test - hconfigIsPresent, ESMF_CplCompCreateUTest.F90, line 567
+20240806 041155.417 INFO             PET1  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_CplCompCreateUTest.F90, line 575
+20240806 041155.417 INFO             PET1  PASS  HConfig handling Test - get hconfig, ESMF_CplCompCreateUTest.F90, line 586
+20240806 041155.418 INFO             PET1  PASS  HConfig handling Test - access map through hconfig, ESMF_CplCompCreateUTest.F90, line 598
+20240806 041155.418 INFO             PET1  fred =            1
+20240806 041155.418 INFO             PET1  PASS  HConfig handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 610
+20240806 041155.418 INFO             PET1  PASS  Creating a Component with Config Test, ESMF_CplCompCreateUTest.F90, line 621
+20240806 041155.418 INFO             PET1  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 629
+20240806 041155.418 INFO             PET1  PASS  Creating a Component with HConfig Test, ESMF_CplCompCreateUTest.F90, line 640
+20240806 041155.418 INFO             PET1  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 648
+20240806 041155.418 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 660
+20240806 041155.418 ERROR            PET1 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 672
+20240806 041155.418 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 684
+20240806 041155.418 ERROR            PET1 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.419 ERROR            PET1 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.419 INFO             PET1  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 696
+20240806 041155.419 INFO             PET1  PASS  Creating a Component Test, ESMF_CplCompCreateUTest.F90, line 707
+20240806 041155.419 INFO             PET1  PASS  Setting HConfig Test, ESMF_CplCompCreateUTest.F90, line 718
+20240806 041155.419 INFO             PET1  PASS  Setting Config Test, ESMF_CplCompCreateUTest.F90, line 729
+20240806 041155.419 ERROR            PET1 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.419 ERROR            PET1 ESMF_CplComp.F90:1974 ESMF_CplCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 041155.419 INFO             PET1  PASS  Setting HConfig and Config Test, ESMF_CplCompCreateUTest.F90, line 740
+20240806 041155.419 INFO             PET1  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 748
+20240806 041155.419 ERROR            PET1 ESMF_CplComp.F90:579 ESMF_CplCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 041155.419 INFO             PET1  PASS  Destroying a Coupler Component - with timeout, ESMF_CplCompCreateUTest.F90, line 759
+20240806 041155.419 INFO             PET1  PASS  Destroying a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 770
+20240806 041155.419 INFO             PET1  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 780
+20240806 041155.419 INFO             PET1  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 791
+20240806 041155.420 INFO             PET1  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 803
+20240806 041155.420 INFO             PET1  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 814
+20240806 041155.420 INFO             PET1  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 823
+20240806 041155.420 INFO             PET1  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 834
+20240806 041155.420 INFO             PET1  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 846
+20240806 041155.420 INFO             PET1  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 857
+20240806 041155.420 INFO             PET1  Ending Test, file ESMF_CplCompCreateUTest.F90, line 861
+20240806 041155.420 INFO             PET1  Finalizing ESMF
+20240806 041155.412 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 041155.412 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 041155.412 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 041155.412 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 041155.412 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.412 INFO             PET2 Running with ESMF Version   : v8.7.0b11
+20240806 041155.412 INFO             PET2 ESMF library build date/time: "Aug  6 2024" "03:55:09"
+20240806 041155.412 INFO             PET2 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240806 041155.412 INFO             PET2 ESMF_COMM                   : mpi
+20240806 041155.412 INFO             PET2 ESMF_MOAB                   : enabled
+20240806 041155.412 INFO             PET2 ESMF_LAPACK                 : enabled
+20240806 041155.412 INFO             PET2 ESMF_NETCDF                 : enabled
+20240806 041155.412 INFO             PET2 ESMF_PNETCDF                : disabled
+20240806 041155.412 INFO             PET2 ESMF_PIO                    : enabled
+20240806 041155.412 INFO             PET2 ESMF_YAMLCPP                : enabled
+20240806 041155.412 INFO             PET2  Beginning Test, file ESMF_CplCompCreateUTest.F90, line 83
+20240806 041155.412 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20240806 041155.412 INFO             PET2  PASS  Testing CplComp IsCreated w/o keyword for uncreated object, ESMF_CplCompCreateUTest.F90, line 91
+20240806 041155.412 INFO             PET2  PASS  Testing CplComp IsCreated for uncreated object, ESMF_CplCompCreateUTest.F90, line 98
+20240806 041155.412 INFO             PET2  PASS  Testing CplComp IsCreated value for uncreated object, ESMF_CplCompCreateUTest.F90, line 104
+20240806 041155.415 INFO             PET2  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 112
+20240806 041155.415 INFO             PET2  PASS  Testing CplComp IsCreated w/o keyword for created object, ESMF_CplCompCreateUTest.F90, line 119
+20240806 041155.415 INFO             PET2  PASS  Testing CplComp IsCreated for created object, ESMF_CplCompCreateUTest.F90, line 126
+20240806 041155.415 INFO             PET2  PASS  Testing CplComp IsCreated value for created object, ESMF_CplCompCreateUTest.F90, line 132
+20240806 041155.415 INFO             PET2  PASS  CplComp equality before assignment Test, ESMF_CplCompCreateUTest.F90, line 139
+20240806 041155.415 INFO             PET2  PASS  CplComp assignment and equality Test, ESMF_CplCompCreateUTest.F90, line 148
+20240806 041155.416 INFO             PET2  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 155
+20240806 041155.416 INFO             PET2  PASS  Testing CplComp IsCreated w/o keyword for destroyed object, ESMF_CplCompCreateUTest.F90, line 162
+20240806 041155.416 INFO             PET2  PASS  Testing CplComp IsCreated for destroyed object, ESMF_CplCompCreateUTest.F90, line 169
+20240806 041155.416 INFO             PET2  PASS  Testing CplComp IsCreated value for destroyed object, ESMF_CplCompCreateUTest.F90, line 175
+20240806 041155.416 INFO             PET2  PASS  CplComp equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 183
+20240806 041155.416 INFO             PET2  PASS  CplComp non-equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 191
+20240806 041155.416 ERROR            PET2 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 041155.416 INFO             PET2  PASS  Double CplCompDestroy through alias Test, ESMF_CplCompCreateUTest.F90, line 198
+20240806 041155.416 INFO             PET2  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 206
+20240806 041155.416 INFO             PET2  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 213
+20240806 041155.416 ERROR            PET2 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used after deletion  - Bad Object
+20240806 041155.416 INFO             PET2  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 224
+20240806 041155.416 INFO             PET2  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 231
+20240806 041155.416 ERROR            PET2 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET2  PASS  Creating a Coupler Component with a negative number in petList, ESMF_CplCompCreateUTest.F90, line 241
+20240806 041155.416 ERROR            PET2 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET2  PASS  Creating a Coupler Component with out of range petList, ESMF_CplCompCreateUTest.F90, line 251
+20240806 041155.416 ERROR            PET2 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used before creation  - Bad Object
+20240806 041155.416 INFO             PET2  PASS  Query run status of a non- created Coupler Component, ESMF_CplCompCreateUTest.F90, line 262
+20240806 041155.416 INFO             PET2  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 271
+20240806 041155.416 INFO             PET2  PASS  Query clockIsPresent bit for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 279
+20240806 041155.416 INFO             PET2  PASS  Verify clockIsPresent for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 286
+20240806 041155.416 INFO             PET2  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 294
+20240806 041155.416 INFO             PET2  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 301
+20240806 041155.416 INFO             PET2  PASS  Validating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 312
+20240806 041155.416 INFO             PET2  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 321
+20240806 041155.416 INFO             PET2  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 330
+20240806 041155.416 INFO             PET2  PASS  Setting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 340
+20240806 041155.416 INFO             PET2  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 349
+20240806 041155.416 INFO             PET2  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 358
+20240806 041155.416 INFO             PET2  PASS  Set Internal State Test, ESMF_CplCompCreateUTest.F90, line 370
+20240806 041155.416 INFO             PET2  PASS  Get Internal State Test, ESMF_CplCompCreateUTest.F90, line 382
+20240806 041155.416 INFO             PET2  PASS  Verify Internal State Test, ESMF_CplCompCreateUTest.F90, line 392
+20240806 041155.416 INFO             PET2  PASS  Accessing information about the set internal states Test, ESMF_CplCompCreateUTest.F90, line 407
+20240806 041155.416 INFO             PET2  PASS  Printing a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 423
+20240806 041155.416 INFO             PET2  PASS  Wait for a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 434
+20240806 041155.416 INFO             PET2  PASS  Config handling Test - configIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 445
+20240806 041155.416 INFO             PET2  PASS  Config handling Test - configIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 453
+20240806 041155.416 INFO             PET2  PASS  Config handling Test - configFileIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 464
+20240806 041155.416 INFO             PET2  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 472
+20240806 041155.417 INFO             PET2  PASS  Setting a ConfigFile Test, ESMF_CplCompCreateUTest.F90, line 483
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - configFileIsPresent, ESMF_CplCompCreateUTest.F90, line 494
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - configFileIsPresent value, ESMF_CplCompCreateUTest.F90, line 502
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - configIsPresent, ESMF_CplCompCreateUTest.F90, line 513
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - configIsPresent value, ESMF_CplCompCreateUTest.F90, line 521
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - get config, ESMF_CplCompCreateUTest.F90, line 532
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - access attribute through config, ESMF_CplCompCreateUTest.F90, line 544
+20240806 041155.417 INFO             PET2  fred =            1
+20240806 041155.417 INFO             PET2  PASS  Config handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 556
+20240806 041155.417 INFO             PET2  PASS  HConfig handling Test - hconfigIsPresent, ESMF_CplCompCreateUTest.F90, line 567
+20240806 041155.417 INFO             PET2  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_CplCompCreateUTest.F90, line 575
+20240806 041155.417 INFO             PET2  PASS  HConfig handling Test - get hconfig, ESMF_CplCompCreateUTest.F90, line 586
+20240806 041155.417 INFO             PET2  PASS  HConfig handling Test - access map through hconfig, ESMF_CplCompCreateUTest.F90, line 598
+20240806 041155.417 INFO             PET2  fred =            1
+20240806 041155.417 INFO             PET2  PASS  HConfig handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 610
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with Config Test, ESMF_CplCompCreateUTest.F90, line 621
+20240806 041155.418 INFO             PET2  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 629
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with HConfig Test, ESMF_CplCompCreateUTest.F90, line 640
+20240806 041155.418 INFO             PET2  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 648
+20240806 041155.418 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 660
+20240806 041155.418 ERROR            PET2 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 672
+20240806 041155.418 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 684
+20240806 041155.418 ERROR            PET2 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET2 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET2  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 696
+20240806 041155.419 INFO             PET2  PASS  Creating a Component Test, ESMF_CplCompCreateUTest.F90, line 707
+20240806 041155.419 INFO             PET2  PASS  Setting HConfig Test, ESMF_CplCompCreateUTest.F90, line 718
+20240806 041155.419 INFO             PET2  PASS  Setting Config Test, ESMF_CplCompCreateUTest.F90, line 729
+20240806 041155.419 ERROR            PET2 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.419 ERROR            PET2 ESMF_CplComp.F90:1974 ESMF_CplCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 041155.419 INFO             PET2  PASS  Setting HConfig and Config Test, ESMF_CplCompCreateUTest.F90, line 740
+20240806 041155.419 INFO             PET2  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 748
+20240806 041155.419 ERROR            PET2 ESMF_CplComp.F90:579 ESMF_CplCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 041155.419 INFO             PET2  PASS  Destroying a Coupler Component - with timeout, ESMF_CplCompCreateUTest.F90, line 759
+20240806 041155.419 INFO             PET2  PASS  Destroying a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 770
+20240806 041155.419 INFO             PET2  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 780
+20240806 041155.419 INFO             PET2  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 791
+20240806 041155.420 INFO             PET2  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 803
+20240806 041155.420 INFO             PET2  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 814
+20240806 041155.420 INFO             PET2  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 823
+20240806 041155.420 INFO             PET2  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 834
+20240806 041155.420 INFO             PET2  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 846
+20240806 041155.420 INFO             PET2  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 857
+20240806 041155.420 INFO             PET2  Ending Test, file ESMF_CplCompCreateUTest.F90, line 861
+20240806 041155.420 INFO             PET2  Finalizing ESMF
+20240806 041155.411 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.411 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20240806 041155.411 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20240806 041155.411 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20240806 041155.411 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20240806 041155.411 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20240806 041155.411 INFO             PET3 Running with ESMF Version   : v8.7.0b11
+20240806 041155.412 INFO             PET3 ESMF library build date/time: "Aug  6 2024" "03:55:09"
+20240806 041155.412 INFO             PET3 ESMF library build location : /tmp/intel_2023.1.0_mpi_g_develop/esmf
+20240806 041155.412 INFO             PET3 ESMF_COMM                   : mpi
+20240806 041155.412 INFO             PET3 ESMF_MOAB                   : enabled
+20240806 041155.412 INFO             PET3 ESMF_LAPACK                 : enabled
+20240806 041155.412 INFO             PET3 ESMF_NETCDF                 : enabled
+20240806 041155.412 INFO             PET3 ESMF_PNETCDF                : disabled
+20240806 041155.412 INFO             PET3 ESMF_PIO                    : enabled
+20240806 041155.412 INFO             PET3 ESMF_YAMLCPP                : enabled
+20240806 041155.412 INFO             PET3  Beginning Test, file ESMF_CplCompCreateUTest.F90, line 83
+20240806 041155.412 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20240806 041155.412 INFO             PET3  PASS  Testing CplComp IsCreated w/o keyword for uncreated object, ESMF_CplCompCreateUTest.F90, line 91
+20240806 041155.412 INFO             PET3  PASS  Testing CplComp IsCreated for uncreated object, ESMF_CplCompCreateUTest.F90, line 98
+20240806 041155.412 INFO             PET3  PASS  Testing CplComp IsCreated value for uncreated object, ESMF_CplCompCreateUTest.F90, line 104
+20240806 041155.415 INFO             PET3  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 112
+20240806 041155.415 INFO             PET3  PASS  Testing CplComp IsCreated w/o keyword for created object, ESMF_CplCompCreateUTest.F90, line 119
+20240806 041155.415 INFO             PET3  PASS  Testing CplComp IsCreated for created object, ESMF_CplCompCreateUTest.F90, line 126
+20240806 041155.415 INFO             PET3  PASS  Testing CplComp IsCreated value for created object, ESMF_CplCompCreateUTest.F90, line 132
+20240806 041155.415 INFO             PET3  PASS  CplComp equality before assignment Test, ESMF_CplCompCreateUTest.F90, line 139
+20240806 041155.415 INFO             PET3  PASS  CplComp assignment and equality Test, ESMF_CplCompCreateUTest.F90, line 148
+20240806 041155.416 INFO             PET3  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 155
+20240806 041155.416 INFO             PET3  PASS  Testing CplComp IsCreated w/o keyword for destroyed object, ESMF_CplCompCreateUTest.F90, line 162
+20240806 041155.416 INFO             PET3  PASS  Testing CplComp IsCreated for destroyed object, ESMF_CplCompCreateUTest.F90, line 169
+20240806 041155.416 INFO             PET3  PASS  Testing CplComp IsCreated value for destroyed object, ESMF_CplCompCreateUTest.F90, line 175
+20240806 041155.416 INFO             PET3  PASS  CplComp equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 183
+20240806 041155.416 INFO             PET3  PASS  CplComp non-equality after destroy Test, ESMF_CplCompCreateUTest.F90, line 191
+20240806 041155.416 ERROR            PET3 ESMF_Comp.F90:1808 ESMF_CompIsDualConnected Invalid object  - uninitialized or destroyed Component object
+20240806 041155.416 INFO             PET3  PASS  Double CplCompDestroy through alias Test, ESMF_CplCompCreateUTest.F90, line 198
+20240806 041155.416 INFO             PET3  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 206
+20240806 041155.416 INFO             PET3  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 213
+20240806 041155.416 ERROR            PET3 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used after deletion  - Bad Object
+20240806 041155.416 INFO             PET3  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 224
+20240806 041155.416 INFO             PET3  PASS  Query run status of a deleted Coupler Component, ESMF_CplCompCreateUTest.F90, line 231
+20240806 041155.416 ERROR            PET3 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET3  PASS  Creating a Coupler Component with a negative number in petList, ESMF_CplCompCreateUTest.F90, line 241
+20240806 041155.416 ERROR            PET3 ESMF_Comp.F90:800 ESMF_CompConstruct Value unrecognized or out of range  - Conflict between petlist and global pet count
+20240806 041155.416 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Value unrecognized or out of range  - Internal subroutine call returned Error
+20240806 041155.416 INFO             PET3  PASS  Creating a Coupler Component with out of range petList, ESMF_CplCompCreateUTest.F90, line 251
+20240806 041155.416 ERROR            PET3 ESMF_CplComp.F90:1360 ESMF_CplCompIsPetLocal Object being used before creation  - Bad Object
+20240806 041155.416 INFO             PET3  PASS  Query run status of a non- created Coupler Component, ESMF_CplCompCreateUTest.F90, line 262
+20240806 041155.416 INFO             PET3  PASS  Creating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 271
+20240806 041155.416 INFO             PET3  PASS  Query clockIsPresent bit for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 279
+20240806 041155.416 INFO             PET3  PASS  Verify clockIsPresent for Clock that was not set Test, ESMF_CplCompCreateUTest.F90, line 286
+20240806 041155.416 INFO             PET3  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 294
+20240806 041155.416 INFO             PET3  PASS  Query run status of a Coupler Component, ESMF_CplCompCreateUTest.F90, line 301
+20240806 041155.416 INFO             PET3  PASS  Validating a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 312
+20240806 041155.416 INFO             PET3  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 321
+20240806 041155.416 INFO             PET3  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 330
+20240806 041155.416 INFO             PET3  PASS  Setting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 340
+20240806 041155.416 INFO             PET3  PASS  Getting  a Coupler Component name Test, ESMF_CplCompCreateUTest.F90, line 349
+20240806 041155.416 INFO             PET3  PASS  Verifying the correct Component name was returned Test, ESMF_CplCompCreateUTest.F90, line 358
+20240806 041155.416 INFO             PET3  PASS  Set Internal State Test, ESMF_CplCompCreateUTest.F90, line 370
+20240806 041155.416 INFO             PET3  PASS  Get Internal State Test, ESMF_CplCompCreateUTest.F90, line 382
+20240806 041155.416 INFO             PET3  PASS  Verify Internal State Test, ESMF_CplCompCreateUTest.F90, line 392
+20240806 041155.416 INFO             PET3  PASS  Accessing information about the set internal states Test, ESMF_CplCompCreateUTest.F90, line 407
+20240806 041155.416 INFO             PET3  PASS  Printing a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 423
+20240806 041155.416 INFO             PET3  PASS  Wait for a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 434
+20240806 041155.416 INFO             PET3  PASS  Config handling Test - configIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 445
+20240806 041155.416 INFO             PET3  PASS  Config handling Test - configIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 453
+20240806 041155.416 INFO             PET3  PASS  Config handling Test - configFileIsPresent before setting, ESMF_CplCompCreateUTest.F90, line 464
+20240806 041155.416 INFO             PET3  PASS  Config handling Test - configFileIsPresent value before setting, ESMF_CplCompCreateUTest.F90, line 472
+20240806 041155.417 INFO             PET3  PASS  Setting a ConfigFile Test, ESMF_CplCompCreateUTest.F90, line 483
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - configFileIsPresent, ESMF_CplCompCreateUTest.F90, line 494
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - configFileIsPresent value, ESMF_CplCompCreateUTest.F90, line 502
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - configIsPresent, ESMF_CplCompCreateUTest.F90, line 513
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - configIsPresent value, ESMF_CplCompCreateUTest.F90, line 521
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - get config, ESMF_CplCompCreateUTest.F90, line 532
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - access attribute through config, ESMF_CplCompCreateUTest.F90, line 544
+20240806 041155.417 INFO             PET3  fred =            1
+20240806 041155.417 INFO             PET3  PASS  Config handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 556
+20240806 041155.417 INFO             PET3  PASS  HConfig handling Test - hconfigIsPresent, ESMF_CplCompCreateUTest.F90, line 567
+20240806 041155.417 INFO             PET3  PASS  HConfig handling Test - hconfigIsPresent value, ESMF_CplCompCreateUTest.F90, line 575
+20240806 041155.417 INFO             PET3  PASS  HConfig handling Test - get hconfig, ESMF_CplCompCreateUTest.F90, line 586
+20240806 041155.417 INFO             PET3  PASS  HConfig handling Test - access map through hconfig, ESMF_CplCompCreateUTest.F90, line 598
+20240806 041155.417 INFO             PET3  fred =            1
+20240806 041155.417 INFO             PET3  PASS  HConfig handling Test - validate attribute value, ESMF_CplCompCreateUTest.F90, line 610
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with Config Test, ESMF_CplCompCreateUTest.F90, line 621
+20240806 041155.418 INFO             PET3  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 629
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with HConfig Test, ESMF_CplCompCreateUTest.F90, line 640
+20240806 041155.418 INFO             PET3  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 648
+20240806 041155.418 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 660
+20240806 041155.418 ERROR            PET3 ESMF_Comp.F90:698 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 672
+20240806 041155.418 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 684
+20240806 041155.418 ERROR            PET3 ESMF_Comp.F90:685 ESMF_CompConstruct Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.418 ERROR            PET3 ESMF_CplComp.F90:482 ESMF_CplCompCreate Invalid argument  - Internal subroutine call returned Error
+20240806 041155.418 INFO             PET3  PASS  Creating a Component with too many config args Test, ESMF_CplCompCreateUTest.F90, line 696
+20240806 041155.419 INFO             PET3  PASS  Creating a Component Test, ESMF_CplCompCreateUTest.F90, line 707
+20240806 041155.419 INFO             PET3  PASS  Setting HConfig Test, ESMF_CplCompCreateUTest.F90, line 718
+20240806 041155.419 INFO             PET3  PASS  Setting Config Test, ESMF_CplCompCreateUTest.F90, line 729
+20240806 041155.419 ERROR            PET3 ESMF_Comp.F90:2081 ESMF_CompSet Invalid argument  - Must only specify one of: 'hconfig', 'config', or 'configFile' arguments!
+20240806 041155.419 ERROR            PET3 ESMF_CplComp.F90:1974 ESMF_CplCompSet Invalid argument  - Internal subroutine call returned Error
+20240806 041155.419 INFO             PET3  PASS  Setting HConfig and Config Test, ESMF_CplCompCreateUTest.F90, line 740
+20240806 041155.419 INFO             PET3  PASS  CplCompDestroy Test, ESMF_CplCompCreateUTest.F90, line 748
+20240806 041155.419 ERROR            PET3 ESMF_CplComp.F90:579 ESMF_CplCompDestroy Arguments are incompatible  - 'timeout' argument is only allowed for connected dual components
+20240806 041155.419 INFO             PET3  PASS  Destroying a Coupler Component - with timeout, ESMF_CplCompCreateUTest.F90, line 759
+20240806 041155.419 INFO             PET3  PASS  Destroying a Coupler Component Test, ESMF_CplCompCreateUTest.F90, line 770
+20240806 041155.419 INFO             PET3  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 780
+20240806 041155.419 INFO             PET3  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 791
+20240806 041155.420 INFO             PET3  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 803
+20240806 041155.420 INFO             PET3  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 814
+20240806 041155.420 INFO             PET3  PASS  Creating a Component with petList Test, ESMF_CplCompCreateUTest.F90, line 823
+20240806 041155.420 INFO             PET3  PASS  Destroying a Component created with petList Test, ESMF_CplCompCreateUTest.F90, line 834
+20240806 041155.420 INFO             PET3  PASS  Creating a Component with empty petList Test, ESMF_CplCompCreateUTest.F90, line 846
+20240806 041155.420 INFO             PET3  PASS  Destroying a Component created with empty petList Test, ESMF_CplCompCreateUTest.F90, line 857
+20240806 041155.420 INFO             PET3  Ending Test, file ESMF_CplCompCreateUTest.F90, line 861
+20240806 041155.420 INFO             PET3  Finalizing ESMF
