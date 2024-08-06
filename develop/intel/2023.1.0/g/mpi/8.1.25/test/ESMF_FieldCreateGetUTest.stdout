@@ -1,4 +1,4 @@
-2024-08-04 04:04:09
+2024-08-05 04:01:00
   Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_FieldCreateGetUTest.F90, line 53
@@ -11,13 +11,13 @@
   PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
   PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
   PASS  Creating an empty Field, ESMF_FieldCreateGetUTest.F90, line 62
+  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, 
   PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, 
  line 70
   PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, 
  line 70
   PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, 
  line 70
-  PASS  Get info associated with the empty field, ESMF_FieldCreateGetUTest.F90, 
  line 70
   PASS  Query field for global and local bounds, ESMF_FieldCreateGetUTest.F90, l
  ine 78
@@ -266,6 +266,8 @@
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, ESMF_FieldCreateGetUTest.F90, line 359
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
+ ra padding and halo, corner stagger, ESMF_FieldCreateGetUTest.F90, line 371
+  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, ESMF_FieldCreateGetUTest.F90, line 359
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, corner stagger, ESMF_FieldCreateGetUTest.F90, line 371
@@ -274,8 +276,6 @@
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, corner stagger, ESMF_FieldCreateGetUTest.F90, line 371
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
- ra padding and halo, corner stagger, ESMF_FieldCreateGetUTest.F90, line 371
-  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, corner stagger, get test, ESMF_FieldCreateGetUTest.F90, li
  ne 384
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
@@ -317,39 +317,30 @@
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
  423
-  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
- ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
- 423
   PASS  Creating a Field from a fortran array 2d both dims distributed and divis
  ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
  est.F90, line 435
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
  423
-  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
- ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
- est.F90, line 435
-  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
- ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
- est.F90, line 435
-  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
- dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
- ieldCreateGetUTest.F90, line 448
-  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
- dimension divisible, with extra padding and halo, non unique gridToFieldMap, ES
- MF_FieldCreateGetUTest.F90, line 461
+  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
+ ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
+ 423
   PASS  Creating a Field from a fortran array 2d both dims distributed and divis
  ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
  est.F90, line 435
   PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
  dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
  ieldCreateGetUTest.F90, line 448
+  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
+ ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
+ est.F90, line 435
   PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
  dimension divisible, with extra padding and halo, non unique gridToFieldMap, ES
  MF_FieldCreateGetUTest.F90, line 461
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
- 470
+  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
+ ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
+ est.F90, line 435
   PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
  dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
  ieldCreateGetUTest.F90, line 448
@@ -362,15 +353,39 @@
   PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
  dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
  ieldCreateGetUTest.F90, line 448
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded with specified ungriddedbounds, ESMF
- _FieldCreateGetUTest.F90, line 479
   PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
  dimension divisible, with extra padding and halo, non unique gridToFieldMap, ES
  MF_FieldCreateGetUTest.F90, line 461
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
+ 470
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded with specified ungriddedbounds, ESMF
+ _FieldCreateGetUTest.F90, line 479
+  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
+ dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
+ ieldCreateGetUTest.F90, line 448
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
  ion undistributed, 3rd dimension ungridded with smaller pecified ungriddedbound
  s, ESMF_FieldCreateGetUTest.F90, line 488
+  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
+ dimension divisible, with extra padding and halo, non unique gridToFieldMap, ES
+ MF_FieldCreateGetUTest.F90, line 461
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded with specified ungriddedbounds, ESMF
+ _FieldCreateGetUTest.F90, line 479
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
+ 470
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded with bigger specified ungriddedbound
+ s, ESMF_FieldCreateGetUTest.F90, line 497
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
+ ion undistributed, 3rd dimension ungridded with smaller pecified ungriddedbound
+ s, ESMF_FieldCreateGetUTest.F90, line 488
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1nd dimens
+ ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
+ 506
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
  ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
  470
@@ -383,9 +398,6 @@
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
  ion undistributed, 3rd dimension ungridded with smaller pecified ungriddedbound
  s, ESMF_FieldCreateGetUTest.F90, line 488
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
- 470
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1nd dimens
  ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
  506
@@ -398,18 +410,6 @@
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
  ion undistributed, 3rd dimension ungridded with smaller pecified ungriddedbound
  s, ESMF_FieldCreateGetUTest.F90, line 488
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded with specified ungriddedbounds, ESMF
- _FieldCreateGetUTest.F90, line 479
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1nd dimens
- ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
- 506
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded with bigger specified ungriddedbound
- s, ESMF_FieldCreateGetUTest.F90, line 497
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
- ion undistributed, 3rd dimension ungridded with smaller pecified ungriddedbound
- s, ESMF_FieldCreateGetUTest.F90, line 488
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, ESMF_FieldCreateGetUTest.F90, line 517
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1nd dimens
@@ -418,14 +418,14 @@
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 2nd dimens
  ion undistributed, 3rd dimension ungridded with bigger specified ungriddedbound
  s, ESMF_FieldCreateGetUTest.F90, line 497
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
+ xtra padding, ESMF_FieldCreateGetUTest.F90, line 517
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1nd dimens
  ion undistributed, 3rd dimension ungridded, ESMF_FieldCreateGetUTest.F90, line 
  506
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, ESMF_FieldCreateGetUTest.F90, line 517
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
- xtra padding, ESMF_FieldCreateGetUTest.F90, line 517
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
   528
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
@@ -436,6 +436,8 @@
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
   528
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has n
+ o extra padding, ESMF_FieldCreateGetUTest.F90, line 540
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
   528
@@ -445,11 +447,6 @@
  o extra padding, ESMF_FieldCreateGetUTest.F90, line 540
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has n
  o extra padding, ESMF_FieldCreateGetUTest.F90, line 540
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has n
- o extra padding, ESMF_FieldCreateGetUTest.F90, line 540
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
- xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
-  552
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
   552
@@ -462,7 +459,8 @@
  xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
   552
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
- xtra padding, cornor stagger, ESMF_FieldCreateGetUTest.F90, line 563
+ xtra padding, use GetAllocBounds internally, ESMF_FieldCreateGetUTest.F90, line
+  552
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, cornor stagger, ESMF_FieldCreateGetUTest.F90, line 563
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
@@ -471,10 +469,12 @@
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, cornor stagger, ESMF_FieldCreateGetUTest.F90, line 563
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
- xtra padding, cornor stagger, use GetAllocBounds internally, ESMF_FieldCreateGe
- tUTest.F90, line 574
+ xtra padding, cornor stagger, ESMF_FieldCreateGetUTest.F90, line 563
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has n
  o extra padding, corner stagger, ESMF_FieldCreateGetUTest.F90, line 586
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
+ xtra padding, cornor stagger, use GetAllocBounds internally, ESMF_FieldCreateGe
+ tUTest.F90, line 574
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, grid has e
  xtra padding, cornor stagger, use GetAllocBounds internally, ESMF_FieldCreateGe
  tUTest.F90, line 574
@@ -538,11 +538,11 @@
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  ESMF_FieldCreateGetUTest.F90, line 666
   PASS  Creating a Field from a fortran array 3d 2,3 dim distributed, 1st dimens
- ion undistributed, 2,3 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 64
- 3
-  PASS  Creating a Field from a fortran array 3d 2,3 dim distributed, 1st dimens
  ion undistributed, 2,3 dimension swapped, use GetAllocBounds internally, ESMF_F
  ieldCreateGetUTest.F90, line 658
+  PASS  Creating a Field from a fortran array 3d 2,3 dim distributed, 1st dimens
+ ion undistributed, 2,3 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 64
+ 3
   PASS  Creating a Field from a fortran array 3d 2,3 dim distributed, 1st dimens
  ion undistributed, 2,3 dimension swapped, use GetAllocBounds internally, ESMF_F
  ieldCreateGetUTest.F90, line 658
@@ -563,26 +563,26 @@
  ieldCreateGetUTest.F90, line 658
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width, ESMF_FieldCreateGetUTest.F90, line 691
-  PASS  Creating a Field from a fortran array pointer, 2d, one dimension distrib
- uted, ESMF_FieldCreateGetUTest.F90, line 682
   PASS  Creating a Field from a fortran array pointer, 2d, one dimension distrib
  uted, ESMF_FieldCreateGetUTest.F90, line 682
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width, gridToFieldMap has dimensions swapped, ESMF_FieldCreateGetUTes
  t.F90, line 701
+  PASS  Creating a Field from a fortran array pointer, 2d, one dimension distrib
+ uted, ESMF_FieldCreateGetUTest.F90, line 682
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  ESMF_FieldCreateGetUTest.F90, line 666
-  PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
- with halo width, ESMF_FieldCreateGetUTest.F90, line 691
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width, ESMF_FieldCreateGetUTest.F90, line 691
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width and gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 710
-  PASS  Creating a Field from a fortran array pointer, 2d, both dimensions distr
- ibuted, ESMF_FieldCreateGetUTest.F90, line 674
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width, gridToFieldMap has dimensions swapped, ESMF_FieldCreateGetUTes
  t.F90, line 701
+  PASS  Creating a Field from a fortran array pointer, 2d, both dimensions distr
+ ibuted, ESMF_FieldCreateGetUTest.F90, line 674
+  PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
+ with halo width, ESMF_FieldCreateGetUTest.F90, line 691
   PASS  Creating a Field from a fortran array, 2d, both dimensions distributed, 
  with halo width, gridToFieldMap has dimensions swapped, ESMF_FieldCreateGetUTes
  t.F90, line 701
@@ -617,10 +617,10 @@
  ith halo width and gridToFieldMap /1,3/, ESMF_FieldCreateGetUTest.F90, line 737
   PASS  Creating a Field from a fortran array, 3d, 1,3 dimensions distributed, w
  ith halo width and gridToFieldMap /1,3/, ESMF_FieldCreateGetUTest.F90, line 737
-  PASS  Creating a Field from a fortran array, 3d, 1,3 dimensions distributed, w
- ith halo width and gridToFieldMap /1,3/, ESMF_FieldCreateGetUTest.F90, line 737
   PASS  Creating a Field from a fortran array, 3d, 1,2 dimensions distributed, w
  ith halo width and gridToFieldMap /2,1/, ESMF_FieldCreateGetUTest.F90, line 728
+  PASS  Creating a Field from a fortran array, 3d, 1,3 dimensions distributed, w
+ ith halo width and gridToFieldMap /1,3/, ESMF_FieldCreateGetUTest.F90, line 737
   PASS  Creating a Field from a fortran array, 3d, 1,3 dimensions distributed, w
  ith halo width and gridToFieldMap /3,1/, ESMF_FieldCreateGetUTest.F90, line 746
   PASS  Creating a Field from a fortran array, 3d, 1,3 dimensions distributed, w
@@ -649,10 +649,10 @@
  ion swapped, fieldget checked, ESMF_FieldCreateGetUTest.F90, line 800
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1,2 dimens
  ion swapped, ESMF_FieldCreateGetUTest.F90, line 786
-  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1,2 dimens
- ion swapped, fieldget checked, ESMF_FieldCreateGetUTest.F90, line 800
   PASS  Creating a Field from a fortran array 3d all dims distributed, with halo
   width, fieldget checked, ESMF_FieldCreateGetUTest.F90, line 773
+  PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1,2 dimens
+ ion swapped, fieldget checked, ESMF_FieldCreateGetUTest.F90, line 800
   PASS  Creating a Field from a fortran array 3d all dims distributed, with halo
   width, fieldget checked, ESMF_FieldCreateGetUTest.F90, line 773
   PASS  Creating a Field from a fortran array 3d grid 2d distgrid 2d, 1,2 dimens
@@ -721,36 +721,36 @@
   PASS  Creating a Field from a fortran array 3d all dims distributed, with halo
  , corner stagger, get test, grid without padding, ESMF_FieldCreateGetUTest.F90,
   line 877
-  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
- ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
- 889
-  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
- ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
- est.F90, line 901
   PASS  Creating a Field from a fortran array 3d all dims distributed, with halo
  , corner stagger, get test, grid without padding, ESMF_FieldCreateGetUTest.F90,
   line 877
-  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
- dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
- ieldCreateGetUTest.F90, line 914
-  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
- imension divisible, with halo, non unique gridToFieldMap, ESMF_FieldCreateGetUT
- est.F90, line 929
+  PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
+ ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
+ 889
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
  889
   PASS  Creating a Field from a fortran array 2d both dims distributed and divis
  ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
  est.F90, line 901
+  PASS  Creating a Field from a fortran array 2d both dims distributed and divis
+ ible, with extra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUT
+ est.F90, line 901
+  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
+ dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
+ ieldCreateGetUTest.F90, line 914
+  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
+ dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
+ ieldCreateGetUTest.F90, line 914
+  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
+ imension divisible, with halo, non unique gridToFieldMap, ESMF_FieldCreateGetUT
+ est.F90, line 929
+  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
+ imension divisible, with halo, non unique gridToFieldMap, ESMF_FieldCreateGetUT
+ est.F90, line 929
   PASS  Creating a Field from a fortran array 3d all dims distributed, with halo
  , corner stagger, get test, grid without padding, ESMF_FieldCreateGetUTest.F90,
   line 877
-  PASS  Creating a Field from a fortran array 2d both dims distributed, neither 
- dimension divisible, with extra padding and halo, 1,2 dimension swapped, ESMF_F
- ieldCreateGetUTest.F90, line 914
-  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
- imension divisible, with halo, non unique gridToFieldMap, ESMF_FieldCreateGetUT
- est.F90, line 929
   PASS  Creating a Field from a fortran array 2d both dims distributed, with ext
  ra padding and halo, 1,2 dimension swapped, ESMF_FieldCreateGetUTest.F90, line 
  889
@@ -763,8 +763,6 @@
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, with halo, non unique gridToFieldMap, ESMF_FieldCreateGetUT
  est.F90, line 929
-  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
- imension divisible, with halo, ESMF_FieldCreateGetUTest.F90, line 944
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, with halo, ESMF_FieldCreateGetUTest.F90, line 944
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
@@ -774,6 +772,8 @@
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, with extra padding and halo, ESMF_FieldCreateGetUTest.F90, 
  line 958
+  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
+ imension divisible, with halo, ESMF_FieldCreateGetUTest.F90, line 944
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, with extra padding and halo, ESMF_FieldCreateGetUTest.F90, 
  line 958
@@ -798,9 +798,6 @@
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, minindex starts from numbers greater than 1, with halo and 
  data copy, ESMF_FieldCreateGetUTest.F90, line 974
-  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
- imension divisible, with extra padding, halo, and data copy, ESMF_FieldCreateGe
- tUTest.F90, line 989
   PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
  imension divisible, with extra padding, halo, and data copy, ESMF_FieldCreateGe
  tUTest.F90, line 989
@@ -809,6 +806,9 @@
  tUTest.F90, line 989
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds, ESMF_FieldCr
  eateGetUTest.F90, line 1004
+  PASS  Creating a Field from a fortran array 3d all dims distributed, neither d
+ imension divisible, with extra padding, halo, and data copy, ESMF_FieldCreateGe
+ tUTest.F90, line 989
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds, ESMF_FieldCr
  eateGetUTest.F90, line 1004
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds allocate the 
@@ -864,10 +864,10 @@
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1131
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1112
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
  line 1168
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1112
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1093
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
@@ -876,13 +876,13 @@
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1131
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
- line 1168
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1112
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, edge1 stagger, ESMF_FieldCreateGetUTest.F
  90, line 1208
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1112
+  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
+ line 1168
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
  line 1188
@@ -954,20 +954,20 @@
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1333
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1292
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, edge1 stagger distgrid padded, ESMF_Field
  CreateGetUTest.F90, line 1250
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1312
+ UTest.F90, line 1292
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1354
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1375
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1312
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1396
@@ -989,20 +989,20 @@
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
  ine 1538
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1312
+  interface, irregular gridToFieldMap, edge1 stagger distgrid padded, ESMF_Field
+ CreateGetUTest.F90, line 1272
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
  CreateGetUTest.F90, line 1561
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, edge1 stagger distgrid padded, ESMF_Field
- CreateGetUTest.F90, line 1272
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1333
+ UTest.F90, line 1312
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
  GGER, ESMF_FieldCreateGetUTest.F90, line 1585
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1333
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
  GetUTest.F90, line 1608
@@ -1020,26 +1020,26 @@
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
  CreateGetUTest.F90, line 1731
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1333
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
  GGER, ESMF_FieldCreateGetUTest.F90, line 1755
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1292
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1333
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
  GetUTest.F90, line 1778
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1354
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 1798
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1375
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 1798
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1396
@@ -1060,40 +1060,32 @@
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
  ine 1538
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
  CreateGetUTest.F90, line 1561
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1354
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1585
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1375
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1608
-  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
- 0, line 1626
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1585
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1312
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1396
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
- SMF_FieldCreateGetUTest.F90, line 1645
   PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1417
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
-  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
   PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1438
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
   PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
  0, line 1456
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
@@ -1102,26 +1094,25 @@
   fieldget, ESMF_FieldCreateGetUTest.F90, line 1495
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1516
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1312
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
- ine 1708
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1608
+  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
+ 0, line 1626
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
+ SMF_FieldCreateGetUTest.F90, line 1645
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
+  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
  ine 1538
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
- CreateGetUTest.F90, line 1731
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
- CreateGetUTest.F90, line 1561
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1755
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
+ ine 1708
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
  line 1855
@@ -1129,31 +1120,26 @@
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1876
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1585
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
+ CreateGetUTest.F90, line 1561
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
+ CreateGetUTest.F90, line 1731
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1897
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1916
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1778
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1608
-  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
- 0, line 1626
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
- SMF_FieldCreateGetUTest.F90, line 1645
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
-  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
  agger, ESMF_FieldCreateGetUTest.F90, line 1939
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1585
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1755
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
  agger, ESMF_FieldCreateGetUTest.F90, line 1962
@@ -1163,9 +1149,211 @@
   PASS  Creating a 3D field from a 4D grid and 1D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
  agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2003
+  PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2020
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1608
+  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
+ 0, line 1626
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
+ SMF_FieldCreateGetUTest.F90, line 1645
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
+  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
+  PASS  Complete a 7D field from a 4D grid and 4D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2044
+  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2062
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1778
+  PASS  Complete a 3D field from a 4D grid and 1D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2081
+  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2099
+  PASS  Complete a 2D field from a 3D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap corner stagger, replicated dimension, ESMF_F
+ ieldCreateGetUTest.F90, line 2117
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1333
   PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
  bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
  ine 1708
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
+ CreateGetUTest.F90, line 1731
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1755
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 2137
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1778
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 1798
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 2159
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 1798
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1354
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1375
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 2179
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1396
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1417
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1438
+  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
+ 0, line 1456
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
+ SMF_FieldCreateGetUTest.F90, line 1475
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
+  fieldget, ESMF_FieldCreateGetUTest.F90, line 1495
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1516
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
+ ine 1538
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
+ line 1855
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1876
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
+ CreateGetUTest.F90, line 1561
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1897
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1916
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1585
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
+ agger, ESMF_FieldCreateGetUTest.F90, line 1939
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
+ line 2217
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2238
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2259
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2279
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, ESMF_FieldCreateGetUTest.F90, line 1962
+  PASS  Creating a 7D field from a 4D grid and 4D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 1985
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1608
+  PASS  Creating a 3D field from a 4D grid and 1D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2003
+  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
+ 0, line 1626
+  PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2020
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
+ SMF_FieldCreateGetUTest.F90, line 1645
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
+  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
+  PASS  Complete a 7D field from a 4D grid and 4D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2044
+  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2062
+  PASS  Complete a 3D field from a 4D grid and 1D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2081
+  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
+ ion, ESMF_FieldCreateGetUTest.F90, line 2099
+  PASS  Complete a 2D field from a 3D grid using generic interface, irregular gr
+ idToFieldMap and distgridToGridMap corner stagger, replicated dimension, ESMF_F
+ ieldCreateGetUTest.F90, line 2117
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, ESMF_FieldCreateGetUTest.F90, line 2304
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
+ ine 1708
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
+ CreateGetUTest.F90, line 1731
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
+ line 1855
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1876
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
+ GGER, ESMF_FieldCreateGetUTest.F90, line 1755
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1897
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 1916
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
+ agger, ESMF_FieldCreateGetUTest.F90, line 1939
+  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
+ bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
+ GetUTest.F90, line 1778
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 2137
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, ESMF_FieldCreateGetUTest.F90, line 1962
+  PASS  Creating a 7D field from a 4D grid and 4D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 1985
+  PASS  Creating a 3D field from a 4D grid and 1D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2003
   PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
  idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
  ion, ESMF_FieldCreateGetUTest.F90, line 2020
@@ -1184,63 +1372,45 @@
   PASS  Complete a 2D field from a 3D grid using generic interface, irregular gr
  idToFieldMap and distgridToGridMap corner stagger, replicated dimension, ESMF_F
  ieldCreateGetUTest.F90, line 2117
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
- CreateGetUTest.F90, line 1731
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1333
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1755
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 1798
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1778
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 2137
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, ESMF_FieldCreateGetUTest.F90, line 2159
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, ESMF_FieldCreateGetUTest.F90, line 1798
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1354
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1375
+  interface, ESMF_FieldCreateGetUTest.F90, line 2137
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 2179
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, ESMF_FieldCreateGetUTest.F90, line 2159
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
+ line 2217
+  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2238
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2259
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
+ UTest.F90, line 2279
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 2179
+  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
+  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
+ agger, ESMF_FieldCreateGetUTest.F90, line 2304
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
  line 1855
   PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1876
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1396
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1417
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1438
-  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
- 0, line 1456
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
- SMF_FieldCreateGetUTest.F90, line 1475
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
-  fieldget, ESMF_FieldCreateGetUTest.F90, line 1495
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1516
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 1897
@@ -1250,9 +1420,8 @@
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
  agger, ESMF_FieldCreateGetUTest.F90, line 1939
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
- ine 1538
+  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
+  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
  agger, ESMF_FieldCreateGetUTest.F90, line 1962
@@ -1265,11 +1434,6 @@
   PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
  idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
  ion, ESMF_FieldCreateGetUTest.F90, line 2020
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
- CreateGetUTest.F90, line 1561
   PASS  Complete a 7D field from a 4D grid and 4D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
  agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2044
@@ -1291,107 +1455,6 @@
   PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 2238
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1585
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2259
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2279
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1608
-  PASS  Creating a 7D field using generic interface, ESMF_FieldCreateGetUTest.F9
- 0, line 1626
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, ESMF_FieldCreateGetUTest.F90, line 2304
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap, E
- SMF_FieldCreateGetUTest.F90, line 1645
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap no
-  fieldget, ESMF_FieldCreateGetUTest.F90, line 1665
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, ESMF_FieldCreateGetUTest.F90, line 1686
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
- line 1855
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1876
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_FieldCreateGetUTest.F90, l
- ine 1708
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1897
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1916
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 2137
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, ESMF_Field
- CreateGetUTest.F90, line 1731
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
- agger, ESMF_FieldCreateGetUTest.F90, line 1939
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, ESMF_DATACOPY_VALUE, CORNER STA
- GGER, ESMF_FieldCreateGetUTest.F90, line 1755
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, ESMF_FieldCreateGetUTest.F90, line 1962
-  PASS  Creating a 7D field from a 4D grid and 4D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 1985
-  PASS  Creating a 3D field from a 4D grid and 1D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2003
-  PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2020
-  PASS  Complete a 7D field from a 4D grid and 4D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2044
-  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2062
-  PASS  Complete a 3D field from a 4D grid and 1D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2081
-  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2099
-  PASS  Complete a 2D field from a 3D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap corner stagger, replicated dimension, ESMF_F
- ieldCreateGetUTest.F90, line 2117
-  PASS  Creating a 7D field using generic interface, arbitrary gridToFieldMap ar
- bitrary distgridToGridMap, arbitrary haloWidth, EDGE1 STAGGER, ESMF_FieldCreate
- GetUTest.F90, line 1778
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 2159
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 2137
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 1798
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 2179
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, ESMF_FieldCreateGetUTest.F90, line 2159
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 1817
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
- line 2217
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2238
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
  UTest.F90, line 2259
@@ -1401,69 +1464,6 @@
   PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
   interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
  agger, ESMF_FieldCreateGetUTest.F90, line 2304
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, fieldget=true, ESMF_FieldCreateGetUTest.F90, line 2179
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 1836
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
- line 1855
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1876
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, ESMF_FieldCreateGetUTest.F90, line 2198
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1897
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 1916
-  PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
-  interface, irregular gridToFieldMap, data copy, ESMF_FieldCreateGetUTest.F90, 
- line 2217
-  PASS  Creating a 7D field from a 1D grid and 6D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2238
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, center st
- agger, ESMF_FieldCreateGetUTest.F90, line 1939
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2259
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap, ESMF_FieldCreateGet
- UTest.F90, line 2279
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, ESMF_FieldCreateGetUTest.F90, line 1962
-  PASS  Creating a 7D field from a 4D grid and 4D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 1985
-  PASS  Creating a 7D field from a 4D grid and 3D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, ESMF_FieldCreateGetUTest.F90, line 2304
-  PASS  Creating a 3D field from a 4D grid and 1D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2003
-  PASS  Creating a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2020
-  PASS  Complete a 7D field from a 4D grid and 4D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2044
-  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2062
-  PASS  Complete a 3D field from a 4D grid and 1D ungridded bounds using generic
-  interface, irregular gridToFieldMap and distgridToGridMap data copy, corner st
- agger, replicated dimension, ESMF_FieldCreateGetUTest.F90, line 2081
-  PASS  Complete a 3D field from a 4D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap data copy, corner stagger, replicated dimens
- ion, ESMF_FieldCreateGetUTest.F90, line 2099
-  PASS  Complete a 2D field from a 3D grid using generic interface, irregular gr
- idToFieldMap and distgridToGridMap corner stagger, replicated dimension, ESMF_F
- ieldCreateGetUTest.F90, line 2117
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
   interface, ESMF_FieldCreateGetUTest.F90, line 2137
   PASS  Creating a 7D field from a 5D grid and 2D ungridded bounds using generic
@@ -1549,6 +1549,9 @@
  eateGetUTest.F90, line 2382
   PASS  Testing completing a Field from a Geom object and a typekind, ESMF_Field
  CreateGetUTest.F90, line 2390
+  Ending Test, file ESMF_FieldCreateGetUTest.F90, line 2393
+  PASS  Testing completing a Field from a Geom object and a typekind, ESMF_Field
+ CreateGetUTest.F90, line 2390
   PASS  Testing completing a Field from a Geom object and a typekind, ESMF_Field
  CreateGetUTest.F90, line 2390
   Ending Test, file ESMF_FieldCreateGetUTest.F90, line 2393
@@ -1556,10 +1559,7 @@
   PASS  Testing completing a Field from a Geom object and a typekind, ESMF_Field
  CreateGetUTest.F90, line 2390
   Ending Test, file ESMF_FieldCreateGetUTest.F90, line 2393
-  PASS  Testing completing a Field from a Geom object and a typekind, ESMF_Field
- CreateGetUTest.F90, line 2390
-  Ending Test, file ESMF_FieldCreateGetUTest.F90, line 2393
-  PET           3  Test Elapsed Time    13648.1340000000       msec.
-  PET           1  Test Elapsed Time    13648.2070000000       msec.
-  PET           0  Test Elapsed Time    13633.9320000000       msec.
-  PET           2  Test Elapsed Time    13648.0570000000       msec.
+  PET           1  Test Elapsed Time    13438.9320000000       msec.
+  PET           0  Test Elapsed Time    13427.0960000000       msec.
+  PET           2  Test Elapsed Time    13438.9330000000       msec.
+  PET           3  Test Elapsed Time    13439.2630000000       msec.
